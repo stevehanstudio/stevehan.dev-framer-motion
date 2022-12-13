@@ -121,6 +121,9 @@ https://blog.logrocket.com/15-ways-implement-vertical-alignment-css/
 How to change light / dark mode based on system settings
 https://www.section.io/engineering-education/watch-for-system-dark-mode-using-js-css/
 
+How to use React-router-dom and Framer Motion AnimatePresence
+https://stackoverflow.com/questions/70239122/react-router-dom-v6-with-framer-motion-v4
+
 Shared layout animations - deprecated with Frame Motion 5
 https://www.framer.com/docs/guide-upgrade/##shared-layout-animations
 
