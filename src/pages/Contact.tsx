@@ -75,8 +75,9 @@ const Contact = () => {
 					name='contact v1'
 					method='POST'
 					data-netlify='true'
+					netlify-honeypot='bot-field'
+					hidden
 					className='px-[1.2em] md:px-0'
-					onSubmit='submit'
 					// onSubmit={handleSubmit(onSubmit)}
 				>
 					<input type='hidden' name='form-name' value='contact v1' />
@@ -97,7 +98,11 @@ const Contact = () => {
 					</div>
 					<div className='fields'>
 						<label htmlFor='message'>Message</label>
-						<textarea id='message' name='message' rows={isMobile ? 5 : 8} />
+						<textarea
+							id='message'
+							name='message'
+							rows={isMobile ? 5 : 8}
+						/>
 						{/* <p>{errors.message?.message}</p> */}
 					</div>
 					<div className='pt-4 fields'>
