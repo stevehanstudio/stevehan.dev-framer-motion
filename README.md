@@ -1,6 +1,6 @@
 # SteveHan.dev Version 2 of my portfolio website
 
-This project uses Typescript, React.js, Next.js 13, and [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+This project uses Typescript, React.js, Framer Motion, and [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
 
 ## Demo
 https://stevehan-dev-v2.vercel.app/
@@ -126,3 +126,9 @@ https://www.framer.com/docs/guide-upgrade/##shared-layout-animations
 
 For the carousel we have to hide the scrollbars in the x direction but keep the functionality
 https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+
+Build error
+Failed to compile.
+Error: resolve-url-loader: error processing CSS
+  Invalid mapping: {"generated":{"line":1,"column":664},"source":"file://B:\\Projects\\stevehanstudio\\stevehan.dev-framer-motion\\src\\styles\\global.scss","original":{"column":null},"name":null}
+https://stackoverflow.com/questions/71188714/react-tailwind-sass-build-error-resolve-url-loader-error-processing-css

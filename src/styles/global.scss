@@ -5,26 +5,32 @@
 @layer components {
   body {
     @apply overflow-x-hidden h-full antialiased transition-colors duration-1000 ease-in-out delay-300 bg-sweetAiran dark:bg-laborWorker;
+    foo: bar;
   }
 
   p {
     @apply text-sm sm:text-base font-normal text-gray-700 dark:text-gray-300 pt-1;
+    foo: bar;
   }
 
   h3 {
     @apply text-center font-semibold pt-5 pb-1 tracking-[0.1rem] text-xl text-gray-600 dark:text-gray-200;
+    foo: bar;
   }
 
   h4 {
     @apply font-medium pt-5 pb-1 text-xl text-gray-700 dark:text-gray-100;
+    foo: bar;
   }
 
   .section-title {
     @apply text-xl sm:text-3xl pt-1 md:pt-6 pb-5 md:pb-4 font-light tracking-[0.6rem] sm:tracking-[0.8rem] uppercase text-center dark:text-white;
+    foo: bar;
   }
 
   .section {
     @apply min-h-screen pt-[3.2rem];
+    foo: bar;
   }
 
   .fade-bottom {
@@ -63,6 +69,7 @@
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-healthcareBlue;
+    foo: bar;
     // background: hsl(120 100% 5% /1);
   }
 
@@ -102,6 +109,7 @@
   }
   .underline {
     @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-1 left-0 top-[100%];
+    foo: bar;
     // position: absolute;
     // top: 100%;
     // left: 0;
@@ -144,6 +152,7 @@
   }
   .underline {
     @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-[3px] left-0 top-[calc(100%_-_2px)];
+    foo: bar;
     // position: absolute;
     // top: 100%;
     // left: 0;
@@ -157,6 +166,7 @@
 
   .menu-item {
     @apply items-center text-gray-500 text-lg transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+    foo: bar;
   }
 
   // .nav-menu-item {
@@ -172,22 +182,27 @@
 
   .social-menu-item {
     @apply px-3;
+    foo: bar;
   }
 
   .nav-link {
     @apply px-3 items-center text-gray-400 font-medium uppercase transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+    foo: bar;
   }
 
   .active {
     @apply text-black dark:text-white;
+    foo: bar;
   }
 
   .mobile-nav-link {
     @apply py-2 px-3 items-center text-gray-500 dark:text-gray-50 font-medium uppercase transition-all hover:text-healthcareBlue focus:text-healthcareBlue;
+    foo: bar;
   }
 
   .mobile-active {
     @apply  text-healthcareBlue dark:text-healthcareBlue;
+    foo: bar;
   }
 
   .logo-image {
@@ -195,6 +210,7 @@
     // @apply z-20 mx-auto mt-24 mb-4 rounded-full drop-shadow-2xl md:w-48 md:h-48 max-w-[50%] max-h-[50%] w-[250px] h-[250px];
     // @apply z-20 mx-auto mt-24 mb-4 rounded-full drop-shadow-2xl max-w-[50%] max-h-[50%] w-[250px] h-[250px];
     @apply relative z-20 mx-auto mt-24 mb-4 rounded-full drop-shadow-2xl w-[250px] h-[250px];
+    foo: bar;
   }
 
   @media (max-width: 768px) {
@@ -216,10 +232,12 @@
 
   .cards-inner-carousel {
     @apply flex flex-row my-auto;
+    foo: bar;
   }
 
   .cards-carousel {
     @apply relative p-2 md:p-10 z-10 cursor-grab my-auto;
+    foo: bar;
     //  bg-gradient-to-r from-[rgba(0,0,0,0.2)] to-[rgba(44,62,80,0.4)];
   }
 
@@ -245,46 +263,57 @@
 
   .nav-carousel {
     @apply z-20 absolute cursor-pointer top-1/2 -translate-y-1/2 text-black dark:text-white opacity-40 dark:opacity-40 py-4 transition duration-500 hover:opacity-90 hover:dark:opacity-90 hover:dark:border-healthcareBlue;
+    foo: bar;
   }
 
   .nav-carousel-left {
     @apply left-0;
+    foo: bar;
   }
 
   .nav-carousel-right {
     @apply right-0;
+    foo: bar;
   }
 
   .card-component {
     @apply flex flex-col grow items-center bg-gray-50 rounded-md mx-1 sm:mx-4 shadow-md h-full md:min-h-[30rem] md:min-w-[20rem] w-[230px] md:w-[400px] transform transition dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.05),0_0_5px_3px_rgba(255,0,255,0.05),0_0_7px_4px_rgba(0,255,255,0.05)] dark:bg-gray-900;
+    foo: bar;
   }
 
   .card-button {
     @apply flex flex-row items-center self-end px-2 py-2 mx-auto mt-1 md:mt-2 align-bottom border-2 rounded-md text-sm md:text-base text-white hover:text-white hover:dark:text-white dark:bg-transparent shadow-sm hover:shadow-md dark:hover:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_4px_2px_rgba(255,255,255,0.3),0_0_8px_4px_rgba(255,255,255,0.2)] transition duration-150 ease-in-out;
+    foo: bar;
   }
 
   .skill {
     @apply px-2 py-1 mt-0 mb-5 mr-1 text-xs font-semibold border-2 rounded-2xl transition-all duration-300;
+    foo: bar;
   }
 
   .skill-unselected {
     @apply text-gray-700 bg-transparent dark:text-gray-300 border-slate-300 dark:border-gray-700 dark:bg-gray-800 hover:bg-healthcareBlue dark:hover:bg-healthcareBlue dark:hover:text-white hover:text-white hover:opacity-100;
+    foo: bar;
   }
 
   .skill-selected {
     @apply text-white border-healthcareBlue bg-healthcareBlue hover:opacity-[85%] dark:text-white;
+    foo: bar;
   }
 
   .expand-skills-button {
     @apply cursor-pointer;
+    foo: bar;
   }
 
   .expand-skills-button-not-hovered {
     @apply text-gray-800 dark:text-gray-200;
+    foo: bar;
   }
 
   .expand-skills-button-hovered {
     @apply text-healthcareBlue dark:text-healthcareBlue;
+    foo: bar;
   }
 
   // items-end m-0 p-0
@@ -303,22 +332,27 @@
 
   form {
     @apply mx-auto w-full;
+    foo: bar;
   }
 
   label {
     @apply text-sm md:text-base mb-1 md:mb-3 text-gray-600 dark:text-white;
+    foo: bar;
   }
 
   input, textarea {
     @apply w-full p-2 md:p-3 rounded-md focus:shadow-lg outline-none transition-all;
+    foo: bar;
   }
 
   .button {
     @apply bg-healthcareBlue text-gray-100 hover:text-white hover:border-black border-2;
+    foo: bar;
   }
 
   .fields {
     @apply mb-4 md:my-5;
+    foo: bar;
   }
 
   .gr-icon path {
