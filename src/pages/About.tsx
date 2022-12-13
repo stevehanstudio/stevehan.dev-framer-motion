@@ -18,8 +18,9 @@ const About = () => {
 				<div className='flex flex-col mx-1 md:mx-7 md:flex-row'>
 					<img
 						className='object-cover w-full h-auto md:pt-6 md:w-[484px] basis-1'
-						src='https://res.cloudinary.com/dbrvquuei/image/upload/v1669594147/stevehandev/images/_DSC8502_2_ukhnwo.jpg'
+						src='https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669594147/stevehandev/images/_DSC8502_2_ukhnwo.jpg'
 						alt='portrait of me'
+						loading='lazy'
 					/>
 					<div className='w-full h-auto px-4 md:px-7 md:w-1/2'>
 						<h4 className='text-xl dark:text-gray-200'>About Me</h4>
