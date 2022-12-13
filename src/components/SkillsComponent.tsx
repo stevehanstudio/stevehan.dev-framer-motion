@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useContext, useRef, MouseEvent } from 'react'
+// import React, { useState, useEffect, useContext, useRef, MouseEvent } from 'react'
+import React, { useState, useEffect, useRef, MouseEvent } from 'react'
 import { motion } from 'framer-motion'
 import { FiChevronUp } from 'react-icons/fi'
 import { MainComponentType } from '../types'
-import { AppContext } from '../context/AppContext'
+// import { AppContext } from '../context/AppContext'
 
 interface Props {
   componentType: MainComponentType
@@ -32,7 +33,7 @@ const SkillsComponent:React.FC<Props> = ({
 	const [expandButtonHover, setExpandButtonHover] = useState(false)
 	const [multiLineSkills, setMultiLineSkills] = useState(false)
 
-	const { isMobile } = useContext(AppContext)
+	// const { isMobile } = useContext(AppContext)
 
 	useEffect(() => {
 		window.addEventListener('resize', () => {
@@ -82,9 +83,9 @@ const SkillsComponent:React.FC<Props> = ({
 				>
 					{showAllSkills ? 'See Less Skills' : 'See All Skills'}
 				</div>
-			) :
+			) : (
 				<div className='w-full h-2'></div>
-			}
+			)}
 			<motion.div
 				ref={skillsContainer}
 				animate={{
@@ -101,6 +102,8 @@ const SkillsComponent:React.FC<Props> = ({
 				<div>
 					<button
 						role='checkbox'
+						aria-checked='false'
+						aria-labelledby='All skills'
 						className={`skill ${
 							selectedSkills.length === 0
 								? ' skill-selected '
@@ -116,6 +119,8 @@ const SkillsComponent:React.FC<Props> = ({
 						return (
 							<button
 								role='checkbox'
+								aria-checked='false'
+								aria-labelledby={skill}
 								className={
 									selectedSkills.includes(skill)
 										? 'skill skill-selected'
@@ -129,8 +134,9 @@ const SkillsComponent:React.FC<Props> = ({
 						)
 					})}
 				</div>
-				{multiLineSkills && <FiChevronUp
-					className={`expand-skills-button min-w-[3rem] w-[3rem] m-0 p-0 text-3xl font-semibold transition duration-500
+				{multiLineSkills && (
+					<FiChevronUp
+						className={`expand-skills-button min-w-[3rem] w-[3rem] m-0 p-0 text-3xl font-semibold transition duration-500
 						${showAllSkills ? ' -rotate-180' : ' rotate-0'}
 						${
 							expandButtonHover
@@ -138,10 +144,11 @@ const SkillsComponent:React.FC<Props> = ({
 								: ' expand-skills-button-not-hovered'
 						}
 					`}
-					onMouseOver={() => setExpandButtonHover(true)}
-					onMouseOut={() => setExpandButtonHover(false)}
-					onClick={handleShowAllSkills}
-				/>}
+						onMouseOver={() => setExpandButtonHover(true)}
+						onMouseOut={() => setExpandButtonHover(false)}
+						onClick={handleShowAllSkills}
+					/>
+				)}
 			</motion.div>
 		</>
 	)

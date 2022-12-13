@@ -23,6 +23,8 @@ export type AppContextType = {
 export const AppContext = createContext<AppContextType>({} as AppContextType)
 // export const AppContext = createContext<AppContextType | null>(null)
 
+const path = ['/', '/projects', '/certificates', '/about', '/contact']
+
 export const AppProvider = ({ children }: { children: ReactNode }): ReactElement => {
 	// const [state, dispatch] = useReducer(appReducer, initialState)
 	const [selectedNavMenuItem, setSelectedNavMenuItem] = useState<number>(0)
@@ -32,7 +34,6 @@ export const AppProvider = ({ children }: { children: ReactNode }): ReactElement
 
 	const isMobile = width && width <= 768 ? true : false
 
-	const path = ['/', '/projects', '/certificates', '/about', '/contact']
 	const { pathname } = useLocation()
 
 	const heroRef = useRef(null)
@@ -45,18 +46,17 @@ export const AppProvider = ({ children }: { children: ReactNode }): ReactElement
 		setWidth(window.innerWidth)
 	}
 
-	const setInitialSelectedNavMenuItem = () => {
-		setSelectedNavMenuItem(path.indexOf(pathname))
-	}
-
 	useEffect(() => {
 		setWidth(window.innerWidth)
-		setInitialSelectedNavMenuItem()
 		window.addEventListener('resize', handleWindowSizeChange)
 		return () => {
 			window.removeEventListener('resize', handleWindowSizeChange)
 		}
 	}, [])
+
+	useEffect(() => {
+		setSelectedNavMenuItem(path.indexOf(pathname))
+	}, [pathname])
 
 	const handleMobileThemeColor = (e: MediaQueryListEvent) => {
 		const colorScheme = e.matches ? 'dark' : 'light'
