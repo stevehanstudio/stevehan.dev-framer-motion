@@ -40,7 +40,8 @@ const Home = () => {
 						}}
 						// className='logo-image'
 						alt='stevehan-logo-emblem'
-						src='/stevehandev.png'
+						src='https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1670922600/stevehandev/images/stevehandev_mmunmr.png'
+						// src='/stevehandev.png'
 						// height={250}
 						// width={250}
 					/>
