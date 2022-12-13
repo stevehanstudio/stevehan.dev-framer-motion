@@ -73,7 +73,7 @@ const Contact = () => {
 				{/* <h3>Let's Get in Touch!</h3> */}
 				<form
 					name='contact v1'
-					method='post'
+					method='POST'
 					data-netlify='true'
 					className='px-[1.2em] md:px-0'
 					// onSubmit='submit'
