@@ -40,21 +40,25 @@ const Contact = () => {
 	// 	}
 	// }
 
-	// const onSubmit: SubmitHandler<FormData> = data => {
-	// 	console.log(data)
-	// 	fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, {
+	// const handleSubmit = (event:SyntheticEvent) => {
+	// 	event.preventDefault()
+	// 	const myForm = event.target
+	// 	const formData = new FormData(myForm)
+
+	// 	fetch('/', {
 	// 		method: 'POST',
-	// 		headers: {
-	// 			'Content-Type': 'application/json',
-	// 		},
-	// 		body: JSON.stringify(data),
-	// 	})
-	// 		.then(response => {
-	// 			return response.json()
+	// 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+	// 			body: new URLSearchParams(formData).toString(),
+	// 			// body: JSON.stringify(data),
 	// 		})
-	// 		.then(d => {
-	// 			console.log('Success:', d)
+	// 		.then(() => {
+	// 			console.log('Form successful submitted');
+
+	// 			// return response.json()
 	// 		})
+	// 		// .then(d => {
+	// 		// 	console.log('Success:', d)
+	// 		// })
 	// 		.catch(error => {
 	// 			console.log('Error:', error)
 	// 		})
@@ -72,27 +76,27 @@ const Contact = () => {
 				<h2 className='section-title'>Contact</h2>
 				{/* <h3>Let's Get in Touch!</h3> */}
 				<form
-					name='contact v1'
-					method='POST'
-					data-netlify='true'
-					netlify-honeypot='bot-field'
+					name='Contact Form'
+					method='post'
+					// data-netlify='true'
+					// netlify-honeypot='bot-field'
 					className='px-[1.2em] md:px-0'
-					// onSubmit={handleSubmit(onSubmit)}
+					// onSubmit={handleSubmit}
 				>
-					<input type='hidden' name='form-name' value='contact v1' />
+					<input type='hidden' name='form-name' value='Contact Form' />
 					<div className='fields'>
 						<label htmlFor='name'>Name</label>
-						<input id='name' type='text' name='name' />
+						<input id='name' type='text' name='name' required />
 						{/* <p>{errors.name?.message}</p> */}
 					</div>
 					<div className='fields'>
 						<label htmlFor='email'>Email</label>
-						<input id='email' type='text' name='email' />
+						<input id='email' type='text' name='email' required />
 						{/* <p>{errors.email?.message}</p> */}
 					</div>
 					<div className='fields'>
 						<label htmlFor='subject'>Subject</label>
-						<input id='subject' type='text' name='subject' />
+						<input id='subject' type='text' name='subject' required />
 						{/* <p>{errors.subject?.message}</p> */}
 					</div>
 					<div className='fields'>
@@ -101,6 +105,7 @@ const Contact = () => {
 							id='message'
 							name='message'
 							rows={isMobile ? 5 : 8}
+							required
 						/>
 						{/* <p>{errors.message?.message}</p> */}
 					</div>
