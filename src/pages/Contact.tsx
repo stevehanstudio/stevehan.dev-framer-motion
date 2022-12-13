@@ -76,7 +76,6 @@ const Contact = () => {
 					method='POST'
 					data-netlify='true'
 					netlify-honeypot='bot-field'
-					hidden
 					className='px-[1.2em] md:px-0'
 					// onSubmit={handleSubmit(onSubmit)}
 				>
