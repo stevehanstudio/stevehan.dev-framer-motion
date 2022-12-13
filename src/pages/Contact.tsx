@@ -76,10 +76,10 @@ const Contact = () => {
 					method='POST'
 					data-netlify='true'
 					className='px-[1.2em] md:px-0'
-					// onSubmit='submit'
+					onSubmit='submit'
 					// onSubmit={handleSubmit(onSubmit)}
 				>
-					{/* <input type='hidden' name='form-name' value='contact v1' /> */}
+					<input type='hidden' name='form-name' value='contact v1' />
 					<div className='fields'>
 						<label htmlFor='name'>Name</label>
 						<input id='name' type='text' name='name' />
