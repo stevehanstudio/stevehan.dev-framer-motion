@@ -1,0 +1,150 @@
+import React, { useState, useEffect, useContext, useRef, MouseEvent } from 'react'
+import { motion } from 'framer-motion'
+import { FiChevronUp } from 'react-icons/fi'
+import { MainComponentType } from '../types'
+import { AppContext } from '../context/AppContext'
+
+interface Props {
+  componentType: MainComponentType
+	skills: string[]
+	selectedSkills: string[]
+	showAllSkills: boolean
+	handleSelectSkill: (e: MouseEvent, skill: string) => void
+	handleShowAllSkills: (e: MouseEvent) => void
+	handleSelectAllSkills: () => void
+}
+
+// const MobileSkillsComponent:React.FC<Props> = ({
+// 	skills,
+// 	selectedSkills,
+// 	showAllSkills
+// })
+
+const SkillsComponent:React.FC<Props> = ({
+	skills,
+	selectedSkills,
+	showAllSkills,
+	handleSelectSkill,
+	handleShowAllSkills,
+	handleSelectAllSkills,
+}) => {
+	const skillsContainer = useRef<HTMLDivElement>(null)
+	const [expandButtonHover, setExpandButtonHover] = useState(false)
+	const [multiLineSkills, setMultiLineSkills] = useState(false)
+
+	const { isMobile } = useContext(AppContext)
+
+	useEffect(() => {
+		window.addEventListener('resize', () => {
+			if (skillsContainer.current) {
+				setMultiLineSkills(skillsContainer.current?.scrollHeight > 48)
+			}
+		})
+	}, [])
+
+	useEffect(() => {
+		if (skillsContainer.current) {
+			setMultiLineSkills(skillsContainer.current?.scrollHeight > 48)
+		}
+	}, [
+		skillsContainer.current?.scrollHeight
+	])
+
+	// console.log(
+	// 	'scrollHeight',
+	// 	skillsContainer.current?.clientHeight,
+	// 	skillsContainer.current?.scrollHeight
+	// )
+
+	return (
+		<>
+			{/* {isMobile
+				?  <motion.div>
+						<motion.div>
+
+						</motion.div>
+				</motion.div>
+				:
+			} */}
+
+			{multiLineSkills ? (
+				<div
+					className={`expand-skills-button flex justify-end w-full pb-1 pr-3 mr-3 text-xs underline
+					${
+						expandButtonHover
+							? 'expand-skills-button-hovered'
+							: 'expand-skills-button-not-hovered'
+					}
+				`}
+					onMouseOver={() => setExpandButtonHover(true)}
+					onMouseOut={() => setExpandButtonHover(false)}
+					onClick={handleShowAllSkills}
+				>
+					{showAllSkills ? 'See Less Skills' : 'See All Skills'}
+				</div>
+			) :
+				<div className='w-full h-2'></div>
+			}
+			<motion.div
+				ref={skillsContainer}
+				animate={{
+					maxHeight: showAllSkills
+						? skillsContainer.current?.scrollHeight + 'px'
+						: '47px',
+				}}
+				transition={{
+					duration: 0.2,
+					type: 'easeIn',
+				}}
+				className='flex flex-row overflow-hidden text-center'
+			>
+				<div>
+					<button
+						role='checkbox'
+						className={`skill ${
+							selectedSkills.length === 0
+								? ' skill-selected '
+								: ' skill-unselected '
+						} ml-2`}
+						onClick={handleSelectAllSkills}
+					>
+						All
+					</button>
+				</div>
+				<div className='flex-wrap'>
+					{skills.map(skill => {
+						return (
+							<button
+								role='checkbox'
+								className={
+									selectedSkills.includes(skill)
+										? 'skill skill-selected'
+										: 'skill skill-unselected'
+								}
+								key={skill}
+								onClick={(e: MouseEvent) => handleSelectSkill(e, skill)}
+							>
+								{skill}
+							</button>
+						)
+					})}
+				</div>
+				{multiLineSkills && <FiChevronUp
+					className={`expand-skills-button min-w-[3rem] w-[3rem] m-0 p-0 text-3xl font-semibold transition duration-500
+						${showAllSkills ? ' -rotate-180' : ' rotate-0'}
+						${
+							expandButtonHover
+								? ' expand-skills-button-hovered'
+								: ' expand-skills-button-not-hovered'
+						}
+					`}
+					onMouseOver={() => setExpandButtonHover(true)}
+					onMouseOut={() => setExpandButtonHover(false)}
+					onClick={handleShowAllSkills}
+				/>}
+			</motion.div>
+		</>
+	)
+}
+
+export default SkillsComponent

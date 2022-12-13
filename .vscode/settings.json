@@ -1,0 +1,27 @@
+{
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"cSpell.words": [
+		"Aboutdotme",
+		"Airan",
+		"ASIC",
+		"bumpmap",
+		"CCSF",
+		"cheatsheet",
+		"Cirriculum",
+		"GLTF",
+		"hookform",
+		"jsbasics",
+		"mipmaps",
+		"Nanodegree",
+		"Nanodgree",
+		"nocompatible",
+		"raycaster",
+		"scrollbars",
+		"Skaffold",
+		"stevehandev",
+		"tailwindcss",
+		"Udacity",
+		"WCAG"
+	]
+}
