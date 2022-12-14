@@ -352,12 +352,12 @@
   }
 
   .card-component {
-    @apply flex flex-col md:grow items-center bg-gray-50 rounded-md mx-4 my-4 md:my-0 md:mx-4 shadow-md h-full md:min-h-[30rem] md:min-w-[20rem] md:w-[400px] transform transition dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.05),0_0_5px_3px_rgba(255,0,255,0.05),0_0_7px_4px_rgba(0,255,255,0.05)] dark:bg-gray-900;
+    @apply flex flex-col md:grow md:items-center bg-gray-50 md:rounded-md md:mx-4 my-4 md:my-0 shadow-md h-full md:min-h-[30rem] md:min-w-[20rem] md:w-[400px] transform transition dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.05),0_0_5px_3px_rgba(255,0,255,0.05),0_0_7px_4px_rgba(0,255,255,0.05)] dark:bg-gray-900;
     foo: bar;
   }
 
   .card-button {
-    @apply flex flex-row items-center self-end px-2 py-2 mx-auto mt-1 md:mt-2 align-bottom border-2 rounded-md text-sm md:text-base text-white hover:text-white hover:dark:text-white dark:bg-transparent shadow-sm hover:shadow-md dark:hover:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_4px_2px_rgba(255,255,255,0.3),0_0_8px_4px_rgba(255,255,255,0.2)] transition duration-150 ease-in-out;
+    @apply flex flex-row items-center self-end px-6 md:px-2 py-2 mx-auto mt-1 md:mt-2 align-bottom bg-gray-100 md:bg-transparent md:border-2 rounded-md text-sm md:text-base text-white hover:text-white hover:dark:text-white dark:bg-transparent shadow-sm hover:shadow-md dark:hover:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_4px_2px_rgba(255,255,255,0.3),0_0_8px_4px_rgba(255,255,255,0.2)] transition duration-150 ease-in-out;
     foo: bar;
   }
 

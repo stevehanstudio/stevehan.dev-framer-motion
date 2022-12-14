@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 // import Image from 'next/image'
 import {
 	DetailsButton,
@@ -8,6 +8,7 @@ import {
 	CredentialsButton,
 } from './Buttons'
 import { MainComponentType, DataType } from '../types'
+import { AppContext } from '../context/AppContext'
 
 interface Props {
   type: MainComponentType
@@ -22,13 +23,17 @@ const CardComponent: React.FC<Props> = ({
 	dataIndex,
 	totalDataObject,
 }) => {
+	const { isMobile } = useContext(AppContext)
+
 	return (
 		<article className='card-component'>
 			<div className='flex-col'>
-				<h4 className='px-1 pt-2 pb-1 text-sm font-semibold text-gray-500 md:pt-3 md:pb-2 dark:text-gray-300'>
-					{type}
-					{` ${dataIndex + 1} of ${totalDataObject}`}
-				</h4>
+				{!isMobile && (
+					<h4 className='px-1 pt-2 pb-1 text-sm font-semibold text-gray-500 md:pt-3 md:pb-2 dark:text-gray-300'>
+						{type}
+						{` ${dataIndex + 1} of ${totalDataObject}`}
+					</h4>
+				)}
 				<div className='relative object-contain overflow-hidden border-2 border-gray-50 dark:border-gray-700 rounded-sm shadow-sm pointer-events-none h-auto md:w-[350px] md:h-[225px]'>
 					<img
 						alt={data.title}
@@ -41,15 +46,21 @@ const CardComponent: React.FC<Props> = ({
 					/>
 				</div>
 			</div>
-			<div className='flex flex-col flex-[1-0-auto] h-full flex-stretch py-3 md:py-7 px-3 md:px-7'>
-				<h1 className='font-semibold text-center text:base md:text-lg dark:text-white'>
+			<div className='flex flex-col flex-[1-0-auto] h-full flex-stretch py-0 md:py-7 px-6 md:px-7'>
+				{isMobile && (
+					<h4 className='pt-4 text-xs font-base leading-none text-gray-500 dark:text-gray-300'>
+						{type}
+						{` ${dataIndex + 1} of ${totalDataObject}`}
+					</h4>
+				)}
+				<h1 className='font-normal md:font-semibold md:text-center leading-none text-xl md:text-lg dark:text-white'>
 					{data.title}
 				</h1>
-				<h2 className='py-2 text-xs font-light md:text-sm dark:text-gray-100'>
+				<h2 className='py-2 text-sm font-light md:text-sm dark:text-gray-100'>
 					{data.subtitle}
 				</h2>
 				{/* <div className='flex flex-row justify-end h-full mx-5 space-between'> */}
-				<div className='flex flex-row justify-between w-full h-full'>
+				<div className='flex flex-row mb-4 md:mb-0 justify-between w-full h-full'>
 					{data.website && <DemoButton url={data.website} />}
 					{data.github && <DetailsButton url={data.github} />}
 					{data.curriculum && <CirriculumButton url={data.curriculum} />}

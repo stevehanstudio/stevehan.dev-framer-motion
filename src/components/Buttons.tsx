@@ -1,69 +1,86 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BsGithub, BsGlobe2 } from 'react-icons/bs'
 import { HiOutlineIdentification } from 'react-icons/hi'
 import { MdOutlineCastForEducation } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
+import { AppContext } from '../context/AppContext'
 
 interface Props {
 	url: string
 }
 
 export const DemoButton: React.FC<Props> = ({ url }) => {
+	const { isMobile } = useContext(AppContext)
+
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
 			<button
 				type='button'
-				className='card-button bg-amber-500 dark:text-amber-400 border-amber-400 hover:bg-amber-400 hover:border-amber-400 hover:dark:bg-amber-800 hover:dark:border-amber-800'
+				className='card-button md:bg-amber-500 md:dark:text-amber-400 md:border-amber-400 md:hover:bg-amber-400 md:hover:border-amber-400 md:hover:dark:bg-amber-800 md:hover:dark:border-amber-800'
 			>
-				<BsGlobe2 />
-				<span className='pl-2'>Demo</span>
+				<BsGlobe2 className={`${isMobile ? 'fill-amber-500' : ''}`} />
+				<span className={`${isMobile ? 'text-amber-500' : ''} pl-2`}>Demo</span>
 			</button>
 		</a>
 	)
 }
 
 export const DetailsButton: React.FC<Props> = ({ url }) => {
+	const { isMobile } = useContext(AppContext)
+
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
 			<button
 				type='button'
-				className='card-button bg-gradient-to-r from-[rgba(256,256,256,0.05)] to-[rgba(256,256,256,0.1)] dark:text-cyan-200 dark:border-cyan-200 border-cyan-500 bg-cyan-500 hover:bg-cyan-400 hover:border-cyan-400 hover:dark:bg-cyan-800 hover:dark:border-cyan-800'
+				className='card-button bg-gradient-to-r from-[rgba(256,256,256,0.05)] to-[rgba(256,256,256,0.1)] md:dark:text-cyan-200 md:dark:border-cyan-200 md:border-cyan-500 md:bg-cyan-500 md:hover:bg-cyan-400 md:hover:border-cyan-400 md:hover:dark:bg-cyan-800 md:hover:dark:border-cyan-800'
 			>
-				<BsGithub />
-				<span className='pl-2'>Details</span>
+				<BsGithub className={`${isMobile ? 'fill-cyan-500' : ''}`} />
+				<span className={`${isMobile ? 'text-cyan-500' : ''} pl-2`}>Details</span>
 			</button>
 		</a>
 	)
 }
 
 export const CirriculumButton: React.FC<Props> = ({ url }) => {
+	const { isMobile } = useContext(AppContext)
+
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
-			<button className='card-button dark:text-lime-200 bg-lime-500 border-lime-500 hover:bg-lime-400 hover:border-lime-400 hover:dark:bg-lime-700 hover:dark:border-lime-700'>
-				<MdOutlineCastForEducation />
-				<span className='pl-1 md:pl-2'>Cirriculum</span>
+			<button className='card-button md:dark:text-lime-200 md:bg-lime-500 md:border-lime-500 md:hover:bg-lime-400 md:hover:border-lime-400 md:hover:dark:bg-lime-700 md:hover:dark:border-lime-700'>
+				<MdOutlineCastForEducation className={`${isMobile ? 'fill-lime-500' : ''}`}/>
+				<span className={`${isMobile ? 'text-lime-500' : ''} pl-2`}>Cirriculum</span>
 			</button>
 		</a>
 	)
 }
 
 export const CourseButton: React.FC<Props> = ({ url }) => {
+	const { isMobile } = useContext(AppContext)
+
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
-			<button className='card-button bg-emerald-600 border-emerald-600 hover:bg-emerald-500 hover:border-emerald-500 dark:text-emerald-200 hover:dark:bg-emerald-700 dark:border-emerald-200 hover:dark:border-emerald-700'>
-				<BsGlobe2 />
-				<span className='pl-1 md:pl-2'>Course</span>
+			<button className='card-button md:bg-emerald-600 md:border-emerald-600 md:hover:bg-emerald-500 md:hover:border-emerald-500 md:dark:text-emerald-200 md:hover:dark:bg-emerald-700 md:dark:border-emerald-200 md:hover:dark:border-emerald-700'>
+				<BsGlobe2 className={`${isMobile ? 'fill-emerald-600' : ''}`} />
+				<span className={`${isMobile ? 'text-emerald-600' : ''} pl-2`}>
+					Course
+				</span>
 			</button>
 		</a>
 	)
 }
 
 export const CredentialsButton: React.FC<Props> = ({ url }) => {
+	const { isMobile } = useContext(AppContext)
+
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
-			<button className='bg-purple-500 border-purple-500 card-button hover:bg-purple-400 hover:border-purple-400 hover:text-white hover:dark:bg-purple-600 hover:dark:border-purple-600 dark:border-purple-300 dark:text-purple-300'>
-				<HiOutlineIdentification />
-				<span className='pl-1 md:pl-2'>Credentials</span>
+			<button className='md:bg-purple-500 md:border-purple-500 card-button md:hover:bg-purple-400 md:hover:border-purple-400 md:hover:text-white md:hover:dark:bg-purple-600 md:hover:dark:border-purple-600 md:dark:border-purple-300 md:dark:text-purple-300'>
+				<HiOutlineIdentification
+					className={`${isMobile ? 'fill-purple-600' : ''}`}
+				/>
+				<span className={`${isMobile ? 'text-purple-600' : ''} pl-2`}>
+					Credentials
+				</span>
 			</button>
 		</a>
 	)
