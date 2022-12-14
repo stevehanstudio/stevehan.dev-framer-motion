@@ -29,7 +29,7 @@ const CardComponent: React.FC<Props> = ({
 					{type}
 					{` ${dataIndex + 1} of ${totalDataObject}`}
 				</h4>
-				<div className='relative object-contain overflow-hidden border-2 border-gray-50 dark:border-gray-700 rounded-sm shadow-sm pointer-events-none w-[215px] h-[160px] md:w-[350px] md:h-[225px]'>
+				<div className='relative object-contain overflow-hidden border-2 border-gray-50 dark:border-gray-700 rounded-sm shadow-sm pointer-events-none h-auto md:w-[350px] md:h-[225px]'>
 					<img
 						alt={data.title}
 						src={data.image}

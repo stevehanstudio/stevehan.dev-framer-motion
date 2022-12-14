@@ -42,7 +42,7 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 				// stiffness: 300,
 				// damping: 30,
 				ease: [0.43, 0.13, 0.23, 0.96],
-				duration: isMobile ? 0.8 : 1.2,
+				duration: isMobile ? 0.35 : 1.2,
 				// },
 			}}
 		>

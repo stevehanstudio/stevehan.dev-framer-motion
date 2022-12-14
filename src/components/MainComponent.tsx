@@ -9,6 +9,7 @@ import { DataType, MainComponentType } from '../types'
 import { AppContext } from '../context/AppContext'
 import MainCarousel from './MainCarousel'
 import MobileSkillsComponent from './MobileSkillsComponent'
+import MobileCardsComponent from './MobileCardsComponent'
 
 interface Props {
   componentType: MainComponentType
@@ -178,6 +179,13 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 						i === selectedSkills.length - 1 ? ` and ${s}.` : ` ${s},`
 					)}
 				</div>
+			) : isMobile ? (
+				<MobileCardsComponent
+					componentType={componentType}
+					dataObject={dataObject}
+					selectedDataObject={selectedDataObject}
+					selectedSkills={selectedSkills}
+				/>
 			) : (
 				<MainCarousel
 					componentType={componentType}
