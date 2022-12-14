@@ -1,13 +1,14 @@
 // import React, { useState, useRef, useEffect, useContext, KeyboardEvent, MouseEvent } from 'react'
-import React, { useState, useEffect, MouseEvent } from 'react'
+import React, { useState, useEffect, useContext, MouseEvent } from 'react'
 // import { motion, Variants } from 'framer-motion'
 // import { InView } from 'react-intersection-observer'
 import SkillsComponent from './SkillsComponent'
 // import CardComponent from './CardComponent'
 import { DataType, MainComponentType } from '../types'
 // import CarouselOverlay from './CarouselOverlay'
-// import { AppContext } from '../context/AppContext'
+import { AppContext } from '../context/AppContext'
 import MainCarousel from './MainCarousel'
+import MobileSkillsComponent from './MobileSkillsComponent'
 
 interface Props {
   componentType: MainComponentType
@@ -25,13 +26,14 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 	// const offset = useMotionValue(0)
 	// offset.onChange(val => console.log('useMotionValue', val))
 
-	// const {
-	// 	// selectedNavMenuItem,
-	// 	// setSelectedNavMenuItem,
-	// 	// projectsRef,
-	// 	// dragDetected,
-	// 	handleDragDetected,
-	// } = useContext(AppContext)
+	const {
+		// selectedNavMenuItem,
+		// setSelectedNavMenuItem,
+		// projectsRef,
+		// dragDetected,
+		// handleDragDetected,
+		isMobile
+	} = useContext(AppContext)
 
 	useEffect(() => {
 		fetch(
@@ -148,15 +150,27 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 		// >
 		<div className='section'>
 			<h2 className='section-title'>{componentType}</h2>
-			<SkillsComponent
-				componentType={componentType}
-				skills={skills}
-				selectedSkills={selectedSkills}
-				showAllSkills={showAllSkills}
-				handleSelectSkill={handleSelectSkill}
-				handleShowAllSkills={handleShowAllSkills}
-				handleSelectAllSkills={handleSelectAllSkills}
-			/>
+			{isMobile ? (
+				<MobileSkillsComponent
+					componentType={componentType}
+					skills={skills}
+					selectedSkills={selectedSkills}
+					showAllSkills={showAllSkills}
+					handleSelectSkill={handleSelectSkill}
+					handleShowAllSkills={handleShowAllSkills}
+					handleSelectAllSkills={handleSelectAllSkills}
+				/>
+			) : (
+				<SkillsComponent
+					componentType={componentType}
+					skills={skills}
+					selectedSkills={selectedSkills}
+					showAllSkills={showAllSkills}
+					handleSelectSkill={handleSelectSkill}
+					handleShowAllSkills={handleShowAllSkills}
+					handleSelectAllSkills={handleSelectAllSkills}
+				/>
+			)}
 			{selectedDataObject.length === 0 ? (
 				<div className='flex items-center h-full px-5 mx-auto text-2xl text-center md:px-7 max-w-7xl dark:text-gray-200'>
 					No project found that uses the combination of

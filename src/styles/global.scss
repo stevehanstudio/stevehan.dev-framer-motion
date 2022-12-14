@@ -302,6 +302,7 @@
     @apply relative; // my-auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    foo: bar;
   }
 
   .cards-inner-carousel {
@@ -361,7 +362,7 @@
   }
 
   .skill {
-    @apply px-2 py-1 mt-0 mb-5 mr-1 text-xs font-semibold border-2 rounded-2xl transition-all duration-300;
+    @apply px-2 py-1 mt-0 mb-5 mr-1 whitespace-nowrap text-xs font-semibold border-2 rounded-2xl transition-all duration-300;
     foo: bar;
   }
 
@@ -403,6 +404,28 @@
   // .expand-skills-text {
   //   @apply pl-9 text-xs;
   // }
+
+  .mobile-skills-carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-skills-carousel-container {
+    @apply relative; // my-auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    foo: bar;
+  }
+
+  .mobile-skills-buttons-carousel {
+    @apply relative z-10 cursor-grab my-auto;
+    foo: bar;
+    //  bg-gradient-to-r from-[rgba(0,0,0,0.2)] to-[rgba(44,62,80,0.4)];
+  }
+
+  .mobile-skills-buttons-inner-carousel {
+    @apply flex flex-row my-auto;
+    foo: bar;
+  }
 
   form {
     @apply mx-auto w-full;
