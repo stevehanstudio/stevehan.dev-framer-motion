@@ -2,7 +2,8 @@
 // import React, { useState, useEffect, useRef, MouseEvent } from 'react'
 import React, {useState, useEffect, useRef, MouseEvent } from 'react'
 import { motion } from 'framer-motion'
-import { HiOutlineDotsHorizontal } from 'react-icons/hi'
+// import { HiOutlineDotsHorizontal } from 'react-icons/hi'
+import { RiFilter3Line } from 'react-icons/ri'
 import { MainComponentType } from '../types'
 // import { AppContext } from '../context/AppContext'
 
@@ -54,6 +55,14 @@ const MobileSkillsComponent:React.FC<Props> = ({
 
 	return (
 		<div ref={skillsContainer} className='mobile-skills-carousel-container'>
+			<div className='absolute z-50 top-2 right-1'>
+				<button
+					className='float-right shadow-md p-2 text-white bg-laborWorkerBlue rounded-full'
+					onClick={() => console.log('Expand mobile skills')}
+				>
+					<RiFilter3Line />
+				</button>
+			</div>
 			<motion.div className='mobile-skills-buttons-carousel'>
 				<motion.div
 					className='mobile-skills-buttons-inner-carousel'
@@ -93,9 +102,6 @@ const MobileSkillsComponent:React.FC<Props> = ({
 							</button>
 						)
 					})}
-					<button className='absolute top-0 right-0 p-2 bg-amber-500 rounded-full' onClick={() => console.log('Expand mobile skills')}>
-						<HiOutlineDotsHorizontal />
-					</button>
 				</motion.div>
 			</motion.div>
 

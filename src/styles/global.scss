@@ -98,7 +98,7 @@
   }
 
   .section-title {
-    @apply text-xl sm:text-3xl pb-5 md:pb-4 font-light tracking-[0.6rem] sm:tracking-[0.8rem] uppercase text-center dark:text-white;
+    @apply text-xl sm:text-3xl pt-3 md:pt-0 pb-3 md:pb-4 font-light tracking-[0.6rem] sm:tracking-[0.8rem] uppercase text-center dark:text-white;
     foo: bar;
   }
 
@@ -362,7 +362,7 @@
   }
 
   .skill {
-    @apply px-2 py-1 mt-0 mb-5 mr-1 whitespace-nowrap text-xs font-semibold border-2 rounded-2xl transition-all duration-300;
+    @apply px-2 py-1 mt-0 md:mb-5 mr-1 whitespace-nowrap text-xs font-semibold border-2 rounded-2xl transition-all duration-300;
     foo: bar;
   }
 
@@ -410,21 +410,26 @@
   }
 
   .mobile-skills-carousel-container {
-    @apply relative; // my-auto;
+    @apply relative bg-gray-50; // my-auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     foo: bar;
   }
 
   .mobile-skills-buttons-carousel {
-    @apply relative z-10 cursor-grab my-auto;
+    @apply relative z-10 cursor-grab my-auto mobile-skills-fade-right;
     foo: bar;
     //  bg-gradient-to-r from-[rgba(0,0,0,0.2)] to-[rgba(44,62,80,0.4)];
   }
 
   .mobile-skills-buttons-inner-carousel {
-    @apply flex flex-row my-auto;
+    @apply flex flex-row my-auto py-3;
     foo: bar;
+  }
+
+  .mobile-skills-fade-right {
+    -webkit-mask-image: linear-gradient(to right, black 75%, transparent 95%, transparent 100%);
+    mask-image: linear-gradient(to right, black 75%, transparent 95%, transparent 100%);
   }
 
   form {
