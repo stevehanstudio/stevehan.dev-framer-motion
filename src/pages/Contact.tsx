@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 // import { useForm, SubmitHandler } from 'react-hook-form'
 // import { yupResolver } from '@hookform/resolvers/yup'
 // import * as yup from 'yup'
-import { GrSend } from 'react-icons/gr'
+import { SubmitButton } from '../components/Buttons'
 import { AppContext } from '../context/AppContext'
 import PageWrapper from '../PageWrapper'
 
@@ -72,18 +72,22 @@ const Contact = () => {
 		// 	onChange={(inView, entry) => handleInView(inView)}
 		// >
 		<PageWrapper>
-			<div className='max-w-md mx-auto section'>
+			<div className='max-w-md mx-auto section bg-blur-md'>
 				<h2 className='section-title'>Contact</h2>
-				{/* <h3>Let's Get in Touch!</h3> */}
+				{/* <h3 className='text-2xl text-red-800 dark:text-red-400'>Let's Get in Touch!</h3> */}
 				<form
-					name='Contact Form'
+					name='SteveHan.dev Contact Form'
 					method='post'
 					// data-netlify='true'
 					// netlify-honeypot='bot-field'
 					className='px-[1.2em] md:px-0'
 					// onSubmit={handleSubmit}
 				>
-					<input type='hidden' name='form-name' value='Contact Form' />
+					<input
+						type='hidden'
+						name='form-name'
+						value='SteveHan.dev Contact Form'
+					/>
 					<div className='fields'>
 						<label htmlFor='name'>Name</label>
 						<input id='name' type='text' name='name' required />
@@ -91,7 +95,7 @@ const Contact = () => {
 					</div>
 					<div className='fields'>
 						<label htmlFor='email'>Email</label>
-						<input id='email' type='text' name='email' required />
+						<input id='email' type='email' name='email' required />
 						{/* <p>{errors.email?.message}</p> */}
 					</div>
 					<div className='fields'>
@@ -111,13 +115,7 @@ const Contact = () => {
 					</div>
 					<div className='pt-4 fields'>
 						{/* <input type='submit' className='button' /> */}
-						<button
-							className='flex flex-row items-center justify-center w-full px-4 py-3 mx-auto text-center text-white rounded-md bg-healthcareBlue'
-							type='submit'
-						>
-							<GrSend className='mr-2 gr-icon' />
-							Submit
-						</button>
+						<SubmitButton />
 					</div>
 				</form>
 			</div>

@@ -11,7 +11,7 @@ const Menu: React.FC= () => {
 	console.log('selectedNavMenuItem', selectedNavMenuItem)
 
   return (
-		<div className='underlined-menu'>
+		<div className='underlined-menu pb-10'>
 			<nav className='flex flex-row items-start justify-between w-full mx-auto underlined-menu max-w-7xl'>
 				<motion.ul
 					initial={{

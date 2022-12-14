@@ -135,3 +135,7 @@ Failed to compile.
 Error: resolve-url-loader: error processing CSS
   Invalid mapping: {"generated":{"line":1,"column":664},"source":"file://B:\\Projects\\stevehanstudio\\stevehan.dev-framer-motion\\src\\styles\\global.scss","original":{"column":null},"name":null}
 https://stackoverflow.com/questions/71188714/react-tailwind-sass-build-error-resolve-url-loader-error-processing-css
+
+Self host Google fonts
+https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775
+https://gwfh.mranftl.com/fonts

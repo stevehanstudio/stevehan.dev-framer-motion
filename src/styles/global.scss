@@ -3,8 +3,82 @@
 @tailwind utilities;
 
 @layer components {
+  // @font-face {
+  //   font-family: 'Work Sans';
+  //   font-weight: 300 700;
+  //   font-display: swap;
+  //   src: url('./fonts/WorkSans-VariableFont_wght.ttf') format('ttf');
+  // }
+
+  /* work-sans-300 - latin */
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/work-sans-v18-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/work-sans-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/work-sans-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/work-sans-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/work-sans-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/work-sans-v18-latin-300.svg#WorkSans') format('svg'); /* Legacy iOS */
+  }
+  /* work-sans-regular - latin */
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/work-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/work-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/work-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/work-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/work-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/work-sans-v18-latin-regular.svg#WorkSans') format('svg'); /* Legacy iOS */
+  }
+  /* work-sans-500 - latin */
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/work-sans-v18-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/work-sans-v18-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/work-sans-v18-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/work-sans-v18-latin-500.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/work-sans-v18-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/work-sans-v18-latin-500.svg#WorkSans') format('svg'); /* Legacy iOS */
+  }
+  /* work-sans-600 - latin */
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/work-sans-v18-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/work-sans-v18-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/work-sans-v18-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/work-sans-v18-latin-600.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/work-sans-v18-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/work-sans-v18-latin-600.svg#WorkSans') format('svg'); /* Legacy iOS */
+  }
+  /* work-sans-700 - latin */
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/work-sans-v18-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/work-sans-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/work-sans-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/work-sans-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/work-sans-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/work-sans-v18-latin-700.svg#WorkSans') format('svg'); /* Legacy iOS */
+  }
+
   body {
     @apply overflow-x-hidden h-full antialiased transition-colors duration-1000 ease-in-out delay-300 bg-sweetAiran dark:bg-laborWorker;
+    font-family: 'Work Sans', Helvetica, sans-serif, Arial;
     foo: bar;
   }
 
@@ -24,12 +98,12 @@
   }
 
   .section-title {
-    @apply text-xl sm:text-3xl pt-1 md:pt-6 pb-5 md:pb-4 font-light tracking-[0.6rem] sm:tracking-[0.8rem] uppercase text-center dark:text-white;
+    @apply text-xl sm:text-3xl pb-5 md:pb-4 font-light tracking-[0.6rem] sm:tracking-[0.8rem] uppercase text-center dark:text-white;
     foo: bar;
   }
 
   .section {
-    @apply min-h-screen pt-[3.2rem];
+    @apply h-full mt-[0.3em];
     foo: bar;
   }
 
@@ -341,7 +415,12 @@
   }
 
   input, textarea {
-    @apply w-full p-2 md:p-3 rounded-md focus:shadow-lg outline-none transition-all;
+    @apply w-full p-2 rounded-md focus:shadow-lg outline-none transition-all focus:drop-shadow-lg border-[3px] border-gray-50 dark:border-gray-800 focus:border-healthcareBlue focus:dark:border-healthcareBlue focus:dark:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_5px_2px_rgba(255,0,255,0.25),0_0_7px_5px_rgba(0,255,255,0.25)];
+    foo: bar;
+  }
+
+  input:focus, textarea:focus {
+    @apply bg-amber-50 outline-none;
     foo: bar;
   }
 

@@ -1,6 +1,7 @@
 import React, { useContext, ReactNode } from 'react'
 import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { VscChevronDown } from 'react-icons/vsc'
 import { AppContext } from './context/AppContext'
 
 const PageWrapper = ({ children }: { children: ReactNode }) => {
@@ -46,6 +47,33 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 			}}
 		>
 			{children}
+			<motion.div
+				className='w-full pt-4 flex justify-center'
+				initial={{
+					opacity: 0
+				}}
+				animate={{
+					opacity: 1
+				}}
+				transition={{
+					delay: 2.5,
+					duration: 1.2
+				}}
+				exit={{
+					opacity: 0,
+					transition: {
+						delay: 0,
+						duration: 1
+					}
+				}}
+			>
+				<button
+					className='text-white opacity-70 hover:opacity-100 transition-350'
+					onClick={() => console.log('Go to next page')}
+				>
+					<VscChevronDown size={60} />
+				</button>
+			</motion.div>
 		</motion.div>
 	)
 }

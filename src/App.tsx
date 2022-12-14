@@ -3,11 +3,12 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import './styles/global.scss'
 import Header from './components/Header'
-import About from './pages/About'
-import Certificates from './pages/Certificates'
-import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import Certificates from './pages/Certificates'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 import { AppProvider } from './context/AppContext'
 import './styles/global.scss'
 
@@ -24,6 +25,7 @@ const App = () => {
 					<Route path='/certificates' element={<Certificates />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</AnimatePresence>
 		</AppProvider>

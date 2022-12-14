@@ -2,6 +2,7 @@ import React from 'react'
 import { BsGithub, BsGlobe2 } from 'react-icons/bs'
 import { HiOutlineIdentification } from 'react-icons/hi'
 import { MdOutlineCastForEducation } from 'react-icons/md'
+import { GrSend } from 'react-icons/gr'
 
 interface Props {
 	url: string
@@ -67,6 +68,16 @@ export const CredentialsButton: React.FC<Props> = ({ url }) => {
 		</a>
 	)
 }
+
+export const SubmitButton = () => (
+	<button
+		className='flex flex-row items-center justify-center w-full px-4 py-3 mx-auto text-center text-gray-100 hover-text-white dark:text-gray-100 hover:dark:text-white rounded-md bg-healthcareBlue border-2 border-transparent dark:border-gray-800 hover:dark:border-gray-200 hover:border-gray-700 hover:shadow-lg hover:dark:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_5px_2px_rgba(255,0,255,0.25),0_0_7px_5px_rgba(0,255,255,0.25)]'
+		type='submit'
+	>
+		<GrSend className='mr-2 gr-icon' />
+		Submit
+	</button>
+)
 
 // interface ExpandProps {
 // 	showAll: boolean

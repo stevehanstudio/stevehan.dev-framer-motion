@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	mode: 'jit',
-	content: [
-		'./src/**/*.{js,ts,jsx,tsx}',
-	],
+	content: ['./src/**/*.{js,ts,jsx,tsx}'],
 	darkMode: 'class',
 	theme: {
 		extend: {
 			backgroundImage: {
+				contactBackground:
+					"url('https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1670993328/stevehandev/images/joshua-sortino-LqKhnDzSF-8-unsplash_1_yp7r1a.jpg')",
 				// sweetAiran: 'linear-gradient(to right bottom, #D7E1EC, #FFFFFF)',
 				sweetAiran: 'linear-gradient(to right, #D7E1EC, #F1F1F1)',
 				signOfIntelligence:
