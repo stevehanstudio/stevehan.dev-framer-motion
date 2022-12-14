@@ -8,12 +8,12 @@ function NotFound() {
   return (
 		<div className='relative section max-w-3xl w-3xl mx-auto justify-center items-center'>
 			<h1 className='section-title'>Page not found</h1>
-			<div className='absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'>
-				{/* <div className='flex flex-col w-full h-full text-center items-center justify-center'> */}
+			{/* <div className='absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'> */}
+				<div className='flex flex-col w-full h-auto text-center items-center justify-center'>
 				<motion.svg
-					// viewBox='0 0 500 500'
-					width='100%'
-					height='100%'
+					viewBox='0 0 500 300'
+					// width='100%'
+					// height='100%'
 					className={`${
 						theme === 'dark'
 					 ? 'stroke-orange-400' : 'stroke-orange-600'}`}
@@ -65,7 +65,7 @@ https://framer.com/m/framer/Animator.js
 					</motion.text>
 					{/* </g> */}
 				</motion.svg>
-				<h3 className='pt-[4em] w-full text-xl font-medium text-orange-600 md:text-3xl dark:text-orange-400'>
+				<h3 className='pt-2 w-full text-xl font-medium text-orange-600 md:text-3xl dark:text-orange-400'>
 					Sorry, error code 404 encountered. The page you requested is not
 					found.
 				</h3>
