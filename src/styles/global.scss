@@ -77,7 +77,8 @@
   }
 
   body {
-    @apply overflow-x-hidden h-full antialiased transition-colors duration-1000 ease-in-out delay-300 bg-sweetAiran dark:bg-laborWorker;
+    // @apply overflow-x-hidden h-full antialiased transition-colors duration-1000 ease-in-out delay-300 bg-sweetAiran dark:bg-laborWorker;
+    @apply h-full antialiased transition-colors duration-1000 ease-in-out delay-300 bg-sweetAiran dark:bg-laborWorker;
     font-family: 'Work Sans', Helvetica, sans-serif, Arial;
     foo: bar;
   }
