@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 // import DarkModeSwitch from './DarkModeSwitch'
-// import { AppContext } from '../context/AppContext'
-import { socialMenuItems } from '../constants/MenuItems'
+import Switch from 'react-switch'
 import { GrSystem } from 'react-icons/gr'
-import { BsMoonFill, BsSunFill } from 'react-icons/bs'
+import { BsMoonFill, BsSunFill, BsFillMenuButtonWideFill } from 'react-icons/bs'
+// import { RiExternalLinkFill } from 'react-icons/ri'
+import { MdOpenInNew } from 'react-icons/md'
+import { AppContext } from '../context/AppContext'
+import { socialMenuItems } from '../constants/MenuItems'
 
 interface Props {
   isSettingsOpen: boolean
@@ -12,20 +15,24 @@ interface Props {
 }
 
 const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) => {
-  return (
+	const [systemTheme, setSystemTheme] = useState(false)
+	const { theme, toggleTheme, mobileMenuBottom,	toggleMobileMenuBottom
+ } = useContext(AppContext)
+
+	return (
 		<AnimatePresence>
 			{isSettingsOpen && (
 				<>
 					<motion.div
 						initial={{ y: '100vh' }}
 						animate={{
-							y: 400,
+							y: 220,
 						}}
 						exit={{
 							y: '100vh',
 						}}
 						transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
-						className='fixed z-40 bg-gray-100 text-gray-800 shadow-lg top-0 right-0 w-full max-w-sm h-auto p-5'
+						className='fixed z-40 rounded-t-3xl border-2 border-gray-600 dark:border-gray-300 bg-gray-100 opacity-95 dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-lg top-0 right-0 w-full max-w-sm h-auto p-5'
 					>
 						<button
 							onClick={() => openSettingsMenu(!isSettingsOpen)}
@@ -33,42 +40,90 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 						>
 							&times;
 						</button>
-						<h2 className='text-4xl capitalize leading-loose'>
-							Settings
-						</h2>
-						<ul className='flex flex-col w-full'>
+						<h4 className='text-xl font-normal capitalize leading-loose'>
+						 My Info
+						</h4>
+						<ul className='flex flex-col w-full pb-4'>
 							{socialMenuItems.map((item, i) => (
-								<li
-									key={i}
-									className='min-w-full flex flex-col my-2'
-								>
+								<li key={i} className='min-w-full my-2'>
 									<a
 										href={item.url}
 										target='_blank'
 										rel='noopener noreferrer'
+										className='flex flex-row items-center'
 									>
 										<item.icon size={item.iconSize} />
-										<span>{item.title}</span>
+										<span className='pl-3 pr-5'>{item.title}</span>
+										<MdOpenInNew size={18} />
 									</a>
 								</li>
 							))}
-							<li>
-								<BsMoonFill /> <BsSunFill /> Dark / Light Mode
-							</li>
-							<li>
-								<GrSystem />System
-							</li>
+							<h4 className='pl-0 mt-2 pb-2 ml-0 text-left text-xl font-normal'>
+								Dark / Light Mode
+							</h4>
+							<div className='flex flex-col justify-between'>
+								<li className='flex flex-row items-center my-2'>
+									{theme === 'dark' ? <BsMoonFill /> : <BsSunFill />}
+									<span className='pl-3'>{`${
+										theme === 'dark' ? 'Dark' : 'Light'
+									} Mode`}</span>
+									<label className='flex items-center'>
+										<span className='pl-4 pr-1'>
+											<BsSunFill />
+										</span>
+										<Switch
+											onChange={() => toggleTheme()}
+											checked={theme === 'dark'}
+											checkedIcon={false}
+											uncheckedIcon={false}
+										/>
+										<span className='pl-1'>
+											<BsMoonFill />
+										</span>
+									</label>
+								</li>
+								<li className='flex flex-row items-center mt-2 pb-2'>
+									<GrSystem />
+									<span className='pl-3 pr-10'>System</span>
+									<label className='flex items-center'>
+										<span className='pr-1'>On</span>
+										<Switch
+											onChange={() => setSystemTheme(!systemTheme)}
+											checked={systemTheme}
+											checkedIcon={false}
+											uncheckedIcon={false}
+										/>
+										<span className='pl-1'>Off</span>
+									</label>
+								</li>
+							</div>
+							<h4 className='pl-0 ml-0 text-left text-xl font-normal'>
+								Navigation Menu Bar
+							</h4>
+							<div className='flex flex-col justify-between'>
+								<li className='flex flex-row items-center my-2'>
+									<BsFillMenuButtonWideFill />
+									<span className='pl-3'>
+										Menu {`${mobileMenuBottom ? 'Bottom' : 'Top'}`}
+									</span>
+									<label className='flex items-center'>
+										<span className='pl-4 pr-1'>Top</span>
+										<Switch
+											onChange={() => toggleMobileMenuBottom()}
+											checked={mobileMenuBottom}
+											checkedIcon={false}
+											uncheckedIcon={false}
+										/>
+										<span className='pl-1'>Bottom</span>
+									</label>
+								</li>
+							</div>
 						</ul>
-						<p className='leading-relaxed'>
-							Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry. Lorem Ipsum has been the industry's
-							standard dummy text ever since the 1500s.
-						</p>
 					</motion.div>
 				</>
 			)}
 		</AnimatePresence>
-  )
+	)
 }
 
 export default SettingsDrawer

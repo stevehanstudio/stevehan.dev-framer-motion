@@ -10,6 +10,8 @@ type AppContextType = {
 	theme: ThemeType
 	toggleTheme: () => void
 	isMobile: boolean | null
+	mobileMenuBottom: boolean
+	toggleMobileMenuBottom: () => void
 	navDirection: navDirectionType | null
 	heroRef: RefObject<HTMLDivElement> | null
 	projectsRef: RefObject<HTMLDivElement> | null

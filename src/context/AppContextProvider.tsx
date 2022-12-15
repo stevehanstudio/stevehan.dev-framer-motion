@@ -18,6 +18,7 @@ export const AppProvider = ({
 	// const [state, dispatch] = useReducer(appReducer, initialState)
 	const [selectedNavMenuItem, setSelectedNavMenuItem] = useState<number>(0)
 	const [theme, setTheme] = useState<ThemeType>('dark')
+	const [mobileMenuBottom, setMobileMenuBottom] = useState(false)
 	const [width, setWidth] = useState<number | null>(null)
 	const [dragDetected, setDragDetected] = useState(false)
 	const [navDirection, setNavDirection] = useState<navDirectionType | null>(null)
@@ -33,6 +34,10 @@ export const AppProvider = ({
 	const certificatesRef = useRef(null)
 	const aboutRef = useRef(null)
 	const contactRef = useRef(null)
+
+	const toggleMobileMenuBottom = () => {
+		setMobileMenuBottom(!mobileMenuBottom)
+	}
 
 	const handleWindowSizeChange = () => {
 		setWidth(window.innerWidth)
@@ -134,6 +139,8 @@ export const AppProvider = ({
 		theme,
 		toggleTheme,
 		isMobile,
+		mobileMenuBottom,
+		toggleMobileMenuBottom,
 		navDirection,
 		heroRef,
 		projectsRef,
