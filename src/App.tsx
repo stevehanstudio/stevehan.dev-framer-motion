@@ -9,7 +9,7 @@ import Certificates from './pages/Certificates'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
-import { AppProvider } from './context/AppContext'
+import { AppProvider } from './context/AppContextProvider'
 import './styles/global.scss'
 
 const App = () => {

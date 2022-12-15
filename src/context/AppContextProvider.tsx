@@ -1,31 +1,20 @@
-import { createContext, ReactNode, ReactElement, useState, useEffect, useRef, RefObject } from 'react'
+import {
+	ReactNode,
+	ReactElement,
+	useState,
+	useEffect,
+	useRef,
+} from 'react'
 import { useLocation } from 'react-router-dom'
-// import { useInView } from 'react-intersection-observer'
-// import { createContext, ReactNode, ReactElement, useReducer, useState, useEffect } from 'react'
-// import appReducer, { initialState } from './appReducer'
 import { ThemeType } from '../types'
+import { AppContext } from './AppContext'
+import { path } from '../constants/misc'
 
-export type AppContextType = {
-	selectedNavMenuItem: number
-	setSelectedNavMenuItem: (navMenuItem: number) => void
-	theme: ThemeType
-	toggleTheme: () => void
-	isMobile: boolean | null
-	heroRef: RefObject<HTMLDivElement> | null
-	projectsRef: RefObject<HTMLDivElement> | null
-	certificatesRef: RefObject<HTMLDivElement> | null
-	aboutRef: RefObject<HTMLDivElement> | null
-	contactRef: RefObject<HTMLDivElement> | null
-	dragDetected: boolean
-	handleDragDetected: () => void
-}
-
-export const AppContext = createContext<AppContextType>({} as AppContextType)
-// export const AppContext = createContext<AppContextType | null>(null)
-
-const path = ['/', '/projects', '/certificates', '/about', '/contact']
-
-export const AppProvider = ({ children }: { children: ReactNode }): ReactElement => {
+export const AppProvider = ({
+	children,
+}: {
+	children: ReactNode
+}): ReactElement => {
 	// const [state, dispatch] = useReducer(appReducer, initialState)
 	const [selectedNavMenuItem, setSelectedNavMenuItem] = useState<number>(0)
 	const [theme, setTheme] = useState<ThemeType>('dark')
@@ -71,7 +60,9 @@ export const AppProvider = ({ children }: { children: ReactNode }): ReactElement
 
 	useEffect(() => {
 		if (isMobile) {
-			const isBrowserDefaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+			const isBrowserDefaultDark = window.matchMedia(
+				'(prefers-color-scheme: dark)'
+			).matches
 			// console.log(
 			// 	`isMobile=${isMobile}, isBrowserDefaultDark=${isBrowserDefaultDark}`
 			// )
@@ -123,7 +114,7 @@ export const AppProvider = ({ children }: { children: ReactNode }): ReactElement
 		aboutRef,
 		contactRef,
 		dragDetected,
-		handleDragDetected
+		handleDragDetected,
 	}
 
 	// console.log('AppContext', theme, width, isMobile)
