@@ -55,6 +55,8 @@ export type MainComponentType = 'Projects' | 'Certificates' | undefined
 // 	newWidth?: number
 // }
 
+export type navDirectionType = 'left' | 'right'
+
 export type ThemeType = 'dark' | 'light'
 
 export interface MenuItemType {

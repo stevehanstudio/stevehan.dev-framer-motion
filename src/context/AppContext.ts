@@ -2,7 +2,7 @@ import { createContext, RefObject } from 'react'
 // import { useInView } from 'react-intersection-observer'
 // import { createContext, ReactNode, ReactElement, useReducer, useState, useEffect } from 'react'
 // import appReducer, { initialState } from './appReducer'
-import { ThemeType } from '../types'
+import { ThemeType, navDirectionType } from '../types'
 
 type AppContextType = {
 	selectedNavMenuItem: number
@@ -10,6 +10,7 @@ type AppContextType = {
 	theme: ThemeType
 	toggleTheme: () => void
 	isMobile: boolean | null
+	navDirection: navDirectionType | null
 	heroRef: RefObject<HTMLDivElement> | null
 	projectsRef: RefObject<HTMLDivElement> | null
 	certificatesRef: RefObject<HTMLDivElement> | null

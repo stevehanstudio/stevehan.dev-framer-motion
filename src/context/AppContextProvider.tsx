@@ -6,7 +6,7 @@ import {
 	useRef,
 } from 'react'
 import { useLocation } from 'react-router-dom'
-import { ThemeType } from '../types'
+import { ThemeType, navDirectionType } from '../types'
 import { AppContext } from './AppContext'
 import { path } from '../constants/misc'
 
@@ -20,10 +20,13 @@ export const AppProvider = ({
 	const [theme, setTheme] = useState<ThemeType>('dark')
 	const [width, setWidth] = useState<number | null>(null)
 	const [dragDetected, setDragDetected] = useState(false)
+	const [navDirection, setNavDirection] = useState<navDirectionType | null>(null)
 
 	const isMobile = width && width <= 768 ? true : false
 
 	const { pathname } = useLocation()
+
+	const prevNavMenuItemRef = useRef(0)
 
 	const heroRef = useRef(null)
 	const projectsRef = useRef(null)
@@ -44,8 +47,31 @@ export const AppProvider = ({
 	}, [])
 
 	useEffect(() => {
-		setSelectedNavMenuItem(path.indexOf(pathname))
+		const newNavMenuItem = path.indexOf(pathname)
+		if (newNavMenuItem > prevNavMenuItemRef.current) {
+			setNavDirection('right')
+			prevNavMenuItemRef.current = newNavMenuItem
+		} else if (newNavMenuItem !== prevNavMenuItemRef.current) {
+			setNavDirection('left')
+			prevNavMenuItemRef.current = newNavMenuItem
+		}
+		setSelectedNavMenuItem(newNavMenuItem)
+		// setSelectedNavMenuItem(path.indexOf(pathname))
 	}, [pathname])
+
+	// useEffect(() => {
+	// 	// console.log(
+	// 	// 	`prevNavMenuItemRef.current=${prevNavMenuItemRef.current}, selectedNavMenuItem=${selectedNavMenuItem}, navDirection=${navDirection}`
+	// 	// )
+
+	// 	if (selectedNavMenuItem > prevNavMenuItemRef.current) {
+	// 		setNavDirection('right')
+	// 		prevNavMenuItemRef.current = selectedNavMenuItem
+	// 	} else if (selectedNavMenuItem !== prevNavMenuItemRef.current) {
+	// 		setNavDirection('left')
+	// 		prevNavMenuItemRef.current = selectedNavMenuItem
+	// 	}
+	// }, [selectedNavMenuItem])
 
 	const handleMobileThemeColor = (e: MediaQueryListEvent) => {
 		const colorScheme = e.matches ? 'dark' : 'light'
@@ -108,6 +134,7 @@ export const AppProvider = ({
 		theme,
 		toggleTheme,
 		isMobile,
+		navDirection,
 		heroRef,
 		projectsRef,
 		certificatesRef,
@@ -118,6 +145,9 @@ export const AppProvider = ({
 	}
 
 	// console.log('AppContext', theme, width, isMobile)
+		console.log(
+			`prevNavMenuItemRef.current=${prevNavMenuItemRef.current}, selectedNavMenuItem=${selectedNavMenuItem}, navDirection=${navDirection}`
+		)
 
 	return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

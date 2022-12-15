@@ -6,7 +6,7 @@ import { AppContext } from './context/AppContext'
 
 const PageWrapper = ({ children }: { children: ReactNode }) => {
 	const { pathname } = useLocation()
-	const { isMobile } = useContext(AppContext)
+	const { isMobile, navDirection } = useContext(AppContext)
 	// console.log('pathname', pathname)
 
 	return (
@@ -21,7 +21,12 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 			// dragMomentum={false}
 			dragConstraints={{ top: 0, bottom: window.innerHeight }}
 			initial={{
-				x: isMobile ? '100vw' : 0,
+				x: isMobile ? '-100vw' : 0,
+				// x: isMobile && navDirection === 'right'
+				// 		? '-100vw'
+				// 		: isMobile && navDirection === 'left'
+				// 		? '100vw'
+				// 		: 0,
 				y: isMobile ? 0 : '100vh',
 				opacity: 1,
 			}}
@@ -31,9 +36,19 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 				opacity: 1,
 			}}
 			exit={{
-				x: isMobile ? '-100vw' : 0,
+				x: isMobile ? '100vw' : 0,
+				// x:
+				// 	isMobile && navDirection === 'right'
+				// 		? '100vw'
+				// 		: isMobile && navDirection === 'left'
+				// 		? '-100vw'
+				// 		: 0,
 				y: isMobile ? 0 : '-100vh',
 				opacity: 1,
+				transition: {
+					ease: 'easeInOut',
+					duration: isMobile ? 0.2 : 0.5,
+				},
 			}}
 			transition={{
 				// y: {
@@ -41,7 +56,7 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 				// type: 'spring',
 				// stiffness: 300,
 				// damping: 30,
-				ease: [0.43, 0.13, 0.23, 0.96],
+				ease: 'easeInOut',
 				duration: isMobile ? 0.35 : 1.2,
 				// },
 			}}
