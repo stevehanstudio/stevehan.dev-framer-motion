@@ -9,8 +9,8 @@ const MobileMenu = () => {
 	console.log('selectedNavMenuItem', selectedNavMenuItem)
 
   return (
-		<div className='mobile-underlined-menu'>
-			<nav className='flex flex-row justify-between w-full mx-auto'>
+		<div className='mobile-underlined-menu overflow-y-hidden'>
+			<nav className='flex flex-row align-middle overflow-y-hidden justify-between w-full mx-auto'>
 				<motion.ul
 					initial={{
 						y: -42,

@@ -98,8 +98,18 @@
     foo: bar;
   }
 
+  .header {
+    @apply align-middle z-50 md:px-4 md:pt-4 md:mx-auto bg-sweetAiran dark:bg-laborWorker md:place-content-center md:fade-bottom;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .section-title {
     @apply text-xl sm:text-3xl pt-6 md:pt-0 pb-3 md:pb-4 font-light tracking-[0.6rem] sm:tracking-[0.8rem] uppercase text-center dark:text-white;
+    height: auto;
     foo: bar;
   }
 
