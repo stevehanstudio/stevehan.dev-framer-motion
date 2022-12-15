@@ -4,7 +4,7 @@ import { createContext, RefObject } from 'react'
 // import appReducer, { initialState } from './appReducer'
 import { ThemeType } from '../types'
 
-export type AppContextType = {
+type AppContextType = {
 	selectedNavMenuItem: number
 	setSelectedNavMenuItem: (navMenuItem: number) => void
 	theme: ThemeType
