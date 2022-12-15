@@ -115,6 +115,8 @@
   .section {
     @apply mt-[36px] md:mt-[106px];
     height: auto;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     // @apply h-full mt-[0.3em];
     foo: bar;
   }
