@@ -109,12 +109,12 @@
 
   .section-title {
     @apply text-xl sm:text-3xl pt-6 md:pt-0 pb-3 md:pb-4 font-light tracking-[0.6rem] sm:tracking-[0.8rem] uppercase text-center dark:text-white;
-    height: auto;
     foo: bar;
   }
 
   .section {
-    @apply h-full mt-[36px] md:mt-[106px];
+    @apply mt-[36px] md:mt-[106px];
+    height: auto;
     // @apply h-full mt-[0.3em];
     foo: bar;
   }
