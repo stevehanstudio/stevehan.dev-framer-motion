@@ -6,7 +6,8 @@ import { AppContext } from './context/AppContext'
 
 const PageWrapper = ({ children }: { children: ReactNode }) => {
 	const { pathname } = useLocation()
-	const { isMobile, navDirection } = useContext(AppContext)
+	// const { isMobile, navDirection } = useContext(AppContext)
+	const { isMobile } = useContext(AppContext)
 	// console.log('pathname', pathname)
 
 	return (
