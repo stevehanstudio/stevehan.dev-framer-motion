@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { RiFilter3Line } from 'react-icons/ri'
 import { MainComponentType } from '../types'
 // import { AppContext } from '../context/AppContext'
+import Sidebar from './SideBar'
 
 interface Props {
   componentType: MainComponentType
@@ -32,6 +33,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 	handleSelectAllSkills,
 }) => {
 	const [width, setWidth] = useState(0)
+	const [seeAllSkills, setSeeAllSkills] = useState(false)
 	// const [currentX, setCurrentX] = useState(0)
 	const skillsContainer = useRef<HTMLDivElement | null>(null)
 
@@ -54,58 +56,74 @@ const MobileSkillsComponent:React.FC<Props> = ({
   }, [selectedSkills])
 
 	return (
-		<div ref={skillsContainer} className='mobile-skills-carousel-container'>
-			<div className='absolute z-50 top-2 right-1'>
-				<button
-					className='float-right shadow-md p-2 text-white bg-laborWorkerBlue rounded-full'
-					onClick={() => console.log('Expand mobile skills')}
-				>
-					<RiFilter3Line />
-				</button>
-			</div>
-			<motion.div className='mobile-skills-buttons-carousel'>
-				<motion.div
-					className='mobile-skills-buttons-inner-carousel'
-					// key={JSON.stringify(selectedSkills)}
-					drag='x'
-					dragConstraints={{ right: 0, left: -width }}
-					// viewport={{ once: true, amount: 1 }}
-				>
+		<>
+			<Sidebar
+				sideBar={seeAllSkills}
+				setSideBar={setSeeAllSkills}
+				skills={skills}
+				selectedSkills={selectedSkills}
+				showAllSkills={showAllSkills}
+				handleSelectSkill={handleSelectSkill}
+				handleShowAllSkills={handleShowAllSkills}
+				handleSelectAllSkills={handleSelectAllSkills}
+			/>
+			<div
+				ref={skillsContainer}
+				className='mobile-skills-carousel-container'
+			>
+				<div className='absolute z-30 top-2 right-1'>
 					<button
-						role='checkbox'
-						aria-checked='false'
-						aria-labelledby='All skills'
-						className={`skill ${
-							selectedSkills.length === 0
-								? ' skill-selected '
-								: ' skill-unselected '
-						} ml-2`}
-						onClick={handleSelectAllSkills}
+						className='float-right shadow-md p-2 text-white bg-laborWorkerBlue rounded-full'
+						onClick={() => setSeeAllSkills(true)}
 					>
-						All
+						<RiFilter3Line />
 					</button>
-					{skills.map(skill => {
-						return (
-							<button
-								role='checkbox'
-								aria-checked='false'
-								aria-labelledby={skill}
-								className={
-									selectedSkills.includes(skill)
-										? 'skill skill-selected'
-										: 'skill skill-unselected'
-								}
-								key={skill}
-								onClick={(e: MouseEvent) => handleSelectSkill(e, skill)}
-							>
-								{skill}
-							</button>
-						)
-					})}
+				</div>
+				<motion.div className='mobile-skills-buttons-carousel'>
+					<motion.div
+						className='mobile-skills-buttons-inner-carousel'
+						// key={JSON.stringify(selectedSkills)}
+						drag='x'
+						dragConstraints={{ right: 0, left: -width }}
+						// viewport={{ once: true, amount: 1 }}
+					>
+						<button
+							role='checkbox'
+							aria-checked='false'
+							aria-labelledby='All skills'
+							className={`skill ${
+								selectedSkills.length === 0
+									? ' skill-selected '
+									: ' skill-unselected '
+							} ml-2`}
+							onClick={handleSelectAllSkills}
+						>
+							All
+						</button>
+						{skills.map(skill => {
+							return (
+								<button
+									role='checkbox'
+									aria-checked='false'
+									aria-labelledby={skill}
+									className={
+										selectedSkills.includes(skill)
+											? 'skill skill-selected'
+											: 'skill skill-unselected'
+									}
+									key={skill}
+									onClick={(e: MouseEvent) =>
+										handleSelectSkill(e, skill)
+									}
+								>
+									{skill}
+								</button>
+							)
+						})}
+					</motion.div>
 				</motion.div>
-			</motion.div>
 
-			{/* {multiLineSkills ? (
+				{/* {multiLineSkills ? (
 				<div
 					className={`expand-skills-button flex justify-end w-full pb-1 pr-3 mr-3 text-xs underline
 					${
@@ -187,7 +205,8 @@ const MobileSkillsComponent:React.FC<Props> = ({
 					/>
 				)}
 			</motion.div> */}
-		</div>
+			</div>
+		</>
 	)
 }
 

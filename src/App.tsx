@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import './styles/global.scss'
 import Header from './components/Header'
+import Settings from './components/Settings'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Certificates from './pages/Certificates'
@@ -28,6 +29,7 @@ const App = () => {
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</AnimatePresence>
+			<Settings />
 		</AppProvider>
 	)
 }

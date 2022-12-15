@@ -4,7 +4,6 @@ import { motion, LayoutGroup } from 'framer-motion'
 import DarkModeSwitch from './DarkModeSwitch'
 import { AppContext } from '../context/AppContext'
 import { navMenuItems, socialMenuItems} from '../constants/MenuItems'
-// import '../styles/global.scss'
 
 const Menu: React.FC= () => {
   const { theme, toggleTheme, selectedNavMenuItem, setSelectedNavMenuItem} = useContext(AppContext)

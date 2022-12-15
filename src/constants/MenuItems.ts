@@ -70,3 +70,4 @@ export const socialMenuItems: MenuItemType[] = [
 		iconSize: 19,
 	},
 ]
+
