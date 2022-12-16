@@ -9,20 +9,25 @@
 		"CCSF",
 		"cheatsheet",
 		"Cirriculum",
+		"Compat",
 		"GLTF",
 		"hookform",
+		"iefix",
 		"jsbasics",
 		"mipmaps",
 		"Nanodegree",
 		"Nanodgree",
 		"nocompatible",
+		"opentype",
 		"raycaster",
 		"scrollbars",
 		"Skaffold",
 		"stevehandev",
 		"tailwindcss",
+		"truetype",
 		"Udacity",
 		"WCAG",
-		"webfonts"
+		"webfonts",
+		"wght"
 	]
 }

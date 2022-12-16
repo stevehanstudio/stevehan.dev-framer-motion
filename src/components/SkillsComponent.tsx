@@ -114,8 +114,48 @@ const SkillsComponent:React.FC<Props> = ({
 						All
 					</button>
 				</div>
-				<div className='flex-wrap'>
+				<motion.div
+					layout
+					transition={{
+						layout: {
+							duration: 0.4,
+						},
+					}}
+					className='flex-wrap'
+				>
+					{selectedSkills.map(skill => {
+						return (
+							<button
+								role='checkbox'
+								aria-checked='false'
+								aria-labelledby={skill}
+								className='skill skill-selected'
+								key={skill}
+								onClick={(e: MouseEvent) => handleSelectSkill(e, skill)}
+							>
+								{skill}
+							</button>
+						)
+					})}
 					{skills.map(skill => {
+						if (!selectedSkills.includes(skill)) {
+							return (
+								<button
+									role='checkbox'
+									aria-checked='false'
+									aria-labelledby={skill}
+									className='skill skill-unselected'
+									key={skill}
+									onClick={(e: MouseEvent) =>
+										handleSelectSkill(e, skill)
+									}
+								>
+									{skill}
+								</button>
+							)
+						} else return null
+					})}
+					{/* {skills.map(skill => {
 						return (
 							<button
 								role='checkbox'
@@ -132,8 +172,8 @@ const SkillsComponent:React.FC<Props> = ({
 								{skill}
 							</button>
 						)
-					})}
-				</div>
+					})} */}
+				</motion.div>
 				{multiLineSkills && (
 					<FiChevronUp
 						className={`expand-skills-button min-w-[3rem] w-[3rem] m-0 p-0 text-3xl font-semibold transition duration-500

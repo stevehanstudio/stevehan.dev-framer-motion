@@ -10,7 +10,7 @@ import SettingsDrawer from './SettingsDrawer'
 
 const Settings = () => {
   const [isSettingsOpen, openSettingsMenu] = useState(false)
-	const { isMobile, mobileMenuBottom } = useContext(AppContext)
+	const { mobileMenuBottom } = useContext(AppContext)
 
   return (
 		<div>
@@ -18,9 +18,9 @@ const Settings = () => {
 				isSettingsOpen={isSettingsOpen}
 				openSettingsMenu={openSettingsMenu}
 			/>
-			<div className={`${isMobile && mobileMenuBottom ? 'top-2' : 'bottom-2'} fixed z-30 right-1`}>
+			<div className={`${mobileMenuBottom ? 'top-2' : 'bottom-2'} fixed z-30 right-1`}>
 				<button
-          className='shadow-md p-2 text-white bg-laborWorkerBlue rounded-full'
+          className='shadow-md p-2 text-white bg-laborWorkerBlue dark:opacity-100 opacity-90 rounded-full'
           onClick={() => openSettingsMenu(true)}
         >
 					<HiOutlineDotsHorizontal />

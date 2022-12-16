@@ -18,6 +18,7 @@ export const AppProvider = ({
 	// const [state, dispatch] = useReducer(appReducer, initialState)
 	const [selectedNavMenuItem, setSelectedNavMenuItem] = useState<number>(0)
 	const [theme, setTheme] = useState<ThemeType>('dark')
+	const [systemThemeEnabled, setSystemThemeEnabled] = useState(false)
 	const [mobileMenuBottom, setMobileMenuBottom] = useState(false)
 	const [width, setWidth] = useState<number | null>(null)
 	const [dragDetected, setDragDetected] = useState(false)
@@ -129,6 +130,8 @@ export const AppProvider = ({
 		}
 	}
 
+	const toggleSystemThemeEnabled = () => setSystemThemeEnabled(!systemThemeEnabled)
+
 	const handleDragDetected = () => {
 		setDragDetected(true)
 	}
@@ -138,6 +141,8 @@ export const AppProvider = ({
 		setSelectedNavMenuItem,
 		theme,
 		toggleTheme,
+		systemThemeEnabled,
+		toggleSystemThemeEnabled,
 		isMobile,
 		mobileMenuBottom,
 		toggleMobileMenuBottom,

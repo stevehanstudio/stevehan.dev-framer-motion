@@ -529,7 +529,8 @@
 		"date": "2021-12-07",
 		"author": "Steve Han",
 		"skills": ["AWS"],
-		"credentials": "https://www.credly.com/badges/9905f240-386f-4eb2-b4b3-637c5d540722/public_url"
+		"credentials": "https://www.credly.com/badges/9905f240-386f-4eb2-b4b3-637c5d540722/public_url",
+		"curriculum": "https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf"
 	},
 	{
 		"title": "AWS Certified Developer - Associate",
@@ -540,7 +541,8 @@
 		"date": "2022-08-15",
 		"author": "Steve Han",
 		"skills": ["AWS"],
-		"credentials": "https://www.credly.com/badges/e380b90e-9221-4c08-946f-468123edcc25/linked_in_profile"
+		"credentials": "https://www.credly.com/badges/e380b90e-9221-4c08-946f-468123edcc25/linked_in_profile",
+		"curriculum": "https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf"
 	}
 ]
 

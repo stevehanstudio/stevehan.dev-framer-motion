@@ -12,7 +12,7 @@ interface Props {
 	handleSelectAllSkills: () => void
 }
 
-const Sidebar: React.FC<Props> = ({
+const MobileSkillsSidebar: React.FC<Props> = ({
 	sideBar,
 	setSideBar,
 	skills,
@@ -27,16 +27,20 @@ const Sidebar: React.FC<Props> = ({
 			{sideBar && (
 				<>
 					<motion.div
-						initial={{ x: '100%' }}
+						initial={{
+							scale: 0,
+							x: '100%' }}
 						animate={{
+							scale: 1,
 							x: 0,
 						}}
 						exit={{
+							scale: 0,
 							x: '100%',
 						}}
 						transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
 						// className='fixed z-40 bg-gray-200 text-gray-800 shadow-lg top-0 right-0 w-full max-w-sm h-screen p-5'
-						className='fixed backdrop-blur-lg z-40 opacity-95 bg-gray-200 text-gray-800 shadow-lg top-0 right-0 p-5'
+						className='fixed backdrop-blur-lg z-40 opacity-95 bg-gray-200 dark:bg-gray-800 dark:text-gray-100 text-gray-800 shadow-lg top-0 right-0 pb-8 pt-5 px-5 border-2 border-gray-400'
 					>
 						<button
 							onClick={() => setSideBar(!sideBar)}
@@ -44,10 +48,18 @@ const Sidebar: React.FC<Props> = ({
 						>
 							&times;
 						</button>
-						<h2 className='text-4xl capitalize leading-loose'>
+						<h2 className='text-3xl px-2 capitalize leading-loose'>
 							All Skills
 						</h2>
-						<div>
+						<motion.div
+							layout
+							transition={{
+								layout: {
+									duration: 1,
+								},
+							}}
+							className='flex flex-row flex-wrap'
+						>
 							<button
 								role='checkbox'
 								aria-checked='false'
@@ -61,7 +73,41 @@ const Sidebar: React.FC<Props> = ({
 							>
 								All
 							</button>
+							{selectedSkills.map(skill => {
+								return (
+									<button
+										role='checkbox'
+										aria-checked='false'
+										aria-labelledby={skill}
+										className='skill skill-selected m-1'
+										key={skill}
+										onClick={(e: MouseEvent) =>
+											handleSelectSkill(e, skill)
+										}
+									>
+										{skill}
+									</button>
+								)
+							})}
 							{skills.map(skill => {
+								if (!selectedSkills.includes(skill)) {
+									return (
+										<button
+											role='checkbox'
+											aria-checked='false'
+											aria-labelledby={skill}
+											className='skill skill-unselected m-1'
+											key={skill}
+											onClick={(e: MouseEvent) =>
+												handleSelectSkill(e, skill)
+											}
+										>
+											{skill}
+										</button>
+									)
+								} else return null
+							})}
+							{/* {skills.map(skill => {
 								return (
 									<button
 										role='checkbox'
@@ -80,8 +126,8 @@ const Sidebar: React.FC<Props> = ({
 										{skill}
 									</button>
 								)
-							})}
-						</div>
+							})} */}
+						</motion.div>
 					</motion.div>
 					<motion.div
 						initial={{ opacity: 0 }}
@@ -101,4 +147,4 @@ const Sidebar: React.FC<Props> = ({
 	)
 }
 
-export default Sidebar
+export default MobileSkillsSidebar

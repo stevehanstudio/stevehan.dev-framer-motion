@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import './styles/global.scss'
@@ -10,14 +10,18 @@ import Certificates from './pages/Certificates'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
-import { AppProvider } from './context/AppContextProvider'
+// import { AppProvider } from './context/AppContextProvider'
 import './styles/global.scss'
+import { AppContext } from './context/AppContext'
 
 const App = () => {
 	const location = useLocation()
+	const { isMobile } = useContext(AppContext)
+
+	console.log('App Component is mobile', isMobile)
 
 	return (
-		<AppProvider>
+		<>
 			<Header />
 			<AnimatePresence mode='wait'>
 				<Routes location={location} key={location.pathname}>
@@ -29,8 +33,8 @@ const App = () => {
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</AnimatePresence>
-			<Settings />
-		</AppProvider>
+			{isMobile && <Settings />}
+		</>
 	)
 }
 

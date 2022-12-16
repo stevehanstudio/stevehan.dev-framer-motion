@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { RiFilter3Line } from 'react-icons/ri'
 import { MainComponentType } from '../types'
 // import { AppContext } from '../context/AppContext'
-import Sidebar from './SideBar'
+import MobileSkillsSidebar from './MobileSkillsSideBar'
 
 interface Props {
   componentType: MainComponentType
@@ -57,7 +57,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 
 	return (
 		<>
-			<Sidebar
+			<MobileSkillsSidebar
 				sideBar={seeAllSkills}
 				setSideBar={setSeeAllSkills}
 				skills={skills}
@@ -69,7 +69,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 			/>
 			<div
 				ref={skillsContainer}
-				className='mobile-skills-carousel-container'
+				className='mobile-skills-carousel-container shadow-md'
 			>
 				<div className='absolute z-30 top-2 right-1'>
 					<button
@@ -100,7 +100,41 @@ const MobileSkillsComponent:React.FC<Props> = ({
 						>
 							All
 						</button>
+						{selectedSkills.map(skill => {
+							return (
+								<button
+									role='checkbox'
+									aria-checked='false'
+									aria-labelledby={skill}
+									className='skill skill-selected'
+									key={skill}
+									onClick={(e: MouseEvent) =>
+										handleSelectSkill(e, skill)
+									}
+								>
+									{skill}
+								</button>
+							)
+						})}
 						{skills.map(skill => {
+							if (!selectedSkills.includes(skill)) {
+								return (
+									<button
+										role='checkbox'
+										aria-checked='false'
+										aria-labelledby={skill}
+										className='skill skill-unselected'
+										key={skill}
+										onClick={(e: MouseEvent) =>
+											handleSelectSkill(e, skill)
+										}
+									>
+										{skill}
+									</button>
+								)
+							} else return null
+						})}
+{/* 						{skills.map(skill => {
 							return (
 								<button
 									role='checkbox'
@@ -119,7 +153,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 									{skill}
 								</button>
 							)
-						})}
+						})} */}
 					</motion.div>
 				</motion.div>
 

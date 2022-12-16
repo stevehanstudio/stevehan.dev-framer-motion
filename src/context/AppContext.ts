@@ -9,6 +9,8 @@ type AppContextType = {
 	setSelectedNavMenuItem: (navMenuItem: number) => void
 	theme: ThemeType
 	toggleTheme: () => void
+	systemThemeEnabled: boolean
+	toggleSystemThemeEnabled: () => void
 	isMobile: boolean | null
 	mobileMenuBottom: boolean
 	toggleMobileMenuBottom: () => void
