@@ -1,9 +1,11 @@
-'use client'
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../context/AppContext'
 // import { InView } from 'react-intersection-observer'
 import PageWrapper from '../PageWrapper'
 
 const About = () => {
+
+	const { isMobile, mobileMenuBottom } = useContext(AppContext)
 
 	// const handleInView = (inView: boolean) => {
 	// 	if (inView === true && selectedNavMenuItem !== 3) {
@@ -13,16 +15,20 @@ const About = () => {
 
 	return (
 		<PageWrapper>
-			<div className='max-w-5xl mx-auto section'>
+			<div
+				className={`section max-w-5xl mx-auto ${
+					isMobile && mobileMenuBottom ? 'm-5 p-0' : ''
+				}`}
+			>
 				<h2 className='section-title'>About</h2>
-				<div className='flex flex-col mx-1 md:mx-7 md:flex-row'>
+				<div className='flex flex-col mx-0 md:mx-7 md:flex-row'>
 					<img
 						className='object-cover w-full h-auto md:pt-6 md:w-[484px] basis-1'
 						src='https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669594147/stevehandev/images/_DSC8502_2_ukhnwo.jpg'
 						alt='portrait of me'
 						loading='lazy'
 					/>
-					<div className='w-full h-auto px-4 md:px-7 md:w-1/2'>
+					<div className='w-full h-auto px-6 pt-1 md-pt-0 md:px-7 md:w-1/2'>
 						<h4 className='text-xl dark:text-gray-200'>About Me</h4>
 						<p className='pb-3'>
 							With a bachelor's degree in Computer Engineering, out of
@@ -62,8 +68,8 @@ const About = () => {
 					</div>
 				</div>
 				<br />
-				<h4 className='px-4 pt-0 md:px-7'>About this website</h4>
-				<p className='px-4 pb-8 mb-8 md:px-7'>
+				<h4 className='px-6 pt-0 md:px-7'>About this website</h4>
+				<p className='px-6 pb-8 mb-8 md:px-7'>
 					When I built my first website in 2002, it was to track my journey
 					and progress as a photographer and document where I've been. Now,
 					that my focus in software development, I built this website with

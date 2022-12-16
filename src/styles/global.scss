@@ -203,7 +203,8 @@
     // }
   }
   .underline {
-    @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-1 left-0 top-[100%];
+    // @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-1 left-0 top-[100%];
+    @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded left-0;
     @JsonIgnoreProperties
     foo: bar;
     // position: absolute;
@@ -230,7 +231,8 @@
   // }
 
 .mobile-underlined-menu {
-  @apply w-full mt-1 px-1 border-b-2 border-gray-300 dark:border-gray-600;
+  // @apply w-full mt-1 px-1 border-b-2 border-gray-300 dark:border-gray-600;
+  @apply w-full px-1 border-gray-300 dark:border-gray-600;
   height: 100%;
   display: grid;
   place-items: center left;
@@ -247,7 +249,7 @@
     // }
   }
   .underline {
-    @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-[3px] left-0 top-[calc(100%_-_3px)];
+    @apply absolute bg-healthcareBlue w-full rounded left-0;
     @JsonIgnoreProperties
     foo: bar;
     // position: absolute;
@@ -262,7 +264,7 @@
 }
 
   .menu-item {
-    @apply items-center text-gray-500 text-lg transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+    @apply items-center text-gray-500 dark:text-gray-100 text-lg transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
     @JsonIgnoreProperties
     foo: bar;
   }

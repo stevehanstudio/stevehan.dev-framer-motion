@@ -33,7 +33,8 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 		// projectsRef,
 		// dragDetected,
 		// handleDragDetected,
-		isMobile
+		isMobile,
+		mobileMenuBottom
 	} = useContext(AppContext)
 
 	useEffect(() => {
@@ -149,7 +150,7 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 		// 	tabIndex={0}
 		// 	onKeyUp={handleKeyPress}
 		// >
-		<div className='section'>
+		<div className={`section ${isMobile && mobileMenuBottom ? 'm-5 p-0' : ''}`}>
 			<h2 className='section-title'>{componentType}</h2>
 			{isMobile ? (
 				<MobileSkillsComponent
