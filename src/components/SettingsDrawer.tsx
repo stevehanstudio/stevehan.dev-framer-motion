@@ -37,12 +37,15 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 							y: '100vh',
 						}}
 						transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
-						className='fixed z-40 rounded-t-3xl border-2 border-gray-400 dark:border-gray-300 bg-gray-100 opacity-95 dark:bg-gray-800 text-gray-800 dark:text-gray-200 top-0 right-0 w-full max-w-sm h-auto p-5 shadow-[0px_-3px_-8px_rgba(0,0,0,0.8)]'
+						className='fixed z-40 rounded-t-3xl border-2 border-gray-400 dark:border-gray-300 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 top-0 right-0 w-full max-w-sm h-auto px-5 pt-3 pb-5 shadow-[0px_-3px_-8px_rgba(0,0,0,0.8)]'
 					>
 						{/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */}
+						<div className='flex place-content-center'>
+							<div className='border-t-4 w-12 rounded-md border-gray-500 dark:border-gray-400' />
+						</div>
 						<button
 							onClick={() => openSettingsMenu(!isSettingsOpen)}
-							className='bg-gray-50 text-black h-8 w-8 block mb-2 rounded-full shadow-sm'
+							className='bg-white text-black h-8 w-8 block mb-2 rounded-full shadow-sm'
 						>
 							&times;
 						</button>
@@ -74,7 +77,11 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 										theme === 'dark' ? 'Dark' : 'Light'
 									} Mode`}</span>
 									<label className='flex items-center'>
-										<span className={`${systemThemeEnabled ? 'opacity-30' : ''} pl-4 pr-1`}>
+										<span
+											className={`${
+												systemThemeEnabled ? 'opacity-30' : ''
+											} pl-4 pr-1`}
+										>
 											<BsSunFill />
 										</span>
 										<Switch
@@ -84,7 +91,11 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 											checkedIcon={false}
 											uncheckedIcon={false}
 										/>
-										<span className={`${systemThemeEnabled ? 'opacity-30' : ''} pl-1`}>
+										<span
+											className={`${
+												systemThemeEnabled ? 'opacity-30' : ''
+											} pl-1`}
+										>
 											<BsMoonFill />
 										</span>
 									</label>

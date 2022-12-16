@@ -6,9 +6,9 @@ import { AppContext } from './context/AppContext'
 
 const PageWrapper = ({ children }: { children: ReactNode }) => {
 	const { pathname } = useLocation()
-	// const { isMobile, navDirection } = useContext(AppContext)
-	const { isMobile } = useContext(AppContext)
-	// console.log('pathname', pathname)
+	const { isMobile, navDirection } = useContext(AppContext)
+	// const { isMobile } = useContext(AppContext)
+	console.log(`pathname=${pathname}, navDirection=${navDirection}`)
 
 	return (
 		<motion.div
@@ -22,14 +22,14 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 			// dragMomentum={false}
 			dragConstraints={{ top: 0, bottom: window.innerHeight }}
 			initial={{
-				x: isMobile ? '-100vw' : 0,
-				// x: isMobile && navDirection === 'right'
-				// 		? '-100vw'
-				// 		: isMobile && navDirection === 'left'
-				// 		? '100vw'
-				// 		: 0,
-				y: isMobile ? 0 : '100vh',
-				opacity: 1,
+				// x: isMobile ? '-100vw' : 0,
+				x: isMobile && navDirection === 'right'
+						? '-100vw'
+						: isMobile && navDirection === 'left'
+						? '100vw'
+						: 0,
+				y: isMobile ? 0 : '100%',
+				opacity: 0,
 			}}
 			animate={{
 				x: 0,
@@ -37,18 +37,18 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 				opacity: 1,
 			}}
 			exit={{
-				x: isMobile ? '100vw' : 0,
-				// x:
-				// 	isMobile && navDirection === 'right'
-				// 		? '100vw'
-				// 		: isMobile && navDirection === 'left'
-				// 		? '-100vw'
-				// 		: 0,
-				y: isMobile ? 0 : '-100vh',
+				// x: isMobile ? '100vw' : 0,
+				x:
+					isMobile && navDirection === 'right'
+						? '100vw'
+						: isMobile && navDirection === 'left'
+						? '-100vw'
+						: 0,
+				y: isMobile ? 0 : '-100%',
 				opacity: 1,
 				transition: {
 					ease: 'easeInOut',
-					duration: isMobile ? 0.2 : 0.5,
+					duration: isMobile ? 0.2 : 0.8,
 				},
 			}}
 			transition={{

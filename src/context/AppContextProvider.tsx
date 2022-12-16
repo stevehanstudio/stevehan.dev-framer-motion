@@ -22,7 +22,7 @@ export const AppProvider = ({
 	const [mobileMenuBottom, setMobileMenuBottom] = useState(false)
 	const [width, setWidth] = useState<number | null>(null)
 	const [dragDetected, setDragDetected] = useState(false)
-	const [navDirection, setNavDirection] = useState<navDirectionType | null>(null)
+	const [navDirection, setNavDirection] = useState<navDirectionType | null>('right')
 
 	const isMobile = width && width <= 768 ? true : false
 
@@ -54,14 +54,22 @@ export const AppProvider = ({
 
 	useEffect(() => {
 		const newNavMenuItem = path.indexOf(pathname)
-		if (newNavMenuItem > prevNavMenuItemRef.current) {
-			setNavDirection('right')
-			prevNavMenuItemRef.current = newNavMenuItem
-		} else if (newNavMenuItem !== prevNavMenuItemRef.current) {
-			setNavDirection('left')
-			prevNavMenuItemRef.current = newNavMenuItem
-		}
-		setSelectedNavMenuItem(newNavMenuItem)
+		setSelectedNavMenuItem((prevNavMenuItem) => {
+			console.log(
+				'pathname change detected in AppContext',
+				prevNavMenuItem, newNavMenuItem
+			)
+			if (newNavMenuItem > prevNavMenuItem) {
+				console.log('setting Nav Direction to right')
+				setNavDirection('right')
+				// prevNavMenuItemRef.current = newNavMenuItem
+			} else if (newNavMenuItem < prevNavMenuItem) {
+				console.log('setting Nav Direction to left')
+				setNavDirection('left')
+				// prevNavMenuItemRef.current = newNavMenuItem
+			}
+			return newNavMenuItem
+		})
 		// setSelectedNavMenuItem(path.indexOf(pathname))
 	}, [pathname])
 

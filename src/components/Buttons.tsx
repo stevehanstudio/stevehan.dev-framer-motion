@@ -19,7 +19,7 @@ export const DemoButton: React.FC<Props> = ({ url }) => {
 				className='card-button md:bg-amber-500 md:dark:text-amber-400 md:border-amber-400 md:hover:bg-amber-400 md:hover:border-amber-400 md:hover:dark:bg-amber-500 md:hover:dark:border-amber-600'
 			>
 				<BsGlobe2 className={`${isMobile ? 'fill-amber-500' : ''}`} />
-				<span className={`${isMobile ? 'text-amber-500' : ''} pl-2`}>Demo</span>
+				<span className={`${isMobile ? 'text-amber-500' : ''} pl-2`}>Live Website</span>
 			</button>
 		</a>
 	)

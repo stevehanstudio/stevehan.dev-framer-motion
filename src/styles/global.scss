@@ -204,6 +204,7 @@
   }
   .underline {
     @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-1 left-0 top-[100%];
+    @JsonIgnoreProperties
     foo: bar;
     // position: absolute;
     // top: 100%;
@@ -247,6 +248,7 @@
   }
   .underline {
     @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-[3px] left-0 top-[calc(100%_-_3px)];
+    @JsonIgnoreProperties
     foo: bar;
     // position: absolute;
     // top: 100%;
@@ -261,6 +263,7 @@
 
   .menu-item {
     @apply items-center text-gray-500 text-lg transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
@@ -277,26 +280,31 @@
 
   .social-menu-item {
     @apply px-3;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .nav-link {
     @apply px-3 items-center text-gray-400 font-medium uppercase transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .active {
     @apply text-black dark:text-white;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .mobile-nav-link {
     @apply py-2 px-3 items-center text-gray-500 dark:text-gray-50 font-medium uppercase transition-all hover:text-healthcareBlue focus:text-healthcareBlue;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .mobile-active {
     @apply  text-healthcareBlue dark:text-healthcareBlue;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
@@ -305,6 +313,7 @@
     // @apply z-20 mx-auto mt-24 mb-4 rounded-full drop-shadow-2xl md:w-48 md:h-48 max-w-[50%] max-h-[50%] w-[250px] h-[250px];
     // @apply z-20 mx-auto mt-24 mb-4 rounded-full drop-shadow-2xl max-w-[50%] max-h-[50%] w-[250px] h-[250px];
     @apply relative z-20 mx-auto mt-24 mb-4 rounded-full drop-shadow-2xl w-[250px] h-[250px];
+    @JsonIgnoreProperties
     foo: bar;
   }
 
@@ -323,16 +332,19 @@
     @apply relative; // my-auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .cards-inner-carousel {
     @apply flex flex-row my-auto;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .cards-carousel {
     @apply relative p-2 md:p-10 z-10 cursor-grab my-auto;
+    @JsonIgnoreProperties
     foo: bar;
     //  bg-gradient-to-r from-[rgba(0,0,0,0.2)] to-[rgba(44,62,80,0.4)];
   }
@@ -359,56 +371,67 @@
 
   .nav-carousel {
     @apply z-20 absolute cursor-pointer top-1/2 -translate-y-1/2 text-black dark:text-white opacity-40 dark:opacity-40 py-4 transition duration-500 hover:opacity-90 hover:dark:opacity-90 hover:dark:border-healthcareBlue;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .nav-carousel-left {
     @apply left-0;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .nav-carousel-right {
     @apply right-0;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .card-component {
     @apply flex flex-col md:grow md:items-center bg-gray-50 md:rounded-md md:mx-4 my-4 md:my-0 shadow-md h-full md:min-h-[30rem] md:min-w-[20rem] md:w-[375px] transform transition dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.05),0_0_5px_3px_rgba(255,0,255,0.05),0_0_7px_4px_rgba(0,255,255,0.05)] dark:bg-gray-900;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .card-button {
     @apply flex flex-row items-center self-end px-6 md:px-2 py-2 mx-auto mt-1 md:mt-2 align-bottom bg-gray-100 dark:bg-gray-800 md:bg-transparent md:dark:border-2 rounded-md text-sm md:text-base text-white hover:text-white hover:dark:text-white shadow-sm hover:shadow-md dark:hover:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_4px_2px_rgba(255,255,255,0.3),0_0_8px_4px_rgba(255,255,255,0.2)] transition duration-150 ease-in-out;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .skill {
     @apply px-2 py-1 mt-0 md:mb-5 mr-1 whitespace-nowrap text-xs font-semibold border-2 rounded-2xl transition-all duration-300;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .skill-unselected {
     @apply text-gray-700 bg-transparent dark:text-gray-300 border-slate-300 dark:border-gray-700 dark:bg-gray-800 hover:bg-healthcareBlue dark:hover:bg-healthcareBlue dark:hover:text-white hover:text-white hover:opacity-100;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .skill-selected {
     @apply text-white border-healthcareBlue bg-healthcareBlue hover:opacity-[85%] dark:text-white;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .expand-skills-button {
     @apply cursor-pointer;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .expand-skills-button-not-hovered {
     @apply text-gray-800 dark:text-gray-200;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .expand-skills-button-hovered {
     @apply text-healthcareBlue dark:text-healthcareBlue;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
@@ -431,20 +454,23 @@
   }
 
   .mobile-skills-carousel-container {
-    @apply relative bg-gray-50 dark:bg-gray-600; // my-auto;
+    @apply relative bg-gray-100 dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700; // my-auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .mobile-skills-buttons-carousel {
     @apply relative z-10 cursor-grab my-auto mobile-skills-fade-right;
+    @JsonIgnoreProperties
     foo: bar;
     //  bg-gradient-to-r from-[rgba(0,0,0,0.2)] to-[rgba(44,62,80,0.4)];
   }
 
   .mobile-skills-buttons-inner-carousel {
     @apply flex flex-row my-auto py-3;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
@@ -455,31 +481,37 @@
 
   form {
     @apply mx-auto w-full;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   label {
     @apply text-sm md:text-base mb-1 md:mb-3 text-gray-600 dark:text-white;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   input, textarea {
     @apply w-full p-2 rounded-md focus:shadow-lg outline-none transition-all focus:drop-shadow-lg border-[3px] border-gray-50 dark:border-gray-800 focus:border-healthcareBlue focus:dark:border-healthcareBlue focus:dark:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_5px_2px_rgba(255,0,255,0.25),0_0_7px_5px_rgba(0,255,255,0.25)];
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   input:focus, textarea:focus {
     @apply bg-amber-50 outline-none;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .button {
     @apply bg-healthcareBlue text-gray-100 hover:text-white hover:border-black border-2;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
   .fields {
     @apply mb-4 md:my-5;
+    @JsonIgnoreProperties
     foo: bar;
   }
 
