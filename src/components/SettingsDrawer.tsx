@@ -104,14 +104,14 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 									<GrSystem />
 									<span className='pl-3 pr-10'>System</span>
 									<label className='flex items-center'>
-										<span className='pr-1'>On</span>
+										<span className='pr-1'>Off</span>
 										<Switch
 											onChange={toggleSystemThemeEnabled}
 											checked={!systemThemeEnabled}
 											checkedIcon={false}
 											uncheckedIcon={false}
 										/>
-										<span className='pl-1'>Off</span>
+										<span className='pl-1'>On</span>
 									</label>
 								</li>
 							</div>
@@ -122,17 +122,17 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 								<li className='flex flex-row items-center my-2'>
 									<BsFillMenuButtonWideFill />
 									<span className='pl-3'>
-										Menu {`${mobileMenuBottom ? 'Bottom' : 'Top'}`}
+										Menu Position
 									</span>
 									<label className='flex items-center'>
-										<span className='pl-4 pr-1'>Top</span>
+										<span className='pl-4 pr-1'>Bottom</span>
 										<Switch
 											onChange={() => toggleMobileMenuBottom()}
-											checked={mobileMenuBottom}
+											checked={!mobileMenuBottom}
 											checkedIcon={false}
 											uncheckedIcon={false}
 										/>
-										<span className='pl-1'>Bottom</span>
+										<span className='pl-1'>Top</span>
 									</label>
 								</li>
 							</div>

@@ -93,8 +93,12 @@ const MobileSkillsComponent:React.FC<Props> = ({
 					<motion.div
 						className='mobile-skills-buttons-inner-carousel'
 						// key={JSON.stringify(selectedSkills)}
+						dragDirectionLock
+						onDirectionLock={axis => console.log('axis', axis)}
 						drag='x'
-						dragConstraints={{ right: 0, left: -width }}
+						dragConstraints={{ right: 0, left: -width, top: 0, bottom: 0 }}
+						whileTap={{ cursor: "grabbing" }}
+						// dragElastic={{top: 0, bottom: 0.3}}
 						// viewport={{ once: true, amount: 1 }}
 					>
 						<motion.button
@@ -144,7 +148,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 								)
 							} else return null
 						})}
-{/* 						{skills.map(skill => {
+						{/* 						{skills.map(skill => {
 							return (
 								<button
 									role='checkbox'
