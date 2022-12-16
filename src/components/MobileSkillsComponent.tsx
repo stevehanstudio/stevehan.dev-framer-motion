@@ -37,23 +37,33 @@ const MobileSkillsComponent:React.FC<Props> = ({
 	// const [currentX, setCurrentX] = useState(0)
 	const skillsContainer = useRef<HTMLDivElement | null>(null)
 
+	console.log(
+		`skillsContainer.current.scrollWidth=${skillsContainer.current?.scrollWidth}, skillsContainer.current.offsetWidth=${skillsContainer.current?.offsetWidth}`
+	)
 	console.log('mobile skills container width', width)
 
   useEffect(() => {
 		if (skillsContainer.current) {
-			// console.log('componentType', componentType)
-			// console.log('window.innerWidth', window.innerWidth)
-			// console.log(
-			// 	'carousel.current',
-			// 	carousel.current.scrollWidth,
-			// 	carousel.current.offsetWidth
+			// setWidth(
+			// 	skillsContainer.current.scrollWidth -
+			// 		2 * skillsContainer.current.offsetWidth
 			// )
-			setWidth(
+			// console.log(
+			// 	'About to set width',
+			// 	width,
+			// 	skillsContainer.current.scrollWidth,
+			// 	skillsContainer.current.offsetWidth
+			// )
+			const updatedWidth =
 				skillsContainer.current.scrollWidth -
-					2 * skillsContainer.current.offsetWidth
-			)
+				skillsContainer.current.offsetWidth
+			if (width < updatedWidth)
+				setWidth(updatedWidth)
+			// setWidth(
+			// 	skillsContainer.current.scrollWidth - skillsContainer.current.offsetWidth
+			// )
 		}
-  }, [selectedSkills])
+  }, [skills, width])
 
 	return (
 		<>
@@ -87,7 +97,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 						dragConstraints={{ right: 0, left: -width }}
 						// viewport={{ once: true, amount: 1 }}
 					>
-						<button
+						<motion.button
 							role='checkbox'
 							aria-checked='false'
 							aria-labelledby='All skills'
@@ -99,10 +109,10 @@ const MobileSkillsComponent:React.FC<Props> = ({
 							onClick={handleSelectAllSkills}
 						>
 							All
-						</button>
+						</motion.button>
 						{selectedSkills.map(skill => {
 							return (
-								<button
+								<motion.button
 									role='checkbox'
 									aria-checked='false'
 									aria-labelledby={skill}
@@ -113,13 +123,13 @@ const MobileSkillsComponent:React.FC<Props> = ({
 									}
 								>
 									{skill}
-								</button>
+								</motion.button>
 							)
 						})}
 						{skills.map(skill => {
 							if (!selectedSkills.includes(skill)) {
 								return (
-									<button
+									<motion.button
 										role='checkbox'
 										aria-checked='false'
 										aria-labelledby={skill}
@@ -130,7 +140,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 										}
 									>
 										{skill}
-									</button>
+									</motion.button>
 								)
 							} else return null
 						})}
