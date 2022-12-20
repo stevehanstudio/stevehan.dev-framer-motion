@@ -161,7 +161,8 @@
   }
 
   .nav-menu {
-    @apply pb-10 mt-0 pt-0 align-middle place-items-start flex flex-row justify-between w-full mx-auto max-w-7xl;
+    // @apply pb-10 mt-0 pt-0 align-middle place-items-start flex flex-row justify-between w-full mx-auto max-w-7xl;
+    @apply pb-10 mt-0 pt-0 align-middle items-start flex flex-row justify-between w-full mx-auto max-w-7xl;
     .menu-item {
       @apply text-lg leading-none uppercase text-gray-400 dark:text-gray-400 hover:text-healthcareBlue dark:hover:text-healthcareBlue;
       margin: 0 1.5rem;
