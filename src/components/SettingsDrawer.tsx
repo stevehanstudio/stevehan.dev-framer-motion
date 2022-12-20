@@ -89,7 +89,7 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 							<span className='pr-1'>Off</span>
 							<Switch
 								onChange={toggleSystemThemeEnabled}
-								checked={!systemThemeEnabled}
+								checked={systemThemeEnabled}
 								checkedIcon={false}
 								uncheckedIcon={false}
 								onColor='#4294ee'

@@ -42,7 +42,7 @@ const Drawer: React.FC<Props> = ({ isActive, setIsActive, children }) => {
 								</div>
 								<button
 									onClick={() => setIsActive(false)}
-									className='text-white bg-healthcareBlue opacity-80 text-lg h-8 w-8 block mb-2 rounded-full shadow-sm'
+									className='text-white bg-healthcareBlue opacity-80 text-lg h-8 w-8 block mb-0 rounded-full shadow-sm'
 								>
 									&times;
 								</button>

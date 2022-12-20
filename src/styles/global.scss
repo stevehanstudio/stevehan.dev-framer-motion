@@ -493,7 +493,7 @@
   }
 
   .drawer-wrapper {
-    @apply fixed z-50 w-[100%] h-[calc(100%_-_3rem)] bottom-0 left-0;
+    @apply fixed z-50 w-[100%] h-[calc(100%_-_2rem)] bottom-0 left-0;
     @JsonIgnoreProperties
     foo: bar;
   }
