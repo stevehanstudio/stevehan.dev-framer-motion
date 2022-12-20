@@ -493,13 +493,13 @@
   }
 
   .drawer-wrapper {
-    @apply fixed z-50 w-[100%] h-[calc(100%_-_6rem)] bottom-0 left-0;
+    @apply fixed z-50 w-[100%] h-[calc(100%_-_3rem)] bottom-0 left-0;
     @JsonIgnoreProperties
     foo: bar;
   }
 
   .drawer {
-    @apply h-[calc(100vh_+_400px)] px-[2rem] pt-[1rem] pb-[400px] bg-gray-50 rounded-3xl dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-2 border-gray-400 dark:border-gray-400 shadow-[0px_-13px_-18px_rgba(0,0,0,0.8)];
+    @apply h-[calc(100vh_+_400px)] px-[1rem] pt-[1rem] pb-[400px] bg-gray-50 rounded-3xl dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-2 border-gray-400 dark:border-gray-400 shadow-[0px_-13px_-18px_rgba(0,0,0,0.8)];
     @JsonIgnoreProperties
     foo: bar;
   }

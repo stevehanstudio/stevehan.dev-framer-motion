@@ -7,11 +7,7 @@ interface Props {
 	children: React.ReactNode
 }
 
-const Drawer: React.FC<Props> = ({
-	isActive,
-	setIsActive,
-  children
-}) => {
+const Drawer: React.FC<Props> = ({ isActive, setIsActive, children }) => {
 	return (
 		<AnimatePresence>
 			{isActive && (
@@ -41,15 +37,16 @@ const Drawer: React.FC<Props> = ({
 						>
 							<div className='drawer'>
 								<div className='flex place-content-center'>
-									<div className='border-t-4 w-12 rounded-md border-gray-500 dark:border-gray-300' />
+									<div className='border-t-4 w-12 rounded-md border-healthcareBlue dark:border-healthcareBlue' />
+									{/* <div className='border-t-4 w-12 rounded-md border-gray-500 dark:border-gray-300' /> */}
 								</div>
 								<button
 									onClick={() => setIsActive(false)}
-									className='bg-white text-black h-8 w-8 block mb-2 rounded-full shadow-sm'
+									className='text-white bg-healthcareBlue opacity-80 text-lg h-8 w-8 block mb-2 rounded-full shadow-sm'
 								>
 									&times;
 								</button>
-								{children}
+								<div className='px-[1rem]'>{children}</div>
 							</div>
 						</motion.div>
 					</motion.div>
