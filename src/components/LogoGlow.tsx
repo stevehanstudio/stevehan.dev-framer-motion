@@ -5,7 +5,7 @@ const LogoGlow = () => {
   return (
 		<>
 			<motion.div
-				className='absolute z-[-1] top-0 left-0 dark:bg-white opacity-75 rounded-full max-w-1/2 max-h-1/2 w-[250px] h-[250px] dark:blur-sm'
+				className='z-[-1] dark:bg-white opacity-75 max-w-1/2 max-h-1/2 dark:blur-sm logo-image-glow'
 				animate={{
 					scale: [0.9, 0.95, 1.05, 1],
 					opacity: 1,
@@ -21,7 +21,7 @@ const LogoGlow = () => {
 				}}
 			/>
 			<motion.div
-				className='absolute z-[-2] top-0 left-0 dark:bg-[#FF00FF] opacity-75 rounded-full max-w-1/2 max-h-1/2 w-[250px] h-[250px] dark:blur-md'
+				className='z-[-2] dark:bg-[#FF00FF] opacity-75 max-w-1/2 max-h-1/2 logo-image-glow dark:blur-md'
 				animate={{
 					backgroundColor: [
 						'rgb(255, 0, 255)',
@@ -43,7 +43,7 @@ const LogoGlow = () => {
 				}}
 			/>
 			<motion.div
-				className='absolute z-[-3] top-0 left-0 dark:bg-[#00FFFF] opacity-100 rounded-full max-w-1/2 max-h-1/2 w-[250px] h-[250px] dark:blur-lg'
+				className='z-[-3] dark:bg-[#00FFFF] opacity-100 max-w-1/2 max-h-1/2 logo-image-glow dark:blur-lg'
 				animate={{
 					backgroundColor: [
 						'rgb(0, 255, 255)',
