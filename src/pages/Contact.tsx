@@ -5,7 +5,7 @@ import React, { useContext } from 'react'
 // import * as yup from 'yup'
 import { SubmitButton } from '../components/Buttons'
 import { AppContext } from '../context/AppContext'
-import PageWrapper from '../PageWrapper'
+import AnimatePageTransition from '../components/AnimatePageTransition'
 
 // type FormData = {
 // 	name: string
@@ -71,7 +71,7 @@ const Contact = () => {
 		// 	className='flex flex-col h-full'
 		// 	onChange={(inView, entry) => handleInView(inView)}
 		// >
-		<PageWrapper>
+		<AnimatePageTransition>
 			<div className='max-w-md mx-auto section bg-blur-md'>
 				<h2 className='section-title'>Contact</h2>
 				{/* <h3 className='text-2xl text-red-800 dark:text-red-400'>Let's Get in Touch!</h3> */}
@@ -119,7 +119,7 @@ const Contact = () => {
 					</div>
 				</form>
 			</div>
-		</PageWrapper>
+		</AnimatePageTransition>
 	)
 }
 

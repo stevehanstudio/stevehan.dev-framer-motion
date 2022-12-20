@@ -14,7 +14,7 @@ export const navMenuItems: MenuItemType[] = [
 		url: '/',
 		// url: '#home',
 		icon: IoHomeOutline,
-		iconSize: 19,
+		iconSize: 21,
 		// clickAction: ActiveMenuType.Home,
 	},
 	{
@@ -45,7 +45,7 @@ export const navMenuItems: MenuItemType[] = [
 		title: 'Contact',
 		url: '/contact',
 		icon: MdOutlineContactMail, // MdContactMail,
-		iconSize: 19,
+		iconSize: 21,
 		// clickAction: ActiveMenuType.Contact,
 	},
 ]

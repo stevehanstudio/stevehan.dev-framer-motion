@@ -6,7 +6,7 @@ import LogoGlow from '../components/LogoGlow'
 import { socialMenuItems } from '../constants/MenuItems'
 // import { icons } from 'react-icons'
 import { AppContext } from '../context/AppContext'
-import PageWrapper from '../PageWrapper'
+import AnimatePageTransition from '../components/AnimatePageTransition'
 
 const Home = () => {
 	// const { theme, isMobile, selectedNavMenuItem, setSelectedNavMenuItem } =
@@ -20,7 +20,7 @@ const Home = () => {
 	// }
 
 	return (
-		<PageWrapper>
+		<AnimatePageTransition>
 			<div className='max-w-5xl mx-auto section'>
 				<div className='logo-image'>
 					<motion.img
@@ -83,17 +83,23 @@ const Home = () => {
 				{isMobile && (
 					<ul className='flex flex-row h-auto pt-5 place-content-center'>
 						{socialMenuItems.map(item => (
-							<li key={item.title} className='mobile-nav-link nav-link'>
-								<item.icon
-									size={item.iconSize}
-									className={item.iconClass}
-								/>
+							<li key={item.title} className='mobile-hero-social-link'>
+								<a
+									href={item.url}
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<item.icon
+										size={item.iconSize}
+										className={item.iconClass}
+									/>
+								</a>
 							</li>
 						))}
 					</ul>
 				)}
 			</div>
-		</PageWrapper>
+		</AnimatePageTransition>
 	)
 }
 

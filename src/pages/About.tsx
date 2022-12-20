@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
 // import { InView } from 'react-intersection-observer'
-import PageWrapper from '../PageWrapper'
+import AnimatePageTransition from '../components/AnimatePageTransition'
 
 const About = () => {
 
@@ -14,7 +14,7 @@ const About = () => {
 	// }
 
 	return (
-		<PageWrapper>
+		<AnimatePageTransition>
 			<div
 				className={`section max-w-5xl mx-auto ${
 					isMobile && mobileMenuBottom ? 'm-5 p-0' : ''
@@ -77,7 +77,7 @@ const About = () => {
 					the way.
 				</p>
 			</div>
-		</PageWrapper>
+		</AnimatePageTransition>
 	)
 }
 

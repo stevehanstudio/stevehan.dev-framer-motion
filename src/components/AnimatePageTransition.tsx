@@ -2,9 +2,9 @@ import React, { useContext, ReactNode } from 'react'
 import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { VscChevronDown } from 'react-icons/vsc'
-import { AppContext } from './context/AppContext'
+import { AppContext } from '../context/AppContext'
 
-const PageWrapper = ({ children }: { children: ReactNode }) => {
+const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 	const { pathname } = useLocation()
 	const { isMobile, navDirection } = useContext(AppContext)
 	// const { isMobile } = useContext(AppContext)
@@ -28,37 +28,38 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 						: isMobile && navDirection === 'left'
 						? '100vw'
 						: 0,
-				y: isMobile ? 0 : '100%',
-				opacity: 0,
+				y: isMobile ? 0 : '100vh',
+				// opacity: 1,
 			}}
 			animate={{
 				x: 0,
 				y: 0,
-				opacity: 1,
+				// opacity: 1,
 			}}
 			exit={{
 				// x: isMobile ? '100vw' : 0,
-				x:
-					isMobile && navDirection === 'right'
+				x: isMobile && navDirection === 'right'
 						? '100vw'
 						: isMobile && navDirection === 'left'
 						? '-100vw'
 						: 0,
 				y: isMobile ? 0 : '-100%',
-				opacity: 1,
+				// opacity: 1,
 				transition: {
 					ease: 'easeInOut',
-					duration: isMobile ? 0.2 : 0.8,
+					// ease: 'inertia',
+					// velocity: 5,
+					duration: isMobile ? 0.5 : 0.8,
 				},
 			}}
 			transition={{
 				// y: {
-				// delay: 1,
+				delay: 0.5,
 				// type: 'spring',
 				// stiffness: 300,
 				// damping: 30,
 				ease: 'easeInOut',
-				duration: isMobile ? 0.5 : 1.2,
+				duration: isMobile ? 1 : 1.8,
 				// },
 			}}
 		>
@@ -96,4 +97,4 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
 	)
 }
 
-export default PageWrapper
+export default AnimatePageTransition

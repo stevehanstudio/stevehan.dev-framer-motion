@@ -15,14 +15,12 @@ export const AppProvider = ({
 }: {
 	children: ReactNode
 }): ReactElement => {
-	// const [state, dispatch] = useReducer(appReducer, initialState)
 	const [selectedNavMenuItem, setSelectedNavMenuItem] = useState<number>(0)
 	const [theme, setTheme] = useState<ThemeType>('dark')
 	const [systemThemeEnabled, setSystemThemeEnabled] = useState(false)
 	const [mobileMenuBottom, setMobileMenuBottom] = useState(false)
 	const [width, setWidth] = useState<number | null>(null)
 	const [dragDetected, setDragDetected] = useState(false)
-	const [navDirection, setNavDirection] = useState<navDirectionType | null>('right')
 
 	const isMobile = width && width <= 768 ? true : false
 
@@ -53,39 +51,25 @@ export const AppProvider = ({
 	}, [])
 
 	useEffect(() => {
-		const newNavMenuItem = path.indexOf(pathname)
-		setSelectedNavMenuItem((prevNavMenuItem) => {
-			console.log(
-				'pathname change detected in AppContext',
-				prevNavMenuItem, newNavMenuItem
-			)
-			if (newNavMenuItem > prevNavMenuItem) {
-				console.log('setting Nav Direction to right')
-				setNavDirection('right')
-				// prevNavMenuItemRef.current = newNavMenuItem
-			} else if (newNavMenuItem < prevNavMenuItem) {
-				console.log('setting Nav Direction to left')
-				setNavDirection('left')
-				// prevNavMenuItemRef.current = newNavMenuItem
-			}
-			return newNavMenuItem
-		})
-		// setSelectedNavMenuItem(path.indexOf(pathname))
+		setSelectedNavMenuItem(path.indexOf(pathname))
 	}, [pathname])
 
-	// useEffect(() => {
-	// 	// console.log(
-	// 	// 	`prevNavMenuItemRef.current=${prevNavMenuItemRef.current}, selectedNavMenuItem=${selectedNavMenuItem}, navDirection=${navDirection}`
-	// 	// )
+	const useNavDirection = (): navDirectionType => {
+		const { pathname, state } = useLocation()
+		const newNavMenuItem = path.indexOf(pathname)
+		console.log('useNavDirection', newNavMenuItem, state?.previousPath || '/')
+		const prevNavMenuItem = path.indexOf(state?.previousPath || '/')
+		console.log('useNavDirection', newNavMenuItem, prevNavMenuItem)
 
-	// 	if (selectedNavMenuItem > prevNavMenuItemRef.current) {
-	// 		setNavDirection('right')
-	// 		prevNavMenuItemRef.current = selectedNavMenuItem
-	// 	} else if (selectedNavMenuItem !== prevNavMenuItemRef.current) {
-	// 		setNavDirection('left')
-	// 		prevNavMenuItemRef.current = selectedNavMenuItem
-	// 	}
-	// }, [selectedNavMenuItem])
+		if (newNavMenuItem > prevNavMenuItem) {
+			return 'right'
+		} else if (newNavMenuItem < prevNavMenuItem) {
+			return 'left'
+		}
+		return 'right'
+	}
+
+	const navDirection = useNavDirection()
 
 	const handleMobileThemeColor = (e: MediaQueryListEvent) => {
 		const colorScheme = e.matches ? 'dark' : 'light'

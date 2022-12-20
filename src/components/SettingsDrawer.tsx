@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useRef, useContext } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 // import DarkModeSwitch from './DarkModeSwitch'
 import Switch from 'react-switch'
@@ -31,7 +31,7 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 					<motion.div
 						initial={{ y: '100vh' }}
 						animate={{
-							y: 220,
+							y: 230,
 						}}
 						exit={{
 							y: '100vh',

@@ -103,12 +103,13 @@
   }
 
   .header {
-    @apply align-middle z-30 md:px-4 md:pt-4 md:mx-auto bg-sweetAiran dark:bg-laborWorker md:place-content-center md:fade-bottom;
+    @apply align-middle z-30 w-[100vw] md:px-4 md:pt-4 md:mx-auto bg-sweetAiran dark:bg-laborWorker md:place-content-center md:fade-bottom;
     overflow: hidden;
-    background-color: #333;
+    // background-color: #333;
     position: fixed;
     // top: 0;
-    width: 100%;
+    @JsonIgnoreProperties
+    foo: bar;
   }
 
   .section-title {
@@ -118,7 +119,8 @@
   }
 
   .section {
-    @apply mt-[36px] md:mt-[106px] overflow-y-scroll md:overflow-y-hidden overflow-x-hidden;
+    // @apply mt-[36px] md:mt-[106px] overflow-y-scroll md:overflow-y-hidden overflow-x-hidden;
+    @apply mt-[36px] md:mt-[106px] md:overflow-y-hidden overflow-x-hidden;
     height: auto;
     // overflow: scroll;
     -webkit-overflow-scrolling: touch;
@@ -168,106 +170,66 @@
     // background: hsl(120 100% 5% /1);
   }
 
-  // .underlined-menu {
-  //   height: 100%;
-  //   width: 100%;
-  //   display: grid;
-  //   place-items: center left;
-  //   color: red;
-  //   // color: rgba($color: #171717, $alpha: .8);
-  //   // background: #ffd11a;
+  .nav-menu {
+    @apply pb-10 mt-0 pt-0 align-middle place-items-start flex flex-row justify-between w-full mx-auto max-w-7xl;
+    .menu-item {
+      @apply text-lg leading-none uppercase text-gray-400 dark:text-gray-400 hover:text-healthcareBlue dark:hover:text-healthcareBlue;
+      margin: 0 1.5rem;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .activeMenuItem {
+      @apply text-healthcareBlue opacity-100;
+      text-decoration: none;
+      @JsonIgnoreProperties
+      foo: bar;
+    }
+
+    .underline {
+      @apply absolute z-30 w-full left-0 top-[calc(100%_+_4px)] h-[4px] rounded bg-healthcareBlue;
+      @JsonIgnoreProperties
+      foo: bar;
+    }
+  }
+
+  .mobile-nav-menu {
+    @apply w-full h-full px-1 border-gray-300 dark:border-gray-600 flex flex-row place-items-center justify-between overflow-y-hidden;
+    @JsonIgnoreProperties
+    foo: bar;
+
+    .menu-item {
+      @apply text-lg text-gray-500 dark:text-gray-300 hover:text-healthcareBlue;
+      cursor: pointer;
+      position: relative;
+      @JsonIgnoreProperties
+      foo: bar;
+    }
+
+    .activeMenuItem {
+      @apply text-healthcareBlue dark:text-healthcareBlue opacity-100;
+      @JsonIgnoreProperties
+      foo: bar;
+    }
+
+    .top-underline {
+      @apply absolute z-30 w-full left-0 top-[calc(100%_-_3px)] h-[3px] rounded bg-healthcareBlue;
+      @JsonIgnoreProperties
+      foo: bar;
+    }
+
+    .bottom-underline {
+      @apply absolute z-30 w-full left-0 bottom-[calc(100%_+_4px)] h-[3px] rounded bg-healthcareBlue;
+      @JsonIgnoreProperties
+      foo: bar;
+    }
+  }
+
+  // .menu-item {
+  //   @apply items-center text-gray-500 dark:text-gray-100 text-lg transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+  //   @JsonIgnoreProperties
+  //   foo: bar;
   // }
-
-.underlined-menu {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  place-items: center left;
-  // color: rgba($color: #171717, $alpha: .8);
-  color: white;
-  // background: gray;
-  // background: #ffd11a;
-  .wrapper {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .menu-item {
-    @apply text-lg uppercase text-black dark:text-white;
-    margin: 0 1.5rem;
-    // font-size: 3rem;
-    // font-weight: 700;
-    cursor: pointer;
-    position: relative;
-    // &:first-child {
-    //   margin-left: 3rem;
-    // }
-  }
-  .underline {
-    // @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded h-1 left-0 top-[100%];
-    @apply absolute bg-healthcareBlue opacity-[0.85] w-full rounded left-0;
-    @JsonIgnoreProperties
-    foo: bar;
-    // position: absolute;
-    // top: 100%;
-    // left: 0;
-    // width: 100%;
-    // height: 4px;
-    // border-radius: 15px;
-    // background: white;
-    // opacity: 0.85;
-  }
-}
-
-  // .underline {
-  //   @apply z-50 bg-healthcareBlue;
-  //   position: absolute;
-  //   top: 100%;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 4px;
-  //   border-radius: 15px;
-  //   // background: white;
-  //   // opacity: 0.85;
-  // }
-
-.mobile-underlined-menu {
-  // @apply w-full mt-1 px-1 border-b-2 border-gray-300 dark:border-gray-600;
-  @apply w-full px-1 border-gray-300 dark:border-gray-600;
-  height: 100%;
-  display: grid;
-  place-items: center left;
-  .wrapper {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .menu-item {
-    @apply text-lg text-black dark:text-white hover:text-healthcareBlue;
-    cursor: pointer;
-    position: relative;
-    // &:first-child {
-    //   margin-left: 3rem;
-    // }
-  }
-  .underline {
-    @apply absolute bg-healthcareBlue w-full rounded left-0;
-    @JsonIgnoreProperties
-    foo: bar;
-    // position: absolute;
-    // top: 100%;
-    // left: 0;
-    // width: 100%;
-    // height: 4px;
-    // border-radius: 15px;
-    // background: white;
-    // opacity: 0.85;
-  }
-}
-
-  .menu-item {
-    @apply items-center text-gray-500 dark:text-gray-100 text-lg transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
-    @JsonIgnoreProperties
-    foo: bar;
-  }
 
   // .nav-menu-item {
   //   @apply relative text-lg uppercase;
@@ -281,34 +243,34 @@
   // }
 
   .social-menu-item {
-    @apply px-3;
+    @apply px-3 items-center text-gray-400 dark:text-gray-400 font-medium uppercase transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
     @JsonIgnoreProperties
     foo: bar;
   }
 
-  .nav-link {
-    @apply px-3 items-center text-gray-400 font-medium uppercase transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
-    @JsonIgnoreProperties
-    foo: bar;
-  }
+  // .nav-link {
+  //   @apply px-3 items-center text-gray-400 font-medium uppercase transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+  //   @JsonIgnoreProperties
+  //   foo: bar;
+  // }
 
-  .active {
-    @apply text-black dark:text-white;
-    @JsonIgnoreProperties
-    foo: bar;
-  }
+  // a.active {
+  //   @apply text-healthcareBlue;
+  //   @JsonIgnoreProperties
+  //   foo: bar;
+  // }
 
-  .mobile-nav-link {
+  .mobile-hero-social-link {
     @apply py-2 px-3 items-center text-gray-500 dark:text-gray-50 font-medium uppercase transition-all hover:text-healthcareBlue focus:text-healthcareBlue;
     @JsonIgnoreProperties
     foo: bar;
   }
 
-  .mobile-active {
-    @apply  text-healthcareBlue dark:text-healthcareBlue;
-    @JsonIgnoreProperties
-    foo: bar;
-  }
+  // .mobile-active {
+  //   @apply  text-healthcareBlue dark:text-healthcareBlue;
+  //   @JsonIgnoreProperties
+  //   foo: bar;
+  // }
 
   .logo-image {
     // @apply z-50 mx-auto mt-24 mb-4 rounded-full drop-shadow-2xl dark:shadow-[0_0_30px_15px_rgba(255,255,255,0.6),0_0_50px_30px_rgba(255,0,255,0.5),0_0_70px_45px_rgba(0,255,255,0.5)];
@@ -331,7 +293,7 @@
   }
 
   .carousel-container {
-    @apply relative; // my-auto;
+    @apply relative;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     @JsonIgnoreProperties
@@ -365,11 +327,6 @@
     -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
     mask-image: linear-gradient(to right, black 80%, transparent 100%);
   }
-
-  // .fade-bottom {
-  //   -webkit-mask-image: linear-gradient(to bottom, black 25%, rgba(0,0,0,0.8) 60%, transparent 100%);
-  //   mask-image: linear-gradient(to bottom, black 25%, rgba(0,0,0,0.5) 50%, transparent 100%);
-  // }
 
   .nav-carousel {
     @apply z-20 absolute cursor-pointer top-1/2 -translate-y-1/2 text-black dark:text-white opacity-40 dark:opacity-40 py-4 transition duration-500 hover:opacity-90 hover:dark:opacity-90 hover:dark:border-healthcareBlue;
@@ -436,20 +393,6 @@
     @JsonIgnoreProperties
     foo: bar;
   }
-
-  // items-end m-0 p-0
-
-  // .expand-skills-button {
-  //   @apply absolute flex flex-row pr-3 w-[7.7rem] rounded-2xl border-2 font-semibold border-healthcareBlue hover:drop-shadow-[-4px_4px_4px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_0_8px_rgba(255,255,255,1)] dark:hover:border-white text-gray-200 hover:text-white dark:hover:text-white right-1 top-[20px] bg-healthcareBlue p-1;
-  // }
-
-  // .expand-skills-icon {
-  //   @apply absolute left-2 top-0 align-middle transition duration-500 text-2xl;
-  // }
-
-  // .expand-skills-text {
-  //   @apply pl-9 text-xs;
-  // }
 
   .mobile-skills-carousel-container::-webkit-scrollbar {
     display: none;

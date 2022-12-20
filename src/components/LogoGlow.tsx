@@ -12,7 +12,7 @@ const LogoGlow = () => {
 				}}
 				transition={{
 					type: 'anticipate',
-					delay: 1,
+					delay: 0.15,
 					duration: 9,
 					times: [0, 0.2, 0.6, 1],
 				}}
@@ -33,7 +33,7 @@ const LogoGlow = () => {
 					opacity: 1,
 					transition: {
 						type: 'anticipate',
-						delay: 1,
+						delay: 0.15,
 						duration: 9,
 						times: [0, 0.2, 0.6, 1],
 					},
@@ -55,7 +55,7 @@ const LogoGlow = () => {
 					opacity: 1,
 					transition: {
 						type: 'anticipate',
-						delay: 1,
+						delay: 0.15,
 						duration: 9,
 						times: [0, 0.2, 0.6, 1],
 					},

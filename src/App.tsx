@@ -9,6 +9,7 @@ import Projects from './pages/Projects'
 import Certificates from './pages/Certificates'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Test from './pages/Test'
 import NotFound from './pages/NotFound'
 // import { AppProvider } from './context/AppContextProvider'
 import './styles/global.scss'
@@ -18,18 +19,20 @@ const App = () => {
 	const location = useLocation()
 	const { isMobile } = useContext(AppContext)
 
-	console.log('App Component is mobile', isMobile)
+	console.log('App location', location)
 
 	return (
 		<>
 			<Header />
-			<AnimatePresence mode='wait'>
+			<AnimatePresence>
+				{/* <AnimatePresence mode='wait'> */}
 				<Routes location={location} key={location.pathname}>
 					<Route path='/' element={<Home />} />
 					<Route path='/projects' element={<Projects />} />
 					<Route path='/certificates' element={<Certificates />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='/test' element={<Test />} />
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</AnimatePresence>

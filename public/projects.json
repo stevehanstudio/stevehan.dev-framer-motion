@@ -55,11 +55,11 @@
     "date": "2020-08-15",
     "author": "Steve Han",
     "skills": ["React","Next.js","Javascript","Chakra UI", "SVG"],
-    "website": "https://www.stevehan.dev",
+    "website": "https://5f918a757a155d0007e3a382--festive-goldstine-033924.netlify.app/",
     "github": "https://github.com/stevehanstudio/stevehan-dev"
   },
   {
-    "title": "Relection of Snowy Cemetery",
+    "title": "Reflection of Snowy Cemetery",
     "subtitle": "Webpage of a reflection of an image on a rotating 3D sphere built using vanilla javascript and three.js",
     "slug": "stevehan-dev",
     "image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669011012/stevehandev/projects/ar-glass_qpx2wr.jpg",
@@ -85,7 +85,7 @@
   {
     "title": "Video from ESP32-CAM",
     "subtitle": "Web application that controls video from an ESP32-CAM module built using React, Rest API",
-    "slug": "timeseries-arduino",
+    "slug": "video-esp32-cam",
     "image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669011319/stevehandev/projects/video-from-esp32-cam_xbyexo.jpg",
     "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011319/stevehandev/projects/video-from-esp32-cam_xbyexo.jpg",
     "date": "2022-05-20",
@@ -100,9 +100,9 @@
     "github": "https://github.com/stevehanstudio/CNIT133I-esp32cam-project"
   },
   {
-		"title": "Timeseries Arduino",
+		"title": "Time-series Arduino",
 		"subtitle": "Full stack web application, that display live time series data from temperature sensor collected on a Arduino Uno board, built using Typescript, React, Node.js, Express, socket.io, Recharts.js",
-		"slug": "timeseries-arduino",
+		"slug": "time-series-arduino",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669011319/stevehandev/projects/timeseries_arduino_icybbq.jpg",
 		"screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011319/stevehandev/projects/timeseries_arduino_icybbq.jpg",
 		"date": "2022-05-04",

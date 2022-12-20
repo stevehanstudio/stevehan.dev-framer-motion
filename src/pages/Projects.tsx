@@ -1,12 +1,12 @@
 import React from 'react'
 import MainComponent from '../components/MainComponent'
-import PageWrapper from '../PageWrapper'
+import AnimatePageTransition from '../components/AnimatePageTransition'
 
 const page = () => {
 	return (
-		<PageWrapper>
+		<AnimatePageTransition>
 			<MainComponent componentType='Projects' />
-		</PageWrapper>
+		</AnimatePageTransition>
 	)
 }
 
