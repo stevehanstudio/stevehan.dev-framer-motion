@@ -7,7 +7,6 @@ import { AppContext } from '../context/AppContext'
 const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 	const { pathname } = useLocation()
 	const { isMobile, navDirection } = useContext(AppContext)
-	// const { isMobile } = useContext(AppContext)
 	console.log(`pathname=${pathname}, navDirection=${navDirection}`)
 
 	return (
@@ -19,48 +18,35 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 				console.log('PageWrapper drag detected', event, info)
 			}
 			dragElastic={0.8}
-			// dragMomentum={false}
 			dragConstraints={{ top: 0, bottom: window.innerHeight }}
 			initial={{
-				// x: isMobile ? '-100vw' : 0,
 				x: isMobile && navDirection === 'right'
 						? '-100vw'
 						: isMobile && navDirection === 'left'
 						? '100vw'
 						: 0,
 				y: isMobile ? 0 : '100vh',
-				// opacity: 1,
 			}}
 			animate={{
 				x: 0,
 				y: 0,
-				// opacity: 1,
 			}}
 			exit={{
-				// x: isMobile ? '100vw' : 0,
 				x: isMobile && navDirection === 'right'
 						? '100vw'
 						: isMobile && navDirection === 'left'
 						? '-100vw'
 						: 0,
 				y: isMobile ? 0 : '-100%',
-				// opacity: 1,
 				transition: {
 					ease: 'easeInOut',
-					// ease: 'inertia',
-					// velocity: 5,
 					duration: isMobile ? 0.5 : 0.8,
 				},
 			}}
 			transition={{
-				// y: {
 				delay: 0.5,
-				// type: 'spring',
-				// stiffness: 300,
-				// damping: 30,
 				ease: 'easeInOut',
 				duration: isMobile ? 1 : 1.8,
-				// },
 			}}
 		>
 			{children}

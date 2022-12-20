@@ -96,8 +96,3 @@ export const SubmitButton = () => (
 	</button>
 )
 
-// interface ExpandProps {
-// 	showAll: boolean
-// 	handleClick: (e: MouseEvent) => void
-// }
-

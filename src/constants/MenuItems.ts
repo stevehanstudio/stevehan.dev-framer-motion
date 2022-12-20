@@ -4,27 +4,21 @@ import { IoHomeOutline } from 'react-icons/io5'
 import { GrProjects, GrCertificate } from 'react-icons/gr'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { MenuItemType } from "../types"
-// import { ActionType, ActiveMenuType, MenuItemType } from '../types'
-// import { IconType } from 'react-icons'
 import ResumeIcon from '../components/ResumeIcon'
 
 export const navMenuItems: MenuItemType[] = [
 	{
 		title: 'Home',
 		url: '/',
-		// url: '#home',
 		icon: IoHomeOutline,
 		iconSize: 21,
-		// clickAction: ActiveMenuType.Home,
 	},
 	{
 		title: 'Projects',
 		url: '/projects',
-		// url: '#projects',
 		icon: GrProjects,
 		iconSize: 19,
 		iconClass: 'gr-icon',
-		// clickAction: ActiveMenuType.Projects,
 	},
 	{
 		title: 'Certificates',
@@ -32,21 +26,18 @@ export const navMenuItems: MenuItemType[] = [
 		icon: GrCertificate,
 		iconSize: 19,
 		iconClass: 'gr-icon',
-		// clickAction: ActiveMenuType.Certificates,
 	},
 	{
 		title: 'About',
 		url: '/about',
 		icon: SiAboutdotme,
 		iconSize: 19,
-		// clickAction: ActiveMenuType.About,
 	},
 	{
 		title: 'Contact',
 		url: '/contact',
-		icon: MdOutlineContactMail, // MdContactMail,
+		icon: MdOutlineContactMail,
 		iconSize: 21,
-		// clickAction: ActiveMenuType.Contact,
 	},
 ]
 
@@ -70,4 +61,3 @@ export const socialMenuItems: MenuItemType[] = [
 		iconSize: 19,
 	},
 ]
-

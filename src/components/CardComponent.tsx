@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-// import Image from 'next/image'
 import {
 	DetailsButton,
 	DemoButton,
@@ -60,7 +59,6 @@ const CardComponent: React.FC<Props> = ({
 				<h2 className='py-2 text-sm font-light md:text-sm dark:text-gray-100'>
 					{data.subtitle}
 				</h2>
-				{/* <div className='flex flex-row justify-end h-full mx-5 space-between'> */}
 				<div className='flex flex-row mb-4 md:mb-0 justify-between w-full h-full'>
 					{data.website && <DemoButton url={data.website} />}
 					{data.github && <DetailsButton url={data.github} />}

@@ -1,9 +1,7 @@
-// import React, { useState, useEffect, useContext, useRef, MouseEvent } from 'react'
 import React, { useState, useEffect, useRef, MouseEvent } from 'react'
 import { motion } from 'framer-motion'
 import { FiChevronUp } from 'react-icons/fi'
 import { MainComponentType } from '../types'
-// import { AppContext } from '../context/AppContext'
 
 interface Props {
   componentType: MainComponentType
@@ -14,12 +12,6 @@ interface Props {
 	handleShowAllSkills: (e: MouseEvent) => void
 	handleSelectAllSkills: () => void
 }
-
-// const MobileSkillsComponent:React.FC<Props> = ({
-// 	skills,
-// 	selectedSkills,
-// 	showAllSkills
-// })
 
 const SkillsComponent:React.FC<Props> = ({
 	skills,
@@ -32,8 +24,6 @@ const SkillsComponent:React.FC<Props> = ({
 	const skillsContainer = useRef<HTMLDivElement>(null)
 	const [expandButtonHover, setExpandButtonHover] = useState(false)
 	const [multiLineSkills, setMultiLineSkills] = useState(false)
-
-	// const { isMobile } = useContext(AppContext)
 
 	useEffect(() => {
 		window.addEventListener('resize', () => {
@@ -51,23 +41,8 @@ const SkillsComponent:React.FC<Props> = ({
 		skillsContainer.current?.scrollHeight
 	])
 
-	// console.log(
-	// 	'scrollHeight',
-	// 	skillsContainer.current?.clientHeight,
-	// 	skillsContainer.current?.scrollHeight
-	// )
-
 	return (
 		<>
-			{/* {isMobile
-				?  <motion.div>
-						<motion.div>
-
-						</motion.div>
-				</motion.div>
-				:
-			} */}
-
 			{multiLineSkills ? (
 				<div
 					className={`expand-skills-button flex justify-end w-full pb-1 pr-3 mr-3 text-xs underline
@@ -155,24 +130,6 @@ const SkillsComponent:React.FC<Props> = ({
 							)
 						} else return null
 					})}
-					{/* {skills.map(skill => {
-						return (
-							<button
-								role='checkbox'
-								aria-checked='false'
-								aria-labelledby={skill}
-								className={
-									selectedSkills.includes(skill)
-										? 'skill skill-selected'
-										: 'skill skill-unselected'
-								}
-								key={skill}
-								onClick={(e: MouseEvent) => handleSelectSkill(e, skill)}
-							>
-								{skill}
-							</button>
-						)
-					})} */}
 				</motion.div>
 				{multiLineSkills && (
 					<FiChevronUp
