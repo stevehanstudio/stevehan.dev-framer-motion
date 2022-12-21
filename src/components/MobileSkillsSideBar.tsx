@@ -27,6 +27,7 @@ const MobileSkillsSidebar: React.FC<Props> = ({
 			{sideBar && (
 				<>
 					<motion.div
+						layout
 						initial={{
 							scale: 0,
 							x: '100%' }}

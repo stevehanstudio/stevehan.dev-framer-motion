@@ -137,7 +137,7 @@
   },
   {
 		"title": "SteveHan.dev v.2",
-		"subtitle": "This website is version 2 of my portfolio site with UI update and built using Typescript, Next.js 13, React, Framer Motion, and Tailwind CSS",
+		"subtitle": "This website is version 2 of my portfolio site with UI update and built using Typescript, React, Framer Motion, and Tailwind CSS",
 		"slug": "stevehan-dev-v2",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
 		"screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
@@ -145,13 +145,14 @@
 		"author": "Steve Han",
 		"skills": [
 			"Typescript",
-			"Next.js",
 			"React",
 			"Framer Motion",
 			"Tailwind CSS",
 			"SASS",
 			"SVG",
-			"Javascript"
+			"Javascript",
+      "Google Analytics",
+      "Google Tag Manager"
 		],
 		"website": "https://stevehan-dev-v2.vercel.app/",
 		"github": "https://github.com/stevehanstudio/stevehan-dev-v2"
