@@ -91,7 +91,7 @@ const Menu: React.FC= () => {
 					className='pl-5'
 					onClick={toggleTheme}
 				>
-					<DarkModeSwitch theme={theme} />
+					<DarkModeSwitch />
 				</button>
 			</motion.ul>
 		</nav>

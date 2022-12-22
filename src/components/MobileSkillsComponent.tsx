@@ -37,10 +37,10 @@ const MobileSkillsComponent:React.FC<Props> = ({
 	// const [currentX, setCurrentX] = useState(0)
 	const skillsContainer = useRef<HTMLDivElement | null>(null)
 
-	console.log(
-		`skillsContainer.current.scrollWidth=${skillsContainer.current?.scrollWidth}, skillsContainer.current.offsetWidth=${skillsContainer.current?.offsetWidth}`
-	)
-	console.log('mobile skills container width', width)
+	// console.log(
+	// 	`skillsContainer.current.scrollWidth=${skillsContainer.current?.scrollWidth}, skillsContainer.current.offsetWidth=${skillsContainer.current?.offsetWidth}`
+	// )
+	// console.log('mobile skills container width', width)
 
   useEffect(() => {
 		if (skillsContainer.current) {
@@ -67,7 +67,7 @@ const MobileSkillsComponent:React.FC<Props> = ({
 
 	return (
 		<>
-			<MobileSkillsSidebar
+			{/* <MobileSkillsSidebar
 				sideBar={seeAllSkills}
 				setSideBar={setSeeAllSkills}
 				skills={skills}
@@ -76,18 +76,30 @@ const MobileSkillsComponent:React.FC<Props> = ({
 				handleSelectSkill={handleSelectSkill}
 				handleShowAllSkills={handleShowAllSkills}
 				handleSelectAllSkills={handleSelectAllSkills}
-			/>
+			/> */}
 			<div
 				ref={skillsContainer}
 				className='mobile-skills-carousel-container shadow-md'
 			>
 				<div className='absolute z-30 top-2 right-1'>
-					<button
-						className='float-right shadow-md p-2 text-white bg-laborWorkerBlue rounded-full'
-						onClick={() => setSeeAllSkills(true)}
-					>
-						<RiFilter3Line />
-					</button>
+					<div className='relative'>
+						<button
+							className='float-right shadow-md p-2 text-white bg-laborWorkerBlue rounded-full'
+							onClick={() => setSeeAllSkills(true)}
+						>
+							<RiFilter3Line />
+						</button>
+						<MobileSkillsSidebar
+							sideBar={seeAllSkills}
+							setSideBar={setSeeAllSkills}
+							skills={skills}
+							selectedSkills={selectedSkills}
+							showAllSkills={showAllSkills}
+							handleSelectSkill={handleSelectSkill}
+							handleShowAllSkills={handleShowAllSkills}
+							handleSelectAllSkills={handleSelectAllSkills}
+						/>
+					</div>
 				</div>
 				<motion.div className='mobile-skills-buttons-carousel'>
 					<motion.div
@@ -96,8 +108,13 @@ const MobileSkillsComponent:React.FC<Props> = ({
 						dragDirectionLock
 						onDirectionLock={axis => console.log('axis', axis)}
 						drag='x'
-						dragConstraints={{ right: 0, left: -width, top: 0, bottom: 0 }}
-						whileTap={{ cursor: "grabbing" }}
+						dragConstraints={{
+							right: 0,
+							left: -width,
+							top: 0,
+							bottom: 0,
+						}}
+						whileTap={{ cursor: 'grabbing' }}
 						// dragElastic={{top: 0, bottom: 0.3}}
 						// viewport={{ once: true, amount: 1 }}
 					>

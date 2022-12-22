@@ -26,8 +26,6 @@ export const AppProvider = ({
 
 	const { pathname } = useLocation()
 
-	const prevNavMenuItemRef = useRef(0)
-
 	const heroRef = useRef(null)
 	const projectsRef = useRef(null)
 	const certificatesRef = useRef(null)
@@ -57,9 +55,9 @@ export const AppProvider = ({
 	const useNavDirection = (): navDirectionType => {
 		const { pathname, state } = useLocation()
 		const newNavMenuItem = path.indexOf(pathname)
-		console.log('useNavDirection', newNavMenuItem, state?.previousPath || '/')
+		// console.log('useNavDirection', newNavMenuItem, state?.previousPath || '/')
 		const prevNavMenuItem = path.indexOf(state?.previousPath || '/')
-		console.log('useNavDirection', newNavMenuItem, prevNavMenuItem)
+		// console.log('useNavDirection', newNavMenuItem, prevNavMenuItem)
 
 		if (newNavMenuItem > prevNavMenuItem) {
 			return 'right'
@@ -103,6 +101,8 @@ export const AppProvider = ({
 					.matchMedia('(prefers-color-scheme: dark)')
 					.removeEventListener('change', handleMobileThemeColor)
 			}
+		} else if (isMobile === false) {
+			setTheme('dark')
 		}
 	}, [isMobile])
 
@@ -149,9 +149,9 @@ export const AppProvider = ({
 	}
 
 	// console.log('AppContext', theme, width, isMobile)
-		console.log(
-			`prevNavMenuItemRef.current=${prevNavMenuItemRef.current}, selectedNavMenuItem=${selectedNavMenuItem}, navDirection=${navDirection}`
-		)
+		// console.log(
+		// 	`prevNavMenuItemRef.current=${prevNavMenuItemRef.current}, selectedNavMenuItem=${selectedNavMenuItem}, navDirection=${navDirection}`
+		// )
 
 	return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }

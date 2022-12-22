@@ -30,18 +30,29 @@ const MobileSkillsSidebar: React.FC<Props> = ({
 						layout
 						initial={{
 							scale: 0,
-							x: '100%' }}
+							top: 0,
+							left: 0,
+							y: '-48%',
+							x: '-45%',
+						}}
 						animate={{
 							scale: 1,
-							x: 0,
+							top: -20,
+							left: 38,
+							y: 0,
+							x: '-100%',
 						}}
 						exit={{
 							scale: 0,
-							x: '100%',
+							top: 0,
+							left: 0,
+							y: '-48%',
+							x: '-45%',
 						}}
-						transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
+						transition={{ type: 'spring', bounce: 0, duration: 2.4 }}
 						// className='fixed z-40 bg-gray-200 text-gray-800 shadow-lg top-0 right-0 w-full max-w-sm h-screen p-5'
-						className='fixed backdrop-blur-lg z-40 opacity-95 bg-gray-200 dark:bg-gray-800 dark:text-gray-100 text-gray-800 shadow-lg top-0 right-0 pb-8 pt-5 px-5 border-2 border-gray-400'
+						className='absolute backdrop-blur-lg z-40 w-[100vw] opacity-95 bg-gray-200 dark:bg-gray-800 dark:text-gray-100 text-gray-800 shadow-lg pb-8 pt-5 px-5 border-2 border-gray-400'
+						// className='fixed backdrop-blur-lg z-40 opacity-95 bg-gray-200 dark:bg-gray-800 dark:text-gray-100 text-gray-800 shadow-lg top-0 right-0 pb-8 pt-5 px-5 border-2 border-gray-400'
 					>
 						<button
 							onClick={() => setSideBar(!sideBar)}

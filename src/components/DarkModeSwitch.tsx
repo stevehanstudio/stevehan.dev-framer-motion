@@ -1,17 +1,12 @@
-"use client"
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import {motion} from "framer-motion"
-// import '../../styles/DarkModeSwitch.scss'
 import { BsMoonFill, BsSunFill } from "react-icons/bs"
+import { AppContext } from '../context/AppContext'
 
-interface Props {
-  theme: string | null
-	isMobile?: boolean
-}
-
-const DarkModeSwitch: React.FC<Props> = ({ theme, isMobile = false }: Props) => {
+const DarkModeSwitch: React.FC = () => {
 	const [rotation, setRotation] = useState(-180)
-	// const handleSwitch = () => {}
+	const { theme } = useContext(AppContext)
+
 	return (
 		<div
 			className='relative -top-3'

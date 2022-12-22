@@ -7,7 +7,7 @@ import { AppContext } from '../context/AppContext'
 const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 	const { pathname } = useLocation()
 	const { isMobile, navDirection } = useContext(AppContext)
-	console.log(`pathname=${pathname}, navDirection=${navDirection}`)
+	// console.log(`pathname=${pathname}, navDirection=${navDirection}`)
 
 	return (
 		<motion.div
