@@ -16,6 +16,7 @@ const About = () => {
 	return (
 		<AnimatePageTransition>
 			<div
+				id='about'
 				className={`section max-w-5xl mx-auto ${
 					isMobile && mobileMenuBottom ? 'm-5 p-0' : ''
 				}`}

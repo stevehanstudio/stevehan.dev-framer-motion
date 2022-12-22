@@ -21,7 +21,7 @@ const Home = () => {
 
 	return (
 		<AnimatePageTransition>
-			<div className='max-w-5xl mx-auto section'>
+			<div id='home' className='max-w-5xl mx-auto section'>
 				<div className='logo-image'>
 					<motion.img
 						animate={{

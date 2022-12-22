@@ -72,7 +72,7 @@ const Contact = () => {
 		// 	onChange={(inView, entry) => handleInView(inView)}
 		// >
 		<AnimatePageTransition>
-			<div className='max-w-md mx-auto section bg-blur-md'>
+			<div id='contact' className='max-w-md mx-auto section bg-blur-md'>
 				<h2 className='section-title'>Contact</h2>
 				{/* <h3 className='text-2xl text-red-800 dark:text-red-400'>Let's Get in Touch!</h3> */}
 				<form

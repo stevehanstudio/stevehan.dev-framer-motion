@@ -5,7 +5,9 @@ import AnimatePageTransition from '../components/AnimatePageTransition'
 const Certificates = () => {
 	return (
 		<AnimatePageTransition>
-			<MainComponent componentType='Certificates' />
+			<div id='certificates'>
+				<MainComponent componentType='Certificates' />
+			</div>
 		</AnimatePageTransition>
 	)
 }

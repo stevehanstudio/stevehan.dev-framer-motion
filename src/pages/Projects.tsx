@@ -5,7 +5,9 @@ import AnimatePageTransition from '../components/AnimatePageTransition'
 const page = () => {
 	return (
 		<AnimatePageTransition>
-			<MainComponent componentType='Projects' />
+			<div id='projects'>
+				<MainComponent componentType='Projects' />
+			</div>
 		</AnimatePageTransition>
 	)
 }

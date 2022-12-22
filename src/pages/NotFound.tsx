@@ -6,7 +6,7 @@ function NotFound() {
 	const { theme, isMobile } = useContext(AppContext)
 
   return (
-		<div className='relative section max-w-3xl w-3xl mx-auto justify-center items-center'>
+		<div id='not-found' className='relative section max-w-3xl w-3xl mx-auto justify-center items-center'>
 			<h1 className='section-title'>Page not found</h1>
 			{/* <div className='absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'> */}
 				<div className='flex flex-col w-full h-auto text-center items-center justify-center'>
