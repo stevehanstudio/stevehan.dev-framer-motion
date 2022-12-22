@@ -1,5 +1,5 @@
 import React, { MouseEvent } from 'react'
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, LayoutGroup } from "framer-motion"
 
 interface Props {
 	sideBar: boolean
@@ -92,38 +92,27 @@ const MobileSkillsSidebar: React.FC<Props> = ({
 							>
 								All
 							</button>
-							<AnimatePresence initial={false} mode='popLayout'>
+							<LayoutGroup>
 								{selectedSkills.map((skill, i) => {
 									return (
 										<motion.button
-											// layout
-											// initial={{
-											// 	opacity: 0,
-											// 	scale: 0.8,
-											// 	// height: 0,
-											// }}
-											// animate={{
-											// 	opacity: 1,
-											// 	scale: 1,
-											// 	// height: 'auto',
-											// }}
-											// exit={{
-											// 	opacity: 0,
-											// 	scale: 0.8,
-											// 	// height: 0,
-											// }}
-											// style={{
-											// 	originX: 1,
-											// }}
-											// transition={{
-											// 	opacity: {
-											// 		type: 'tween',
-											// 		duration: 0.2,
-											// 	},
-											// 	layout: {
-											// 		duration: i * 0.05
-											// 	}
-											// }}
+											initial={{
+												opacity: 0,
+												scale: 0.8,
+											}}
+											animate={{
+												opacity: 1,
+												scale: 1,
+											}}
+											exit={{
+												opacity: 0,
+												scale: 0.8,
+											}}
+											transition={{
+												type: 'spring',
+												damping: 0,
+												duration: 0.1,
+											}}
 											role='checkbox'
 											aria-checked='false'
 											aria-labelledby={skill}
@@ -141,34 +130,19 @@ const MobileSkillsSidebar: React.FC<Props> = ({
 									if (!selectedSkills.includes(skill)) {
 										return (
 											<motion.button
-												// layout
-												// initial={{
-												// 	opacity: 0,
-												// 	// scale: 0.8,
-												// 	// height: 0,
-												// }}
-												// animate={{
-												// 	opacity: 1,
-												// 	// scale: 1,
-												// 	// height: 'auto',
-												// }}
-												// exit={{
-												// 	opacity: 0,
-												// 	// scale: 0.8,
-												// 	// height: 0,
-												// }}
-												// style={{
-												// 	originX: 1,
-												// }}
-												// transition={{
-												// 	opacity: {
-												// 		ease: 'anticipate',
-												// 		duration: 0.2,
-												// 	},
-												// 	layout: {
-												// 		duration: i * 0.05,
-												// 	},
-												// }}
+												initial={{
+													opacity: 0,
+												}}
+												animate={{
+													opacity: 1,
+												}}
+												exit={{
+													opacity: 0,
+												}}
+												transition={{
+													ease: 'easeInOut',
+													duration: 0.1,
+												}}
 												role='checkbox'
 												aria-checked='false'
 												aria-labelledby={skill}
@@ -183,28 +157,7 @@ const MobileSkillsSidebar: React.FC<Props> = ({
 										)
 									} else return null
 								})}
-							</AnimatePresence>
-
-							{/* {skills.map(skill => {
-								return (
-									<button
-										role='checkbox'
-										aria-checked='false'
-										aria-labelledby={skill}
-										className={
-											selectedSkills.includes(skill)
-												? 'skill skill-selected m-1'
-												: 'skill skill-unselected m-1'
-										}
-										key={skill}
-										onClick={(e: MouseEvent) =>
-											handleSelectSkill(e, skill)
-										}
-									>
-										{skill}
-									</button>
-								)
-							})} */}
+							</LayoutGroup>
 						</motion.div>
 					</motion.div>
 					<motion.div

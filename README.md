@@ -142,3 +142,6 @@ https://gwfh.mranftl.com/fonts
 
 Fix Page Not Found on Netlify by adding a _directs file in the public folder
 https://www.freecodecamp.org/news/how-to-deploy-a-routed-react-app-to-netlify/
+
+Filtering out internal traffic for Google Tag Manager and GA4
+https://www.youtube.com/watch?v=018vb5hDtE8
