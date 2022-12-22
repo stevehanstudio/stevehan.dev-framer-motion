@@ -16,7 +16,7 @@ const Settings = () => {
 			<div
 				className={`${
 					mobileMenuBottom ? 'top-2' : 'bottom-2'
-				} absolute z-0 right-1`}
+				} fixed z-0 right-1`}
 				onClick={() => openSettingsMenu(true)}
 			>
 				<button className='shadow-md p-2 text-white bg-laborWorkerBlue dark:opacity-100 opacity-90 rounded-full'>
