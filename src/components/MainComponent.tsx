@@ -150,7 +150,9 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 		// 	tabIndex={0}
 		// 	onKeyUp={handleKeyPress}
 		// >
-		<div className={`section ${isMobile && mobileMenuBottom ? 'mt-5 p-0' : ''}`}>
+		<div
+			className={`section ${isMobile && mobileMenuBottom ? 'mt-5 p-0' : ''}`}
+		>
 			<h2 className='section-title'>{componentType}</h2>
 			{isMobile ? (
 				<MobileSkillsComponent
@@ -174,11 +176,14 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 				/>
 			)}
 			{selectedDataObject.length === 0 ? (
-				<div className='flex items-center h-full px-5 mx-auto text-2xl text-center md:px-7 max-w-7xl dark:text-gray-200'>
-					No project found that uses the combination of
-					{selectedSkills.map((s, i) =>
-						i === selectedSkills.length - 1 ? ` and ${s}.` : ` ${s},`
-					)}
+				// <div className='flex items-center h-[100vh] px-5 mx-auto text-2xl text-center md:px-7 max-w-7xl dark:text-gray-200'>
+				<div className='table items-center min-h-[600px] h-full px-5 mx-auto text-2xl text-center md:px-7 max-w-7xl dark:text-gray-200'>
+					<span className='table-cell align-middle'>
+						No project found that uses the combination of
+						{selectedSkills.map((s, i) =>
+							i === selectedSkills.length - 1 ? ` and ${s}.` : ` ${s},`
+						)}
+					</span>
 				</div>
 			) : isMobile ? (
 				<MobileCardsComponent

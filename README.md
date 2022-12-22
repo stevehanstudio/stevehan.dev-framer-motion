@@ -139,3 +139,6 @@ https://stackoverflow.com/questions/71188714/react-tailwind-sass-build-error-res
 Self host Google fonts
 https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775
 https://gwfh.mranftl.com/fonts
+
+Fix Page Not Found on Netlify
+https://www.freecodecamp.org/news/how-to-deploy-a-routed-react-app-to-netlify/
