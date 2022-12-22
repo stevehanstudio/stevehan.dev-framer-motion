@@ -140,5 +140,5 @@ Self host Google fonts
 https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775
 https://gwfh.mranftl.com/fonts
 
-Fix Page Not Found on Netlify
+Fix Page Not Found on Netlify by adding a _directs file in the public folder
 https://www.freecodecamp.org/news/how-to-deploy-a-routed-react-app-to-netlify/
