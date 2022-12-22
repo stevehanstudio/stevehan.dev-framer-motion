@@ -27,13 +27,20 @@ const MobileSkillsSidebar: React.FC<Props> = ({
 			{sideBar && (
 				<>
 					<motion.div
+						className='drawer-background'
+						onClick={() => setSideBar(false)}
+						exit={{ opacity: 0 }}
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+					/>
+					<motion.div
 						layout
 						initial={{
 							scale: 0,
 							top: 0,
 							left: 0,
-							y: '-48%',
-							x: '-45%',
+							y: '-47.5%',
+							x: '-45.5%',
 						}}
 						animate={{
 							scale: 1,
@@ -46,16 +53,16 @@ const MobileSkillsSidebar: React.FC<Props> = ({
 							scale: 0,
 							top: 0,
 							left: 0,
-							y: '-48%',
-							x: '-45%',
+							y: '-47.5%',
+							x: '-45.5%',
 						}}
-						transition={{ type: 'spring', bounce: 0, duration: 2.4 }}
+						transition={{ type: 'spring', damping: 35, duration: 0.45 }}
 						// className='fixed z-40 bg-gray-200 text-gray-800 shadow-lg top-0 right-0 w-full max-w-sm h-screen p-5'
-						className='absolute backdrop-blur-lg z-40 w-[100vw] opacity-95 bg-gray-200 dark:bg-gray-800 dark:text-gray-100 text-gray-800 shadow-lg pb-8 pt-5 px-5 border-2 border-gray-400'
+						className='absolute backdrop-blur-lg z-50 w-[100vw] opacity-95 bg-gray-200 dark:bg-gray-800 dark:text-gray-100 text-gray-800 shadow-lg pb-8 pt-5 px-5 border-2 border-gray-400'
 						// className='fixed backdrop-blur-lg z-40 opacity-95 bg-gray-200 dark:bg-gray-800 dark:text-gray-100 text-gray-800 shadow-lg top-0 right-0 pb-8 pt-5 px-5 border-2 border-gray-400'
 					>
 						<button
-							onClick={() => setSideBar(!sideBar)}
+							onClick={() => setSideBar(false)}
 							className='bg-white text-black h-8 w-8 block mb-2 rounded-full'
 						>
 							&times;

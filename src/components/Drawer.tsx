@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { RxDragHandleHorizontal } from 'react-icons/rx'
 
 interface Props {
 	isActive: boolean
@@ -33,19 +34,20 @@ const Drawer: React.FC<Props> = ({ isActive, setIsActive, children }) => {
 								opacity: 0.5,
 								y: '110%',
 							}}
-							transition={{ type: 'spring', damping: 25, duration: 0.4 }}
+							transition={{ type: 'spring', damping: 30, duration: 0.45 }}
 						>
 							<div className='drawer'>
-								<div className='flex place-content-center'>
-									<div className='border-t-4 w-12 rounded-md border-healthcareBlue dark:border-healthcareBlue' />
-									{/* <div className='border-t-4 w-12 rounded-md border-gray-500 dark:border-gray-300' /> */}
-								</div>
 								<button
 									onClick={() => setIsActive(false)}
-									className='text-white bg-healthcareBlue opacity-80 text-lg h-8 w-8 block mb-0 rounded-full shadow-sm'
+									className='absolute text-white bg-healthcareBlue opacity-80 text-lg h-8 w-8 block mb-0 rounded-full shadow-sm'
 								>
 									&times;
 								</button>
+								<div className='flex -mt-2 place-content-center'>
+									<RxDragHandleHorizontal size={48} />
+									{/* <div className='border-t-4 w-12 rounded-md border-healthcareBlue dark:border-healthcareBlue' /> */}
+									{/* <div className='border-t-4 w-12 rounded-md border-gray-500 dark:border-gray-300' /> */}
+								</div>
 								<div className='px-[1rem]'>{children}</div>
 							</div>
 						</motion.div>
