@@ -1,13 +1,22 @@
 import React, { useContext, ReactNode } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { VscChevronDown } from 'react-icons/vsc'
 import { AppContext } from '../context/AppContext'
+import { path } from '../constants/misc'
 
 const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 	const { pathname } = useLocation()
-	const { isMobile, navDirection } = useContext(AppContext)
+	const navigate = useNavigate()
+	const { isMobile, selectedNavMenuItem, setSelectedNavMenuItem, navDirection } = useContext(AppContext)
 	// console.log(`pathname=${pathname}, navDirection=${navDirection}`)
+
+	const handleGoToNextPage = () => {
+		const nextMenuItem =
+			selectedNavMenuItem === path.length - 1 ? 0 : selectedNavMenuItem + 1
+		navigate(path[nextMenuItem])
+		setSelectedNavMenuItem(nextMenuItem)
+	}
 
 	return (
 		<motion.div
@@ -20,7 +29,8 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 			dragElastic={0.8}
 			dragConstraints={{ top: 0, bottom: window.innerHeight }}
 			initial={{
-				x: isMobile && navDirection === 'right'
+				x:
+					isMobile && navDirection === 'right'
 						? '-100vw'
 						: isMobile && navDirection === 'left'
 						? '100vw'
@@ -32,7 +42,8 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 				y: 0,
 			}}
 			exit={{
-				x: isMobile && navDirection === 'right'
+				x:
+					isMobile && navDirection === 'right'
 						? '100vw'
 						: isMobile && navDirection === 'left'
 						? '-100vw'
@@ -51,7 +62,7 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 		>
 			{children}
 			<motion.div
-				className='w-full pt-4 flex justify-center'
+				className='flex justify-center w-full pt-4'
 				initial={{
 					opacity: 0,
 				}}
@@ -73,7 +84,7 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 				{!isMobile && (
 					<button
 						className='text-white opacity-70 hover:opacity-100 transition-350'
-						onClick={() => console.log('Go to next page')}
+						onClick={handleGoToNextPage}
 					>
 						<VscChevronDown size={60} />
 					</button>
