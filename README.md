@@ -1,6 +1,6 @@
 # Portfolio website
 
-This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/motion/), and [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3), and integrated with Google Analytics 4 and Google Tag Manager.
+This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/motion/), and [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3), and is integrated with Google Analytics 4 and Google Tag Manager.
 
 ## Live Demo
 [www.stevehan.dev](https://www.stevehan.dev)
@@ -87,7 +87,7 @@ Coming soon...
 
 * [For the carousel we have to hide the scrollbars in the x direction but keep the functionality (W3School)](https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp)
 
-[React tailwind + sass build error - resolve-url-loader: error processing CSS (StackOverFlow)](https://stackoverflow.com/questions/71188714/react-tailwind-sass-build-error-resolve-url-loader-error-processing-css) - Helped me resolve the SASS related build error.
+* [React tailwind + sass build error - resolve-url-loader: error processing CSS (StackOverFlow)](https://stackoverflow.com/questions/71188714/react-tailwind-sass-build-error-resolve-url-loader-error-processing-css) - Helped me resolve the SASS related build error.
 
 * [How to self host Google fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775)
 
