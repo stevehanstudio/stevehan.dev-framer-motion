@@ -1,17 +1,15 @@
-# SteveHan.dev Version 2 of my portfolio website
+# Portfolio website
 
 This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/motion/), and [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3), and integrated with Google Analytics 4 and Google Tag Manager.
-
-
 
 ## Live Demo
 [www.stevehan.dev](https://www.stevehan.dev)
 
-## Known Issues:
+## Known Issues
 
 Coming soon...
 
-## References
+## Resources
 
 * [Level UP Tutorials - Animating React with Framer Motion course](https://levelup.video/tutorials/animating-react-with-framer-motion) - Excellent course.  This was my first course on Framer Motion.
 
