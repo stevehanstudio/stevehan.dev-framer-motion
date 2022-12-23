@@ -1,4 +1,4 @@
-# Portfolio website
+# SteveHan.dev Portfolio website
 
 This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/motion/), and [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3), and is integrated with Google Analytics 4 and Google Tag Manager.
 

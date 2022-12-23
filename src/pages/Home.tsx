@@ -67,18 +67,63 @@ const Home = () => {
 					<h1 className='text-4xl font-light tracking-tighter text-center text-healthcareBlue md:text-7xl'>
 						STEVE HAN
 					</h1>
-					<h3 className='text-base font-semibold tracking-wider text-center text-gray-500 sm:tracking-widest md:text-xl dark:text-gray-400'>
+					<motion.h3
+						initial={{
+							opacity: 0,
+							translateY: 400,
+						}}
+						animate={{
+							opacity: 1,
+							translateY: 0,
+						}}
+						transition={{
+							type: 'easeInOut',
+							duration: 2,
+							delay: 0.5,
+						}}
+						className='text-base font-semibold tracking-wider text-center text-gray-500 sm:tracking-widest md:text-xl dark:text-gray-400'
+					>
 						Full Stack Software Engineer
-					</h3>
-					<p className='text-sm font-semibold text-center dark:text-gray-200'>
+					</motion.h3>
+					<motion.p
+						initial={{
+							opacity: 0,
+							translateY: 350,
+						}}
+						animate={{
+							opacity: 1,
+							translateY: 0,
+						}}
+						transition={{
+							type: 'easeInOut',
+							duration: 2.25,
+							delay: 1,
+						}}
+						className='text-sm font-semibold text-center dark:text-gray-200'
+					>
 						Typescript | React | Javascript | Node.js | AWS
-					</p>
-					<p className='text-center text-gray-800 text-md sm:text-lg m-7 dark:text-gray-200'>
+					</motion.p>
+					<motion.p
+						initial={{
+							opacity: 0,
+							translateY: 300,
+						}}
+						animate={{
+							opacity: 1,
+							translateY: 0,
+						}}
+						transition={{
+							type: 'easeInOut',
+							duration: 2.5,
+							delay: 1.5,
+						}}
+						className='text-center text-gray-800 text-md sm:text-lg m-7 dark:text-gray-200'
+					>
 						Hi, welcome to my portfolio website. I am a full stack
 						software engineer competent on the web stack with a focus on
 						typescript, react, and cloud computing on AWS. I am dedicated,
 						a team player with an attention to details.
-					</p>
+					</motion.p>
 				</motion.div>
 				{isMobile && (
 					<ul className='flex flex-row h-auto pt-5 place-content-center'>
