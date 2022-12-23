@@ -2,14 +2,154 @@
 
 This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/motion/), and [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3), and is integrated with Google Analytics 4 and Google Tag Manager.
 
-## Live Demo
-[www.stevehan.dev](https://www.stevehan.dev)
+<details open>
+<summary>
+<h2>Live Site</h2>
+</summary>
 
-## Known Issues
+[www.stevehan.dev](https://www.stevehan.dev)
+</details>
+
+<details open>
+<summary>
+<h2>Screenshots</h2>
+</summary>
+
+<h3>Desktop</h3>
+<img alt="Desktop screenshot" width="1000px" src="https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1671834505/stevehandev/screenshots/desktop_screenshot_bkevoo.jpg" />
+<br />
+<h3>Mobile (captured by iPhone X)</h3>
+<img alt="Mobile phone screenshot iPhone X" width="300px" src="https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1671834505/stevehandev/screenshots/iphoneX_screenshot_nfflck.jpg" />
+<br />
+
+</details>
+
+<details open>
+<summary>
+<h2>Technology Used</h2>
+</summary>
+
+<img align="left" alt="Typescript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" />
+<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+<img align="left" alt="Framer Motion" width="26px" src="https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67" />
+<img align="left" alt="Tailwind CSS" width="26px" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" />
+<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
+<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<img align="left" alt="Sass" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
+<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+<img align="left" alt="Jira" width="26px" src="https://user-images.githubusercontent.com/25181517/183912952-83784e94-629d-4c34-a961-ae2ae795b662.png" />
+<img align="left" alt="Google Analytics" width="26px" src="https://avatars.githubusercontent.com/u/4327788?s=200&v=4" />
+<img align="left" alt="Google Tag Manager" width="26px" src="https://img.icons8.com/color/512/google-tag-manager.png" />
+<br />
+
+</details>
+
+<details open>
+<summary>
+<h2>Technology Used</h2>
+</summary>
+
+<img align="left" alt="Typescript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" />
+<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+<img align="left" alt="Framer Motion" width="26px" src="https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67" />
+<img align="left" alt="Tailwind CSS" width="26px" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" />
+<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
+<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<img align="left" alt="Sass" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
+<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+<img align="left" alt="Jira" width="26px" src="https://user-images.githubusercontent.com/25181517/183912952-83784e94-629d-4c34-a961-ae2ae795b662.png" />
+<img align="left" alt="Google Analytics" width="26px" src="https://avatars.githubusercontent.com/u/4327788?s=200&v=4" />
+<img align="left" alt="Google Tag Manager" width="26px" src="https://img.icons8.com/color/512/google-tag-manager.png" />
+<br />
+
+</details>
+
+<details open>
+<summary>
+<h2>Project Folder Structure</h2>
+</summary>
+
+```
+├── .vscode
+│   └── settings.json # Settings of VS code editor
+├── public
+│   ├── _redirects # Netlify ...
+│   ├── manifest.json # Not modified.
+│   └── index.html # Main HTML file, contains the code for Google Tag Manager and Hotjar.
+├── src
+│   ├── components
+│   │   ├── AnimationPageTransition.tsx # .
+│   │   ├── Buttons.tsx # Contains all the buttons used in the project.
+│   │   ├── CardComponent.tsx #
+│   │   ├── DarkModeSwitch.tsx # Dark/light mode switch
+│   │   ├── Drawer.tsx #
+│   │   ├── Header.tsx #
+│   │   ├── LogoGlow.tsx #
+│   │   ├── MainCarousel.tsx #
+│   │   ├── MainComponent.tsx #
+│   │   ├── Menu.tsx #
+│   │   ├── MobileCardsComponent.tsx #
+│   │   ├── MobileMenu.tsx #
+│   │   ├── MobileSkillsComponent.tsx #
+│   │   ├── MobileSkillsSideBar.tsx #
+│   │   ├── ResumeIcon.tsx #
+│   │   ├── Settings.tsx #
+│   │   ├── SettingsDrawer.tsx #
+│   │   └── SkillsComponent.tsx #
+│   ├── constants
+│   │   ├── MenuItems.ts
+│   │   └── misc.ts #
+│   ├── context
+│   │   ├── AppContext.ts #
+│   │   └── AppContextProvider.tsx # Contains the global states
+│   ├── fonts
+│   │   └──  global.scss # Global styles
+│   ├── pages
+│   │   ├── About.tsx # About me and the website page
+│   │   ├── Certificates.tsx # Certificates page
+│   │   ├── Contact.tsx # Contact form page
+│   │   ├── Home.tsx # Home / hero page
+│   │   ├── NotFound.tsx # 404 page
+│   │   └── Projects.tsx # Projects page
+│   ├── styles
+│   │   └──  # Image of Charleston Pierce
+│   ├── App.test.tsx # .
+│   ├── App.tsx # This is the root of the app.
+│   ├── index.css # Global styles.
+│   ├── index.tsx # Used for DOM rendering only.
+│   ├── react-app-env.d.ts # .
+│   ├── reportWebVitals.ts # .
+│   ├── setupTests.ts # .
+│   └── types.ts # Typescript types definitions for the project.
+├── .gitignore # Files ignored by Git.
+├── README.md # This file.
+├── package.json # npm package manager file.
+├── package-lock.json # Contains the dependencies used in the project.
+├── postcss-config.json # .
+├── tailwind.config.js # Tailwind CSS configuration file.
+└── tsconfig.json # Typescript configuration file.
+```
+</details>
+
+<details open>
+<summary>
+<h2>Known Issues</h2>
+</summary>
 
 Coming soon...
 
-## Resources
+</details>
+
+<details open>
+<summary>
+<h2>Resources</h2>
+</summary>
 
 * [Animating React with Framer Motion course (Level UP Tutorials)](https://levelup.video/tutorials/animating-react-with-framer-motion) - Excellent course.  This was my first course on Framer Motion.
 
@@ -100,3 +240,5 @@ Coming soon...
 * [Advanced Google Analytics 4 Implementation with Tag Manager](https://www.udemy.com/course/advanced-google-analytics-4/)
 
 * [Filtering out internal traffic for Google Tag Manager and GA4 (Youtube)](https://www.youtube.com/watch?v=018vb5hDtE8)
+
+</details>

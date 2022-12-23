@@ -155,7 +155,7 @@
   },
   {
 		"title": "SteveHan.dev v.2",
-		"subtitle": "This web app is version 2 of my portfolio site and is built have a native like mobile user interface.  Tech used: Typescript, React, Framer Motion, Cloudinary and Tailwind CSS, and integrated with Google Analytics 4 and Google Tag Manager.",
+		"subtitle": "Responsive web app of my portfolio (version 2).  Built have a native like mobile user interface using Typescript, React, Framer Motion, Cloudinary and Tailwind CSS, and integrated with Google Analytics 4 and Google Tag Manager.",
 		"slug": "stevehan-dev-v2",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
 		"screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
