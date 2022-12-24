@@ -204,6 +204,8 @@ Coming soon...
 
 * [For the carousel we have to hide the scrollbars in the x direction but keep the functionality (W3School)](https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp)
 
+* [Stop scrolling from interfering with dragging (Framer Motion issue on Github)](https://github.com/framer/motion/issues/185) - This issue took some time for me to resolve.  The issue was with my mobile skills component where drag movement is supposed to be constrained in the x direction, but it doesn't and it's possible to drag the component off below the bottom of the screen.  The solution was to use an event listener and disregard the touch movement when a touchmove event is detected and delta y is greater than delta x.
+
 * [React tailwind + sass build error - resolve-url-loader: error processing CSS (StackOverFlow)](https://stackoverflow.com/questions/71188714/react-tailwind-sass-build-error-resolve-url-loader-error-processing-css) - Helped me resolve the SASS related build error.
 
 * [How to self host Google fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775)

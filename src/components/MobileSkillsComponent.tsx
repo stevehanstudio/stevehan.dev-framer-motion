@@ -36,13 +36,30 @@ const MobileSkillsComponent:React.FC<Props> = ({
 	const [seeAllSkills, setSeeAllSkills] = useState(false)
 	// const [currentX, setCurrentX] = useState(0)
 	const skillsContainer = useRef<HTMLDivElement | null>(null)
+	const [allowScroll, setAllowScroll] = useState(false)
 
 	// console.log(
 	// 	`skillsContainer.current.scrollWidth=${skillsContainer.current?.scrollWidth}, skillsContainer.current.offsetWidth=${skillsContainer.current?.offsetWidth}`
 	// )
 	// console.log('mobile skills container width', width)
 
-  useEffect(() => {
+	useEffect(() => {
+		if (allowScroll) {
+			const handleTouch = (ev: Event) => {
+				ev.stopPropagation()
+				// console.log('handleTouch')
+			}
+			document.documentElement.addEventListener('touchmove', handleTouch)
+			return () => {
+				document.documentElement.removeEventListener(
+					'touchmove',
+					handleTouch
+				)
+			}
+		}
+	}, [allowScroll])
+
+	useEffect(() => {
 		if (skillsContainer.current) {
 			// setWidth(
 			// 	skillsContainer.current.scrollWidth -
@@ -57,13 +74,12 @@ const MobileSkillsComponent:React.FC<Props> = ({
 			const updatedWidth =
 				skillsContainer.current.scrollWidth -
 				skillsContainer.current.offsetWidth
-			if (width < updatedWidth)
-				setWidth(updatedWidth)
+			if (width < updatedWidth) setWidth(updatedWidth)
 			// setWidth(
 			// 	skillsContainer.current.scrollWidth - skillsContainer.current.offsetWidth
 			// )
 		}
-  }, [skills, width])
+	}, [skills, width])
 
 	return (
 		<>
@@ -108,6 +124,11 @@ const MobileSkillsComponent:React.FC<Props> = ({
 						dragDirectionLock
 						onDirectionLock={axis => console.log('axis', axis)}
 						drag='x'
+						onDragStart={(event, info) => {
+							setAllowScroll(
+								Math.abs(info.delta.y) > Math.abs(info.delta.x)
+							)
+						}}
 						dragConstraints={{
 							right: 0,
 							left: -width,
