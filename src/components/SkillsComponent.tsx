@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, MouseEvent } from 'react'
-import { motion } from 'framer-motion'
+import { LayoutGroup, motion } from 'framer-motion'
 import { FiChevronUp } from 'react-icons/fi'
 import { MainComponentType } from '../types'
 
@@ -89,18 +89,36 @@ const SkillsComponent:React.FC<Props> = ({
 						All
 					</button>
 				</div>
+				<LayoutGroup>
 				<motion.div
-					layout
-					transition={{
-						layout: {
-							duration: 0.4,
-						},
-					}}
+					// layout
+					// transition={{
+					// 	layout: {
+					// 		duration: 0.4,
+					// 	},
+					// }}
 					className='flex-wrap'
 				>
 					{selectedSkills.map(skill => {
 						return (
-							<button
+							<motion.button
+								initial={{
+									opacity: 0,
+									scale: 0,
+								}}
+								animate={{
+									opacity: 1,
+									scale: 1,
+								}}
+								exit={{
+									opacity: 0,
+									scale: 0,
+								}}
+								transition={{
+									type: 'easeInOut',
+									// damping: 0,
+									duration: 0.2,
+								}}
 								role='checkbox'
 								aria-checked='false'
 								aria-labelledby={skill}
@@ -109,13 +127,26 @@ const SkillsComponent:React.FC<Props> = ({
 								onClick={(e: MouseEvent) => handleSelectSkill(e, skill)}
 							>
 								{skill}
-							</button>
+							</motion.button>
 						)
 					})}
 					{skills.map(skill => {
 						if (!selectedSkills.includes(skill)) {
 							return (
-								<button
+								<motion.button
+									initial={{
+										opacity: 0,
+									}}
+									animate={{
+										opacity: 1,
+									}}
+									exit={{
+										opacity: 0,
+									}}
+									transition={{
+										ease: 'easeInOut',
+										duration: 1,
+									}}
 									role='checkbox'
 									aria-checked='false'
 									aria-labelledby={skill}
@@ -126,11 +157,12 @@ const SkillsComponent:React.FC<Props> = ({
 									}
 								>
 									{skill}
-								</button>
+								</motion.button>
 							)
 						} else return null
 					})}
 				</motion.div>
+			</LayoutGroup>
 				{multiLineSkills && (
 					<FiChevronUp
 						className={`expand-skills-button min-w-[3rem] w-[3rem] m-0 p-0 text-3xl font-semibold transition duration-500
