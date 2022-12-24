@@ -443,6 +443,18 @@
 		"course": "https://www.freecodecamp.org/learn/back-end-development-and-apis/"
 	},
 	{
+		"title": "Ultimate Google Analytics (4) course + 50 practical examples",
+		"subtitle": "Learn both Google Analytics 4 and Universal Analytics going through 50 practical examples.",
+		"slug": "ultimate-google-analytics",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1671851703/stevehandev/certificates/UC-3bdbf34a-798c-4535-a562-16bb1e08ef77_qhk2s5.jpg",
+		"date": "2022-12-23",
+		"author": "Steve Han",
+		"organization": "Udemy",
+		"skills": ["Google Analytics", "Google Tag Manager"],
+		"credentials": "https://www.udemy.com/certificate/UC-3bdbf34a-798c-4535-a562-16bb1e08ef77/",
+		"course": "https://www.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/"
+	},
+	{
 		"title": "Security for Web App Development",
 		"subtitle": "Relevant Courses: JavaScript, jQuery, AJAX, Intermediate HTML and CSS, Introduction to SQL Databases and NoSQL, Computer Networks, Network Security, Securing Web Applications",
 		"slug": "ccsf-web-application-programming",
