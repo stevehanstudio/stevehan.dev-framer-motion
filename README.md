@@ -206,6 +206,8 @@ Coming soon...
 
 * [Stop scrolling from interfering with dragging (Framer Motion issue on Github)](https://github.com/framer/motion/issues/185) - This issue took some time for me to resolve.  The issue was with my mobile skills component where drag movement is supposed to be constrained in the x direction, but it doesn't and it's possible to drag the component off below the bottom of the screen.  The solution was to use an event listener and disregard the touch movement when a touchmove event is detected and delta y is greater than delta x.
 
+* [react typescript issue on add EventListener](https://stackoverflow.com/questions/58162113/react-typescript-issue-on-addevenlistener) - I had trouble figuring out the type of event touchmove is.  I thought it would be React.TouchEvent<HTMLElement> but it is just Event.
+
 * [React tailwind + sass build error - resolve-url-loader: error processing CSS (StackOverFlow)](https://stackoverflow.com/questions/71188714/react-tailwind-sass-build-error-resolve-url-loader-error-processing-css) - Helped me resolve the SASS related build error.
 
 * [How to self host Google fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775)

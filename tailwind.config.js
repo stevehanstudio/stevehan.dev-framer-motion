@@ -5,6 +5,9 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			backgroundSize: {
+					'400%': '400%'
+				},
 			backgroundImage: {
 				contactBackground:
 					"url('https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1670993328/stevehandev/images/joshua-sortino-LqKhnDzSF-8-unsplash_1_yp7r1a.jpg')",
@@ -14,6 +17,8 @@ module.exports = {
 					'linear-gradient(to right bottom, #FFFCFF, #D5FEFD',
 				deepWater: 'linear-gradient(to right bottom, #04619F, #000000)',
 				laborWorker: 'linear-gradient(to right, #2C3E50, #000000)',
+				bgGradient:
+					'linear-gradient(to right, #2C3E50, #000000 25%, #D7E1EC 75%, #F1F1F1)',
 				calmCelebration:
 					'linear-gradient(to right bottom, #09203F, #537895)',
 				whaleHouse: 'linear-gradient(to right bottom, #09203F, #537895)',

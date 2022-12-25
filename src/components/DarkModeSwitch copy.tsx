@@ -17,24 +17,23 @@ const DarkModeSwitch: React.FC = () => {
 				className='relative'
 				initial={{
 					// opacity: 1,
-					scale: theme === 'dark' ? 1 : 0,
+					scale: 1,
 				}}
 				animate={{
 					// opacity: theme === 'dark' ? 1 : 0,
 					scale: theme === 'dark' ? 1 : 0,
 					rotate: rotation,
 					transition: {
-						delay: theme === 'dark' ? 0.7 : 0,
 						// type: 'easeOut',
 						// duration: 2,
 						rotate: {
 							duration: 0.7,
-							ease: 'easeIn',
+							ease: 'easeInOut',
 						},
 						scale: {
 							duration: 0.7,
 							// delay: 0.5,
-							ease: 'easeIn',
+							ease: 'easeInOut',
 						},
 					},
 				}}
@@ -46,7 +45,6 @@ const DarkModeSwitch: React.FC = () => {
 				<BsSunFill
 					className='dark:hover:filter dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]'
 					// className='relative transition-opacity duration-1000 ease-in-out theme.rotate-180'
-					// fill='#777777' // {`#f8f765`}
 					fill='#f8f765'
 					size={50}
 					// size={`${isMobile ? '24' : '50'}`}
@@ -56,23 +54,22 @@ const DarkModeSwitch: React.FC = () => {
 				className='absolute left-2 top-1'
 				// className={`${isMobile ? 'absolute' : 'absolute left-2 top-1'}`}
 				initial={{
-					// opacity: 0,
-					scale: theme === 'dark' ? 0 : 1,
-					rotate: theme === 'dark' ? -180 : 0,
+					opacity: 0,
+					scale: 0,
+					rotate: -180,
 				}}
 				animate={{
-					// opacity: theme === 'dark' ? 0 : 1,
+					opacity: theme === 'dark' ? 0 : 1,
 					scale: theme === 'dark' ? 0 : 1,
 					rotate: rotation,
 					// scale: 1,
 					transition: {
-						delay: theme === 'dark' ? 0 : 0.7,
 						// type: 'easeOut',
 						// duration: 2,
-						// opacity: {
-						// 	duration: 0.7,
-						// 	ease: 'easeOut',
-						// },
+						opacity: {
+							duration: 0.7,
+							ease: 'easeOut',
+						},
 						rotate: {
 							duration: 0.7,
 							ease: 'easeInOut',

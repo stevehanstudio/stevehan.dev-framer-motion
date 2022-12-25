@@ -83,7 +83,7 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 			>
 				{!isMobile && (
 					<button
-						className='text-white opacity-70 hover:opacity-100 transition-350'
+						className='text-laborWorkerBlue dark:text-white opacity-70 hover:opacity-100 transition-350'
 						onClick={handleGoToNextPage}
 					>
 						<VscChevronDown size={60} />
