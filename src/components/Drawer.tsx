@@ -48,7 +48,9 @@ const Drawer: React.FC<Props> = ({ isActive, setIsActive, children }) => {
 									{/* <div className='border-t-4 w-12 rounded-md border-healthcareBlue dark:border-healthcareBlue' /> */}
 									{/* <div className='border-t-4 w-12 rounded-md border-gray-500 dark:border-gray-300' /> */}
 								</div>
-								<div className='px-[1rem]'>{children}</div>
+								<div className='px-[1rem]'>
+									{children}
+								</div>
 							</div>
 						</motion.div>
 					</motion.div>

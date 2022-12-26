@@ -7,8 +7,42 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 <h2>Live Site</h2>
 </summary>
 
-[www.stevehan.dev](https://www.stevehan.dev)
+[🌐www.stevehan.dev](https://www.stevehan.dev)
 </details>
+
+<details open>
+<summary>
+<h2>Features</h2>
+</summary>
+
+* Dark / light Mode
+  * Dark / light mode switch animation
+  * Linear gradient background animation
+* Desktop/tablet (>= 768 pixels)
+  * Skills
+    * Expand/collapse to see all or less skills
+    * Reorder and animate selected buttons to the front
+  * Carousel to scroll through projects and certificates
+    * Drag with momentum to scroll
+    * Right/left buttons to go to next set
+    * Fade out on left and/or right to show there's more
+  * Navigation
+    * Chevron button on bottom of page to go to next page
+* Mobile (< 768 pixels)
+  * Setting
+    * Drawer drag close
+  * Skills
+    * Carousel to select skills
+    * Filter sidebar to see all skills
+  * Navigation
+* Image Optimization
+  * Cloudinary image transformation delivery URL
+* Miscellaneous
+  * 404 Page not found
+    * SVG Animation
+
+</details>
+
 
 <details open>
 <summary>
@@ -18,7 +52,7 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 <h3>Desktop</h3>
 <img alt="Desktop screenshot" width="1000px" src="https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1671834505/stevehandev/screenshots/desktop_screenshot_bkevoo.jpg" />
 <br />
-<h3>Mobile (captured by iPhone X)</h3>
+<h3>Mobile (captured on iPhone X)</h3>
 <img alt="Mobile phone screenshot iPhone X" width="300px" src="https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1671834505/stevehandev/screenshots/iphoneX_screenshot_nfflck.jpg" />
 <br />
 
@@ -29,20 +63,68 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 <h2>Technology Used</h2>
 </summary>
 
-<img align="left" alt="Typescript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" />
-<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
-<img align="left" alt="Framer Motion" width="26px" src="https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67" />
-<img align="left" alt="Tailwind CSS" width="26px" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" />
-<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-<img align="left" alt="Sass" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
-<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-<img align="left" alt="Jira" width="26px" src="https://user-images.githubusercontent.com/25181517/183912952-83784e94-629d-4c34-a961-ae2ae795b662.png" />
-<img align="left" alt="Google Analytics" width="26px" src="https://avatars.githubusercontent.com/u/4327788?s=200&v=4" />
-<img align="left" alt="Google Tag Manager" width="26px" src="https://img.icons8.com/color/512/google-tag-manager.png" />
+<table>
+<tr>
+  <td>
+    <img align="left" alt="Typescript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" />
+  </td>
+  <td>
+    <img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+  </td>
+  <td>
+    <img align="left" alt="Framer Motion" width="26px" src="https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67" />
+  </td>
+  <td>
+    <img align="left" alt="Tailwind CSS" width="26px" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" />
+  </td>
+  <td>
+    <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
+  </td>
+  <td>
+    <img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+  </td>
+  <td>
+    <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+  </td>
+  <td>
+    <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+  </td>
+  <td>
+    <img align="left" alt="Sass" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
+  </td>
+  <td>
+    <img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+  </td>
+  <td>
+    <img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+  </td>
+  <td>
+    <img align="left" alt="Jira" width="26px" src="https://user-images.githubusercontent.com/25181517/183912952-83784e94-629d-4c34-a961-ae2ae795b662.png" />
+  </td>
+  <td>
+    <img align="left" alt="Google Analytics" width="26px" src="https://avatars.githubusercontent.com/u/4327788?s=200&v=4" />
+  </td>
+  <td>
+    <img align="left" alt="Google Tag Manager" width="26px" src="https://img.icons8.com/color/512/google-tag-manager.png" />
+  </td>
+</tr>
+<tr>
+  <td>Typescript</td>
+  <td>React</td>
+  <td>Framer Motion</td>
+  <td>Tailwind CSS</td>
+  <td>Visual Studio Code</td>
+  <td>JavaScript</td>
+  <td>HTML5</td>
+  <td>CSS3</td>
+  <td>SASS</td>
+  <td>Git</td>
+  <td>Github</td>
+  <td>Jira</td>
+  <td>Google Analytics</td>
+  <td>Google Tag Manager</td>
+</tr>
+</table>
 <br />
 
 </details>
@@ -54,9 +136,9 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 
 ```
 ├── .vscode
-│   └── settings.json # Settings of VS code editor
+│   └── settings.json # VS Code settings
 ├── public
-│   ├── _redirects # Netlify ...
+│   ├── _redirects # Configures Netlify so that routing is handled on the client side by React Router
 │   ├── manifest.json # Not modified.
 │   └── index.html # Main HTML file, contains the code for Google Tag Manager and Hotjar.
 ├── src
@@ -88,14 +170,14 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 │   ├── fonts
 │   │   └──  global.scss # Global styles
 │   ├── pages
-│   │   ├── About.tsx # About me and the website page
+│   │   ├── About.tsx # About me and about the website page
 │   │   ├── Certificates.tsx # Certificates page
 │   │   ├── Contact.tsx # Contact form page
-│   │   ├── Home.tsx # Home / hero page
-│   │   ├── NotFound.tsx # 404 page
+│   │   ├── Home.tsx # Home / Hero page
+│   │   ├── NotFound.tsx # 404 page not found
 │   │   └── Projects.tsx # Projects page
 │   ├── styles
-│   │   └──  # Image of Charleston Pierce
+│   │   └──  global.scss # Global styles
 │   ├── App.test.tsx # .
 │   ├── App.tsx # This is the root of the app.
 │   ├── index.css # Global styles.
@@ -136,7 +218,7 @@ Coming soon...
 
 * [Making dark and light more gradients with 'background-image' in Tailwind CSS (StackOverFlow)](https://stackoverflow.com/questions/68599939/make-gradient-in-dark-mode-background-image-work-with-simple-background-backg)
 
-* [Examples of black & blue gradients](https://www.eggradients.com/category/black-and-blue-gradient) - I reference this in coming up with my color scheme.
+* [Examples of black & blue gradients](https://www.eggradients.com/category/black-and-blue-gradient) - I referenced this in coming up with my color scheme.
 
 * [Dark Mode Animation (CodePen)](https://codepen.io/stevehanstudio/pen/poKEmxg) - I used this as inspiration in coming up with my dark mode switch.
 
