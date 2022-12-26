@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import './styles/global.scss'
 import Header from './components/Header'
 import Settings from './components/Settings'
@@ -21,7 +21,7 @@ const App = () => {
 	// console.log('App location', location)
 
 	return (
-		<motion.div
+		<div
 			// initial={{
 			// 	backgroundPosition: theme === 'dark' ? 'bg-left' : 'bg-right',
 			// }}
@@ -51,7 +51,7 @@ const App = () => {
 				</Routes>
 			</AnimatePresence>
 			{isMobile && <Settings />}
-		</motion.div>
+		</div>
 	)
 }
 
