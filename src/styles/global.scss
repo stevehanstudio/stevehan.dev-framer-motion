@@ -340,9 +340,18 @@
 
   .card-button {
     @apply flex flex-row items-center self-end px-6 md:px-2 py-2 mx-auto mt-1 md:mt-2 align-bottom bg-gray-100 dark:bg-gray-800 md:bg-transparent md:dark:border-2 rounded-md text-sm md:text-base text-white hover:text-white hover:dark:text-white shadow-sm hover:shadow-md dark:hover:shadow-[0_0_2px_1px_rgba(255,255,255,0.5),0_0_4px_2px_rgba(255,255,255,0.3),0_0_8px_4px_rgba(255,255,255,0.2)] transition duration-150 ease-in-out;
+    // @apply flex flex-row items-center self-end px-6 md:px-2 py-2 mx-auto mt-1 md:mt-2 align-bottom bg-gray-100 dark:bg-gray-800 md:bg-transparent md:dark:border-2 rounded-md text-sm md:text-base text-white md:dark:hover:bg-gradient-to-r md:dark:hover:from-gray-600 md:dark:hover:to-transparent hover:text-white shadow-sm hover:shadow-md md:dark:hover:shadow-[0_0_2px_1px_rgba(255,255,255,0.45),0_0_4px_2px_rgba(255,255,255,0.2),0_0_8px_4px_rgba(255,255,255,0.1)] transition duration-150 ease-in-out;
+    // background: linear-gradient(115deg, transparent 25%, rgba(255,255,255,0.5) 50%, transparent 75%);
+    // background-size: 300%;
+    // background-position: right;
+    // transition: background-position 500ms;
     @JsonIgnoreProperties
     foo: bar;
   }
+
+  // .card-button:hover {
+  //   background-position: left;
+  // }
 
   .skill {
     @apply px-2 py-1 mt-0 md:mb-5 mr-1 whitespace-nowrap text-xs font-semibold border-2 rounded-2xl transition-all duration-300;

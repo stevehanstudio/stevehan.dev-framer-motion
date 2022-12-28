@@ -36,7 +36,7 @@
   },
   {
     "title": "Would You Rather",
-    "subtitle": "A questions & answers game with social media features made using React, redux, Node.js.",
+    "subtitle": "A questions & answers game with social media features made using React, Redux, Redux Thunk, and React Router.",
     "slug": "would-you-rather",
     "image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669011279/stevehandev/projects/would-you-rather_wbuhgi.png",
     "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/would-you-rather_wbuhgi.png",
@@ -48,7 +48,7 @@
   },
   {
     "title": "SteveHan.dev (older version)",
-    "subtitle": "My developer portfolio site built using React, Next.js, MDX, and Chakra UI",
+    "subtitle": "My developer portfolio site built using React, Gatsby.js, GraphQL, Material UI, and integrated with Google Analytics and Google Tag Manager",
     "slug": "stevehan-dev",
     "image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669011280/stevehandev/projects/stevehan-dev_np84ix.png",
     "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011280/stevehandev/projects/stevehan-dev_np84ix.png",
@@ -56,12 +56,13 @@
     "author": "Steve Han",
     "skills": [
 			"React",
-			"Next.js",
+			"Gatsby",
 			"Javascript",
-			"Chakra UI",
+			"Material UI",
 			"SVG",
 			"Google Analytics",
-			"Google Tag Manager"
+			"Google Tag Manager",
+      "SEO"
 		],
     "website": "https://5f918a757a155d0007e3a382--festive-goldstine-033924.netlify.app/",
     "github": "https://github.com/stevehanstudio/stevehan-dev"
@@ -80,7 +81,7 @@
   },
   {
     "title": "Steve Han Photography",
-    "subtitle": "My photography portfolio site built using Gatsby, React, Cloudinary",
+    "subtitle": "My photography portfolio site built using React, Gatsby.js, GraphQL, Styled Components, Cloudinary, and integrated with Google Analytics and Google Tag Manager",
     "slug": "steve-han-photography",
     "image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669011403/stevehandev/projects/stevehanphotography_nq09r4.jpg",
     "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011403/stevehandev/projects/stevehanphotography_nq09r4.jpg",
@@ -138,7 +139,7 @@
   },
   {
     "title": "Graph UI",
-    "subtitle": "Web application that visualizes a complex data schema.  Built using Typescript, React, and Material UI",
+    "subtitle": "Web application that visualizes the complex data schema of a healthcare dataset.  Built using Typescript, React, and Material UI",
     "slug": "graph-ui",
     "image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1668855413/stevehandev/projects/graph-ui-screenshot_qol2u8.jpg",
     "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855413/stevehandev/projects/graph-ui-screenshot_qol2u8.jpg",

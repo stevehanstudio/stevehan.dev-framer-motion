@@ -29,7 +29,7 @@
 			"HTML",
 			"CSS"
 		],
-		"credentials": "https://www.udemy.com/certificate/UC-e898e789-91cb-4fac-b7e9-93fc15045703/",
+		"credentials": "https://ude.my/UC-e898e789-91cb-4fac-b7e9-93fc15045703/",
 		"course": "https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/"
 	},
 	{
@@ -48,7 +48,7 @@
 			"Rest API",
 			"GraphQL"
 		],
-		"credentials": "https://www.udemy.com/certificate/UC-3feeb346-0c1e-4bb9-8963-01ebbf7b93ea/",
+		"credentials": "https://ude.my/UC-3feeb346-0c1e-4bb9-8963-01ebbf7b93ea/",
 		"course": "https://www.udemy.com/course/nodejs-the-complete-guide/"
 	},
 	{
@@ -60,7 +60,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["React", "Javascript", "Styled Components", "CSS-in-JS"],
-		"credentials": "https://www.udemy.com/certificate/UC-0e3002ca-1c71-423b-902d-5d8f28fdc46e/",
+		"credentials": "https://ude.my/UC-0e3002ca-1c71-423b-902d-5d8f28fdc46e/",
 		"course": "https://www.udemy.com/course/react-styled-components/"
 	},
 	{
@@ -72,7 +72,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Typescript", "Three.js"],
-		"credentials": "https://www.udemy.com/certificate/UC-040d4bfa-374f-44c4-897b-70b0a31a91a5/",
+		"credentials": "https://ude.my/UC-040d4bfa-374f-44c4-897b-70b0a31a91a5/",
 		"course": "https://www.udemy.com/course/threejs-tutorials/"
 	},
 	{
@@ -96,7 +96,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Typescript", "React", "Node.js", "Express", "Javascript"],
-		"credentials": "https://www.udemy.com/certificate/UC-9ec581fa-192e-4a7b-8ea1-f95d5b03ddea/",
+		"credentials": "https://ude.my/UC-9ec581fa-192e-4a7b-8ea1-f95d5b03ddea/",
 		"course": "https://www.udemy.com/course/understanding-typescript/"
 	},
 	{
@@ -156,7 +156,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Javascript", "HTML"],
-		"credentials": "https://www.udemy.com/certificate/UC-30805a28-4f2b-4486-bf14-c8be5c93b7e6/",
+		"credentials": "https://ude.my/UC-30805a28-4f2b-4486-bf14-c8be5c93b7e6/",
 		"course": "https://www.udemy.com/course/creating-accessible-websites/"
 	},
 	{
@@ -179,7 +179,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["SVG", "Javascript", "CSS", "HTML"],
-		"credentials": "https://www.udemy.com/certificate/UC-befaf345-4185-4b8c-aae1-0e21f8e5554a/",
+		"credentials": "https://ude.my/UC-befaf345-4185-4b8c-aae1-0e21f8e5554a/",
 		"course": "https://www.udemy.com/course/learn-svg-animation/"
 	},
 	{
@@ -190,7 +190,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["SVG", "Javascript", "CSS", "HTML"],
-		"credentials": "https://www.udemy.com/certificate/UC-befaf345-4185-4b8c-aae1-0e21f8e5554a/",
+		"credentials": "https://ude.my/UC-befaf345-4185-4b8c-aae1-0e21f8e5554a/",
 		"course": "https://www.udemy.com/course/interactive-web-animations-javascript-svg-css-html/"
 	},
 	{
@@ -208,7 +208,7 @@
 			"MongoDB",
 			"Mongoose"
 		],
-		"credentials": "https://www.udemy.com/certificate/UC-324909ef-f820-4d0c-86a8-f4378e815ad1/",
+		"credentials": "https://ude.my/UC-324909ef-f820-4d0c-86a8-f4378e815ad1/",
 		"course": "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/"
 	},
 	{
@@ -219,7 +219,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Node.js", "Express", "Rest API", "Websocket", "Blockchain"],
-		"credentials": "https://www.udemy.com/certificate/UC-324909ef-f820-4d0c-86a8-f4378e815ad1/",
+		"credentials": "https://ude.my/UC-324909ef-f820-4d0c-86a8-f4378e815ad1/",
 		"course": "https://www.udemy.com/course/build-blockchain/"
 	},
 	{
@@ -230,7 +230,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["AWS"],
-		"credentials": "https://www.udemy.com/certificate/UC-ecda96bc-27ce-4be9-ac2c-97b73b107f4a/",
+		"credentials": "https://ude.my/UC-ecda96bc-27ce-4be9-ac2c-97b73b107f4a/",
 		"course": "https://www.udemy.com/course/aws-certified-cloud-practitioner-new/"
 	},
 	{
@@ -241,7 +241,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["AWS", "AWS Elastic Beanstalk", "AWS Lambda", "DynamoDB"],
-		"credentials": "https://www.udemy.com/certificate/UC-1acbd79e-977f-455e-beb7-1fef7123f5e1/",
+		"credentials": "https://ude.my/UC-1acbd79e-977f-455e-beb7-1fef7123f5e1/",
 		"course": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/"
 	},
 	{
@@ -252,7 +252,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["AWS", "Serverless", "AWS Lambda", "Rest API"],
-		"credentials": "https://www.udemy.com/certificate/UC-e0ac734b-2c4b-465d-b290-bfbc603ee28d/",
+		"credentials": "https://ude.my/UC-e0ac734b-2c4b-465d-b290-bfbc603ee28d/",
 		"course": "https://www.udemy.com/course/aws-serverless-a-complete-introduction/"
 	},
 	{
@@ -282,7 +282,7 @@
 			"Travis CI",
 			"Skaffold"
 		],
-		"credentials": "https://www.udemy.com/certificate/UC-62056008-c8a7-4fae-8b00-eee20b7407d7/",
+		"credentials": "https://ude.my/UC-62056008-c8a7-4fae-8b00-eee20b7407d7/",
 		"course": "https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/"
 	},
 	{
@@ -293,7 +293,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Typescript", "React", "Express", "Redux", "Javascript"],
-		"credentials": "https://www.udemy.com/certificate/UC-1004afff-7ed8-48d2-aec9-c83dd4739dd8/",
+		"credentials": "https://ude.my/UC-1004afff-7ed8-48d2-aec9-c83dd4739dd8/",
 		"course": "https://www.udemy.com/course/typescript-the-complete-developers-guide/"
 	},
 	{
@@ -315,7 +315,7 @@
 			"HTML",
 			"CSS"
 		],
-		"credentials": "https://www.udemy.com/certificate/UC-3af01ac1-34de-491f-99d9-2b7b771902b9/",
+		"credentials": "https://ude.my/UC-3af01ac1-34de-491f-99d9-2b7b771902b9/",
 		"course": "https://www.udemy.com/course/chrome-extension/"
 	},
 	{
@@ -326,7 +326,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["PWA", "Javascript"],
-		"credentials": "https://www.udemy.com/certificate/UC-ddb0f6cd-b5f8-428e-b891-e984f30ae2cb/",
+		"credentials": "https://ude.my/UC-ddb0f6cd-b5f8-428e-b891-e984f30ae2cb/",
 		"course": "https://www.udemy.com/course/progressive-web-apps/"
 	},
 	{
@@ -337,7 +337,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Microservices", "Web Security"],
-		"credentials": "https://www.udemy.com/certificate/UC-fd485094-2b7f-4923-a37c-5882af066ee0/",
+		"credentials": "https://ude.my/UC-fd485094-2b7f-4923-a37c-5882af066ee0/",
 		"course": "https://www.udemy.com/course/microservices-security-the-complete-guide/"
 	},
 	{
@@ -349,7 +349,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Linux", "AWS", "DevOps"],
-		"credentials": "https://www.udemy.com/certificate/UC-4302db2b-e399-4eca-9d05-623135fa67a2/",
+		"credentials": "https://ude.my/UC-4302db2b-e399-4eca-9d05-623135fa67a2/",
 		"course": "https://www.udemy.com/course/valaxy-linux/"
 	},
 	{
@@ -367,7 +367,7 @@
 			"Javascript",
 			"Apollo Server"
 		],
-		"credentials": "https://www.udemy.com/certificate/UC-4302db2b-e399-4eca-9d05-623135fa67a2/",
+		"credentials": "https://ude.my/UC-4302db2b-e399-4eca-9d05-623135fa67a2/",
 		"course": "https://www.udemy.com/course/graphql-by-example/"
 	},
 	{
@@ -379,7 +379,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["AWS", "AWS Lambda", "IoT", "MQTT", "Javascript", "Python"],
-		"credentials": "https://www.udemy.com/certificate/UC-3126e5a0-b369-49d5-87ac-ea528cb3572e/",
+		"credentials": "https://ude.my/UC-3126e5a0-b369-49d5-87ac-ea528cb3572e/",
 		"course": "https://www.udemy.com/course/exploring-aws-iot/"
 	},
 	{
@@ -391,7 +391,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["AWS", "AWS Lambda", "AWS DynamoDB", "Serverless", "Microservices", "AWS CDK"],
-		"credentials": "https://www.udemy.com/certificate/UC-9936078a-b474-4424-ace4-fc6b3279d39c/",
+		"credentials": "https://ude.my/UC-9936078a-b474-4424-ace4-fc6b3279d39c/",
 		"course": "https://www.udemy.com/course/aws-serverless-microservices-lambda-eventbridge-sqs-apigateway/"
 	},
 	{
@@ -403,7 +403,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Kubernetes", "Docker", "CI/CD", "Jenkins", "Ansible"],
-		"credentials": "https://www.udemy.com/certificate/UC-da087f17-b424-4da0-99d2-a21c5684e1dd/",
+		"credentials": "https://ude.my/UC-da087f17-b424-4da0-99d2-a21c5684e1dd/",
 		"course": "https://www.udemy.com/course/valaxy-devops/"
 	},
 	{
@@ -427,7 +427,7 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["D3.js", "Javascript", "SVG"],
-		"credentials": "https://www.udemy.com/certificate/UC-0e3002ca-1c71-423b-902d-5d8f28fdc46e/",
+		"credentials": "https://ude.my/UC-0e3002ca-1c71-423b-902d-5d8f28fdc46e/",
 		"course": "https://www.udemy.com/course/d3jsbasics/"
 	},
 	{
@@ -451,8 +451,19 @@
 		"author": "Steve Han",
 		"organization": "Udemy",
 		"skills": ["Google Analytics", "Google Tag Manager"],
-		"credentials": "https://www.udemy.com/certificate/UC-3bdbf34a-798c-4535-a562-16bb1e08ef77/",
+		"credentials": "https://ude.my/UC-3bdbf34a-798c-4535-a562-16bb1e08ef77/",
 		"course": "https://www.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/"
+	},
+{
+		"title": "AWS & Typescript Masterclass - CDK, Serverless, React",
+		"subtitle": "Course on developing with AWS Cloud development kit CDK.  Topics include typescript, AWS Cognito, AWS Amplify, CDK Constructs V2, AWS Lambda, API Gateway, AWS IAM, Cloudwatch, deploy CDK infrastructure and CloudFormation",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1672198866/stevehandev/certificates/UC-8d9ab6f3-cf82-4792-bfaa-e9a34681a7af_qdyyvj.jpg",
+		"date": "2022-12-27",
+		"author": "Steve Han",
+		"organization": "Udemy",
+		"skills": ["AWS", "AWS CDK", "AWS Lambda", "Serverless", "Typescript", "React", "Javascript"],
+		"credentials": "https://ude.my/UC-8d9ab6f3-cf82-4792-bfaa-e9a34681a7af/",
+		"course": "https://www.udemy.com/course/aws-typescript-cdk-serverless-react/"
 	},
 	{
 		"title": "Security for Web App Development",
@@ -499,7 +510,7 @@
 	},
 	{
 		"title": "Web Application Programming",
-		"subtitle": "Relevant Courses: HTML & CSS, Javascript Frameworks & Libraries, JavaScript for IoT & XR, JavaScript, Mobile Web, Python Programming, Advanced Python, Software Engineering, SQL Databases & NoSQL, C++, Unix/Linux",
+		"subtitle": "Relevant Courses: HTML & CSS, Javascript Frameworks & Libraries, JavaScript for IoT & XR, JavaScript, Mobile Web, AWS Cloud Practitioner, Python Programming, Advanced Python, Software Engineering, SQL Databases & NoSQL, C++, Unix/Linux",
 		"slug": "ccsf-web-application-programming",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1668718398/stevehandev/certificates/CCSF-web-application-programming-web_dkqhdu.jpg",
 		"organization": "City College of San Francisco",

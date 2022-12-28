@@ -33,7 +33,7 @@ const About = () => {
 						<h4 className='text-xl dark:text-gray-200'>About Me</h4>
 						<p className='pb-3'>
 							With a bachelor's degree in Computer Engineering, out of
-							college, I had pursued hardware engineering, because I had
+							college, I pursued hardware engineering, because I
 							found hardware to be more challenging and enjoy challenges.
 							In 2002, after 6 years of designing hardware and ASIC
 							(Application Specific Integrated Circuit) chips, I decided
