@@ -322,4 +322,8 @@ Coming soon...
 
 * [React js: Error: useLocation() may be used only in the context of a <Router> component](https://stackoverflow.com/questions/66747556/react-js-error-uselocation-may-be-used-only-in-the-context-of-a-router-com).  App component has to be wrapped with Router in App.test.tsx.
 
+## AWS - Backend / Deployment
+
+* [Amplify pull error (Github issues)](https://github.com/aws-amplify/amplify-cli/issues/11245). When setting up Amplify Studio and running ```amplify pull``` receive the message ".config\local-env-info.json does not exist".  The solution was to delete the amplify folder and rerun ```amplify pull```
+
 </details>

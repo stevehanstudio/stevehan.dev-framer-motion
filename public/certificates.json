@@ -390,7 +390,14 @@
 		"date": "2022-06-28",
 		"author": "Steve Han",
 		"organization": "Udemy",
-		"skills": ["AWS", "AWS Lambda", "AWS DynamoDB", "Serverless", "Microservices", "AWS CDK"],
+		"skills": [
+			"AWS",
+			"AWS Lambda",
+			"AWS DynamoDB",
+			"Serverless",
+			"Microservices",
+			"AWS CDK"
+		],
 		"credentials": "https://ude.my/UC-9936078a-b474-4424-ace4-fc6b3279d39c/",
 		"course": "https://www.udemy.com/course/aws-serverless-microservices-lambda-eventbridge-sqs-apigateway/"
 	},
@@ -454,14 +461,33 @@
 		"credentials": "https://ude.my/UC-3bdbf34a-798c-4535-a562-16bb1e08ef77/",
 		"course": "https://www.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/"
 	},
-{
+	{
+		"title": "AWS Amplify Studio Masterclass - Visually Build UI & Backend",
+		"subtitle": "Build and deploy a Fullstack Web App with Amplify Studio and React.  Convert Figma Designs into React Components.",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1672483809/UC-a4ffe1b4-5fc3-47a4-9338-fd3ed44e441e_sweupo.jpg",
+		"date": "2022-12-31",
+		"author": "Steve Han",
+		"organization": "Udemy",
+		"skills": ["AWS", "AWS Amplify Studio", "React", "Javascript", "Figma"],
+		"credentials": "https://ude.my/UC-a4ffe1b4-5fc3-47a4-9338-fd3ed44e441e/",
+		"course": "https://www.udemy.com/course/aws-amplify-studio-masterclass/"
+	},
+	{
 		"title": "AWS & Typescript Masterclass - CDK, Serverless, React",
 		"subtitle": "Course on developing with AWS Cloud development kit CDK.  Topics include typescript, AWS Cognito, AWS Amplify, CDK Constructs V2, AWS Lambda, API Gateway, AWS IAM, Cloudwatch, deploy CDK infrastructure and CloudFormation",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1672198866/stevehandev/certificates/UC-8d9ab6f3-cf82-4792-bfaa-e9a34681a7af_qdyyvj.jpg",
 		"date": "2022-12-27",
 		"author": "Steve Han",
 		"organization": "Udemy",
-		"skills": ["AWS", "AWS CDK", "AWS Lambda", "Serverless", "Typescript", "React", "Javascript"],
+		"skills": [
+			"AWS",
+			"AWS CDK",
+			"AWS Lambda",
+			"Serverless",
+			"Typescript",
+			"React",
+			"Javascript"
+		],
 		"credentials": "https://ude.my/UC-8d9ab6f3-cf82-4792-bfaa-e9a34681a7af/",
 		"course": "https://www.udemy.com/course/aws-typescript-cdk-serverless-react/"
 	},

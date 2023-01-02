@@ -83,7 +83,7 @@ const Home = () => {
 						}}
 						className='text-base font-semibold tracking-wider text-center text-gray-500 sm:tracking-widest md:text-xl dark:text-gray-400'
 					>
-						Full Stack Software Engineer
+						Full Stack Javascript Engineer
 					</motion.h3>
 					<motion.p
 						initial={{
@@ -119,10 +119,10 @@ const Home = () => {
 						}}
 						className='text-center text-gray-800 text-md sm:text-lg m-7 dark:text-gray-200'
 					>
-						Hi, welcome to my portfolio website. I am a full stack
-						software engineer competent on the web stack with a focus on
-						typescript, react, and cloud computing on AWS. I am dedicated,
-						a team player with an attention to details.
+						Hi, welcome to my portfolio website. I am a dedicated,
+						team player with an attention to details, that enjoys
+						looking under the hood to understand how things work and
+						coming up with creative solutions.
 					</motion.p>
 				</motion.div>
 				{isMobile && (
