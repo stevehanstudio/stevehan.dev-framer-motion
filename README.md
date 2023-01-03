@@ -211,7 +211,7 @@ Coming soon...
 </summary>
 <details closed>
 <summary>
-<h3>Javascript / React.js</h3>
+<h4>Javascript / React.js</h4>
 </summary>
 
 * [Find single or array of values in JavaScript array using includes (blog)](https://www.gavsblog.com/blog/find-single-or-array-of-values-in-javascript-array-using-includes)
@@ -232,7 +232,7 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>Styling - Tailwind CSS / SASS / CSS</h3>
+<h4>Styling - Tailwind CSS / SASS / CSS</h4>
 </summary>
 
 * [Tailwind CSS Dark Mode | React App Theme Switcher (Youtube)](https://www.youtube.com/watch?v=VylXkPy-MIc)
@@ -266,7 +266,7 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>Animation - Framer Motion</h3>
+<h4>Animation - Framer Motion</h4>
 </summary>
 
 * [Animating React with Framer Motion course (Level UP Tutorials)](https://levelup.video/tutorials/animating-react-with-framer-motion) - Excellent course.  This was my first course on Framer Motion.
@@ -303,7 +303,7 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>SVG</h3>
+<h4>SVG</h4>
 </summary>
 
 * [Work around for color styling issue with Grommet Icons (Github)](https://github.com/grommet/grommet-icons/issues/171)
@@ -318,7 +318,7 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>Fonts</h3>
+<h4>Fonts</h4>
 </summary>
 
 * [How to self host Google fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775)
@@ -329,31 +329,7 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>Deployment / Build - Netlify</h3>
-</summary>
-
-* [Next js typescript build error](https://nextjs.org/docs/api-reference/next.config.js/ignoring-typescript-errors).  This project started out as a Next.js 13 project.
-
-* [Fix Page Not Found on Netlify by adding a _directs file in the public folder (FreeCodeCamp)](https://www.freecodecamp.org/news/how-to-deploy-a-routed-react-app-to-netlify/)
-
-</details>
-
-<details closed>
-<summary>
-<h3>Traffic Analytic - Google Analytics, Google Tag Manager, Hotjar</h3>
-</summary>
-
-* [Ultimate Google Analytics (4) course + 50 practical examples (Udemy)](https://www.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/)
-
-* [Advanced Google Analytics 4 Implementation with Tag Manager](https://www.udemy.com/course/advanced-google-analytics-4/)
-
-* [Filtering out internal traffic for Google Tag Manager and GA4 (Youtube)](https://www.youtube.com/watch?v=018vb5hDtE8)
-
-</details>
-
-<details closed>
-<summary>
-<h3>Testing - React Testing Library, Jest</h3>
+<h4>Testing - React Testing Library, Jest</h4>
 </summary>
 
 * [React js: Error: useLocation() may be used only in the context of a <Router> component](https://stackoverflow.com/questions/66747556/react-js-error-uselocation-may-be-used-only-in-the-context-of-a-router-com).  App component has to be wrapped with Router in App.test.tsx.
@@ -362,7 +338,7 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>Performance - React Profiler, Core Web Vitals, Lighthouse, Memo</h3>
+<h4>Performance - React Profiler, Core Web Vitals, Lighthouse, Memo</h4>
 </summary>
 
 * [Optimize Performance for React (Pluralsight)](https://www.pluralsight.com/courses/optimize-performance-react).  Course on using React Profiler, React PureComponents, memo, useMemo, and reducing bundle size to improve performance
@@ -375,10 +351,27 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>AWS - Backend / Deployment</h3>
+<h4>Deployment / Build - Netlify, AWS</h4>
 </summary>
 
+* [Next js typescript build error](https://nextjs.org/docs/api-reference/next.config.js/ignoring-typescript-errors).  This project started out as a Next.js 13 project.
+
+* [Fix Page Not Found on Netlify by adding a _directs file in the public folder (FreeCodeCamp)](https://www.freecodecamp.org/news/how-to-deploy-a-routed-react-app-to-netlify/)
+
 * [Amplify pull error (Github issues)](https://github.com/aws-amplify/amplify-cli/issues/11245). When setting up Amplify Studio and running ```amplify pull``` receive the message ".config\local-env-info.json does not exist".  The solution was to delete the amplify folder and rerun ```amplify pull```
+
+</details>
+
+<details closed>
+<summary>
+<h4>Traffic Analytics - Google Analytics, Google Tag Manager, Hotjar</h4>
+</summary>
+
+* [Ultimate Google Analytics (4) course + 50 practical examples (Udemy)](https://www.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/)
+
+* [Advanced Google Analytics 4 Implementation with Tag Manager](https://www.udemy.com/course/advanced-google-analytics-4/)
+
+* [Filtering out internal traffic for Google Tag Manager and GA4 (Youtube)](https://www.youtube.com/watch?v=018vb5hDtE8)
 
 </details>
 
