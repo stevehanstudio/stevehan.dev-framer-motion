@@ -201,7 +201,23 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 <h2>Known Issues</h2>
 </summary>
 
-Coming soon...
+* Make setting drawer menu's drag close only on a handle and make the setting drawer scrollable if there's vertical overflow
+* Main component cards does not animate unless 100% of the card container is in view.  Change it to something like 40% in view.
+
+</details>
+
+<details open>
+<summary>
+<h2>Future Todos</h2>
+</summary>
+
+* Add integration with Mixpanel for user analytics
+* Add backend on AWS using CDK and AWS Lambda
+* Add set focus and keyboard accessibility
+* Improve 404 page animation
+* Add additional units tests with Jest and React Testing Library
+* Add PWA homescreen installation for mobile
+* Improve on the styling of main component's buttons
 
 </details>
 
