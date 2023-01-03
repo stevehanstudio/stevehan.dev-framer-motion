@@ -42,8 +42,8 @@ const Home = () => {
 						alt='stevehan-logo-emblem'
 						src='https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1670922600/stevehandev/images/stevehandev_mmunmr.png'
 						// src='/stevehandev.png'
-						// height={250}
-						// width={250}
+						height={`${isMobile ? 175 : 250}`}
+						width={`${isMobile ? 175 : 250}`}
 					/>
 					{theme === 'dark' && <LogoGlow />}
 				</div>
