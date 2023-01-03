@@ -347,6 +347,8 @@ Coming soon...
 
 * [Tech Talk: Performance & React: Measuring and Fixing Common Bottlenecks](https://www.youtube.com/watch?v=b8IcYOV5_Rc) - Clear explaination on why the choice of keys used in rendering lists makes a big difference in performance
 
+* [Lighthouse error: "Buttons do not have an accessible name" (StackOverFlow)](https://stackoverflow.com/questions/56082381lighthouse-error-buttons-do-not-have-an-accessible-name).  Add aria-label to buttons.
+
 </details>
 
 <details closed>

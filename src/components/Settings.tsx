@@ -19,7 +19,7 @@ const Settings = () => {
 				} fixed z-0 right-1`}
 				onClick={() => openSettingsMenu(true)}
 			>
-				<button className='shadow-md p-2 text-white bg-laborWorkerBlue dark:opacity-100 opacity-90 rounded-full'>
+				<button className='shadow-md p-2 text-white bg-laborWorkerBlue dark:opacity-100 opacity-90 rounded-full' arial-label='open settings menu'>
 					<HiOutlineDotsHorizontal />
 				</button>
 			</div>
