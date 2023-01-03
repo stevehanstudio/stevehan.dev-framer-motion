@@ -85,6 +85,7 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 					<button
 						className='text-laborWorkerBlue dark:text-white opacity-70 hover:opacity-100 transition-350'
 						onClick={handleGoToNextPage}
+						aria-label='go to next page'
 					>
 						<VscChevronDown size={60} />
 					</button>

@@ -28,29 +28,29 @@ const Menu: React.FC= () => {
 				}}
 				className='flex flex-row'
 			>
-					{navMenuItems.map((item, i) => (
-						<li
-							key={i}
-							className='menu-item'
-							onClick={() => setSelectedNavMenuItem(i)}
+				{navMenuItems.map((item, i) => (
+					<li
+						key={i}
+						className='menu-item'
+						onClick={() => setSelectedNavMenuItem(i)}
+					>
+						<NavLink
+							to={item.url}
+							state={{ previousPath: location.pathname || '/' }}
+							className={({ isActive }) =>
+								isActive ? 'activeMenuItem' : ''
+							}
 						>
-							<NavLink
-								to={item.url}
-								state={{ previousPath: location.pathname || '/' }}
-								className={({ isActive }) =>
-									isActive ? 'activeMenuItem' : ''
-								}
-							>
-								{item.title}
-								{selectedNavMenuItem === i && (
-									<motion.div
-										className='underline'
-										layoutId='underline'
-									/>
-								)}
-							</NavLink>
-						</li>
-					))}
+							{item.title}
+							{selectedNavMenuItem === i && (
+								<motion.div
+									className='underline'
+									layoutId='underline'
+								/>
+							)}
+						</NavLink>
+					</li>
+				))}
 			</motion.ul>
 			<motion.ul
 				initial={{
@@ -76,6 +76,7 @@ const Menu: React.FC= () => {
 							href={item.url}
 							target='_blank'
 							rel='noopener noreferrer'
+							aria-label={item.title}
 						>
 							<item.icon size={item.iconSize} />
 						</a>
@@ -88,6 +89,7 @@ const Menu: React.FC= () => {
 							: 'Switch to Dark Mode'
 					}
 					data-offset="{'top': -19, 'left': -20}"
+					aria-label='dark mode switch'
 					className='pl-5'
 					onClick={toggleTheme}
 				>

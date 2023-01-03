@@ -210,7 +210,12 @@ Coming soon...
 <h2>Resources</h2>
 </summary>
 
-## Javascript / React.js
+</details>
+
+<details closed>
+<summary>
+<h3>Javascript / React.js</h3>
+</summary>
 
 * [Find single or array of values in JavaScript array using includes (blog)](https://www.gavsblog.com/blog/find-single-or-array-of-values-in-javascript-array-using-includes)
 
@@ -226,7 +231,12 @@ Coming soon...
 
 * [ReactJS: How to determine if the application is being viewed on mobile or desktop browser (StackOverFlow)](https://stackoverflow.com/questions/39435395/reactjs-how-to-determine-if-the-application-is-being-viewed-on-mobile-or-deskto)
 
-## Styling - Tailwind CSS / SASS / CSS
+</details>
+
+<details closed>
+<summary>
+<h3>Styling - Tailwind CSS / SASS / CSS</h3>
+</summary>
 
 * [Tailwind CSS Dark Mode | React App Theme Switcher (Youtube)](https://www.youtube.com/watch?v=VylXkPy-MIc)
 
@@ -255,8 +265,12 @@ Coming soon...
 * [Creating custom scrollbars using CSS (Youtube)](https://www.youtube.com/watch?v=lvKK2fs6h4I)
 
 * [For the carousel we have to hide the scrollbars in the x direction but keep the functionality (W3School)](https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp)
+</details>
 
-## Animation - Framer Motion
+<details closed>
+<summary>
+<h3>Animation - Framer Motion</h3>
+</summary>
 
 * [Animating React with Framer Motion course (Level UP Tutorials)](https://levelup.video/tutorials/animating-react-with-framer-motion) - Excellent course.  This was my first course on Framer Motion.
 
@@ -288,7 +302,12 @@ Coming soon...
 
 * [Stop scrolling from interfering with dragging (Framer Motion issue on Github)](https://github.com/framer/motion/issues/185) - This issue took some time for me to resolve.  The issue was with my mobile skills component where drag movement is supposed to be constrained in the x direction, but it doesn't and it's possible to drag the component off below the bottom of the screen.  The solution was to use an event listener and disregard the touch movement when a touchmove event is detected and delta y is greater than delta x.
 
-## SVG
+</details>
+
+<details closed>
+<summary>
+<h3>SVG</h3>
+</summary>
 
 * [Work around for color styling issue with Grommet Icons (Github)](https://github.com/grommet/grommet-icons/issues/171)
 
@@ -298,19 +317,34 @@ Coming soon...
 
 * [Adding icon to submit button (StackOverFlow)](https://stackoverflow.com/questions/9376192/add-icon-to-submit-button-in-twitter-bootstrap-2)
 
-## Fonts
+</details>
+
+<details closed>
+<summary>
+<h3>Fonts</h3>
+</summary>
 
 * [How to self host Google fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775)
 
 * [Google webfonts helper](https://gwfh.mranftl.com/fonts)
 
-## Deployment / Build - Netlify
+</details>
+
+<details closed>
+<summary>
+<h3>Deployment / Build - Netlify</h3>
+</summary>
 
 * [Next js typescript build error](https://nextjs.org/docs/api-reference/next.config.js/ignoring-typescript-errors).  This project started out as a Next.js 13 project.
 
 * [Fix Page Not Found on Netlify by adding a _directs file in the public folder (FreeCodeCamp)](https://www.freecodecamp.org/news/how-to-deploy-a-routed-react-app-to-netlify/)
 
-## Traffic Analytic - Google Analytics, Google Tag Manager, Hotjar
+</details>
+
+<details closed>
+<summary>
+<h3>Traffic Analytic - Google Analytics, Google Tag Manager, Hotjar</h3>
+</summary>
 
 * [Ultimate Google Analytics (4) course + 50 practical examples (Udemy)](https://www.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/)
 
@@ -318,8 +352,38 @@ Coming soon...
 
 * [Filtering out internal traffic for Google Tag Manager and GA4 (Youtube)](https://www.youtube.com/watch?v=018vb5hDtE8)
 
-## Testing - React Testing Library, Jest
+</details>
+
+<details closed>
+<summary>
+<h3>Testing - React Testing Library, Jest</h3>
+</summary>
 
 * [React js: Error: useLocation() may be used only in the context of a <Router> component](https://stackoverflow.com/questions/66747556/react-js-error-uselocation-may-be-used-only-in-the-context-of-a-router-com).  App component has to be wrapped with Router in App.test.tsx.
 
 </details>
+
+<details closed>
+<summary>
+<h3>Performance - React Profiler, Core Web Vitals, Lighthouse, wrapping memo, adding useMemo hooks</h3>
+</summary>
+
+* [Optimize Performance for React (Pluralsight)](https://www.pluralsight.com/courses/optimize-performance-react).  Course on using React Profiler, React PureComponents, memo, useMemo, and reducing bundle size to improve performance
+
+* [Profile a React App for Performance (blog)](https://kentcdodds.com/blog/profile-a-react-app-for-performance) - Tips on using React Profiler on production build
+
+* [Tech Talk: Performance & React: Measuring and Fixing Common Bottlenecks](https://www.youtube.com/watch?v=b8IcYOV5_Rc) - Clear explaination on why the choice of keys used in rendering lists makes a big difference in performance
+
+</details>
+
+<details closed>
+<summary>
+<h3>AWS - Backend / Deployment</h3>
+</summary>
+
+* [Amplify pull error (Github issues)](https://github.com/aws-amplify/amplify-cli/issues/11245). When setting up Amplify Studio and running ```amplify pull``` receive the message ".config\local-env-info.json does not exist".  The solution was to delete the amplify folder and rerun ```amplify pull```
+
+</details>
+
+</details>
+
