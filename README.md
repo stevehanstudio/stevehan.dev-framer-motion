@@ -205,18 +205,14 @@ Coming soon...
 
 </details>
 
-<details open>
+< open>
 <summary>
 <h2>Resources</h2>
 </summary>
-
-</details>
-
 <details closed>
 <summary>
 <h3>Javascript / React.js</h3>
 </summary>
-
 * [Find single or array of values in JavaScript array using includes (blog)](https://www.gavsblog.com/blog/find-single-or-array-of-values-in-javascript-array-using-includes)
 
 * [Handle mouse hover events over a mapped array in React (StackOverFlow)](https://stackoverflow.com/questions/67501705/handle-mouse-hover-events-over-a-mapped-array-in-react)
@@ -365,7 +361,7 @@ Coming soon...
 
 <details closed>
 <summary>
-<h3>Performance - React Profiler, Core Web Vitals, Lighthouse, wrapping memo, adding useMemo hooks</h3>
+<h3>Performance - React Profiler, Core Web Vitals, Lighthouse, Memo</h3>
 </summary>
 
 * [Optimize Performance for React (Pluralsight)](https://www.pluralsight.com/courses/optimize-performance-react).  Course on using React Profiler, React PureComponents, memo, useMemo, and reducing bundle size to improve performance
