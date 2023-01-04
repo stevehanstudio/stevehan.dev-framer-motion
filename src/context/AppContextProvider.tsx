@@ -45,14 +45,14 @@ export const AppProvider = ({
 		setWidth(window.innerWidth)
 		window.addEventListener('resize', handleWindowSizeChange)
 		// console.log('Env', process.env.REACT_APP_MIXPANEL_DISTINCT_ID)
-		if (process.env.REACT_APP_MIXPANEL_DISTINCT_ID)
-			mixpanel.init(process.env.REACT_APP_MIXPANEL_DISTINCT_ID, {
+		if (process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
+			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
 				debug: true,
 			})
-		else if (process.env.NETLIFY_MIXPANEL_DISTINCT_ID)
-			mixpanel.init(process.env.NETLIFY_MIXPANEL_DISTINCT_ID, {
-			debug: false,
-		})
+		else if (process.env.NETLIFY_MIXPANEL_PROJECT_TOKEN)
+			mixpanel.init(process.env.NETLIFY_MIXPANEL_PROJECT_TOKEN, {
+				debug: false,
+			})
 
 		return () => {
 			window.removeEventListener('resize', handleWindowSizeChange)
