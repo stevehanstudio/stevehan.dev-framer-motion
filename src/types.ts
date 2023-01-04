@@ -43,7 +43,7 @@ export type MainComponentType = 'Projects' | 'Certificates' | undefined
 // export enum ActionType {
 // 	SetHomePage,
 // 	SetProjectsPage,
-// 	SetCertificatesPage,
+// 	SetrtificatesPage,
 // 	SetAboutPage,
 // 	SetContactPage,
 // 	SetPreviousPage,
@@ -66,4 +66,14 @@ export interface MenuItemType {
 	iconClass?: string
 	iconSize?: number
 	// clickAction?: ActiveMenuType
+}
+
+export interface MixpanelEventType {
+	title?: String
+	isMobile?: boolean | null
+	theme?: ThemeType,
+	mainComponentType?: MainComponentType
+	buttonName?: String
+	currentPath?: String
+	nextPath?: String
 }

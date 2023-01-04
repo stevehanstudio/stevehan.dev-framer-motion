@@ -60,12 +60,40 @@ const CardComponent: React.FC<Props> = ({
 					{data.subtitle}
 				</h2>
 				<div className='flex flex-row mb-4 md:mb-0 justify-between w-full h-full'>
-					{data.website && <DemoButton url={data.website} />}
-					{data.github && <DetailsButton url={data.github} />}
-					{data.curriculum && <CirriculumButton url={data.curriculum} />}
-					{data.course && <CourseButton url={data.course} />}
+					{data.website && (
+						<DemoButton
+							title={data.title}
+							type={type}
+							url={data.website}
+						/>
+					)}
+					{data.github && (
+						<DetailsButton
+							title={data.title}
+							type={type}
+							url={data.github}
+						/>
+					)}
+					{data.curriculum && (
+						<CirriculumButton
+							title={data.title}
+							type={type}
+							url={data.curriculum}
+						/>
+					)}
+					{data.course && (
+						<CourseButton
+							title={data.title}
+							type={type}
+							url={data.course}
+						/>
+					)}
 					{data.credentials && (
-						<CredentialsButton url={data.credentials} />
+						<CredentialsButton
+							title={data.title}
+							type={type}
+							url={data.credentials}
+						/>
 					)}
 				</div>
 			</div>

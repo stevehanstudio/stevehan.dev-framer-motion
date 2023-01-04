@@ -10,7 +10,9 @@ const DarkModeSwitch: React.FC = () => {
 	return (
 		<div
 			className='relative -top-3'
-			onClick={() => setRotation(rotation + 180)}
+			onClick={() => {
+				setRotation(rotation + 180)
+			}}
 		>
 			<motion.div
 				className='relative'

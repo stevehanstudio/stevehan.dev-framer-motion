@@ -391,6 +391,10 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 
 * [Filtering out internal traffic for Google Tag Manager and GA4 (Youtube)](https://www.youtube.com/watch?v=018vb5hDtE8)
 
+* [Getting Started with Mixpanel: Implementation 101](https://www.youtube.com/watch?v=ePIemj9gOgM&t=5s)
+
+* [Mixpanel Implementation (Course)](https://help.mixpanel.com/hc/en-us/articles/360021749032-Mixpanel-Implementation-Course-)
+
 </details>
 
 </details>

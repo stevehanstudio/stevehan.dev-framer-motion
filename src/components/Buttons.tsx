@@ -1,15 +1,24 @@
 import React, { useContext } from 'react'
+import mixpanel from 'mixpanel-browser'
 import { BsGithub, BsGlobe2 } from 'react-icons/bs'
 import { HiOutlineIdentification } from 'react-icons/hi'
 import { MdOutlineCastForEducation } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
 import { AppContext } from '../context/AppContext'
+import { MainComponentType, MixpanelEventType } from '../types'
 
 interface Props {
+	title?: String
+	type?: MainComponentType,
 	url: string
 }
 
-export const DemoButton: React.FC<Props> = ({ url }) => {
+const mainComponentButtonClick = (mixpanelEvent: MixpanelEventType) => {
+	mixpanel.track('Main Component Button Click', mixpanelEvent)
+	// console.log('mixpanel.track')
+}
+
+export const DemoButton: React.FC<Props> = ({ title, type, url }) => {
 	const { isMobile } = useContext(AppContext)
 
 	return (
@@ -18,6 +27,14 @@ export const DemoButton: React.FC<Props> = ({ url }) => {
 				type='button'
 				className='card-button md:bg-amber-500 md:dark:text-amber-400 md:border-amber-400 md:hover:bg-amber-400 md:hover:border-amber-400 md:hover:dark:bg-amber-500 md:hover:dark:border-amber-600'
 				// className='card-button md:bg-amber-500 md:dark:text-amber-400 md:border-amber-400 md:hover:bg-amber-400 md:hover:border-amber-400 md:hover:bg-transparent'
+				onClick={() => {
+					mainComponentButtonClick({
+						title,
+						isMobile,
+						mainComponentType: type,
+						buttonName: 'Live Website',
+					})
+				}}
 			>
 				<BsGlobe2 className={`${isMobile ? 'fill-amber-500' : ''}`} />
 				<span className={`${isMobile ? 'text-amber-500' : ''} pl-2`}>
@@ -28,7 +45,7 @@ export const DemoButton: React.FC<Props> = ({ url }) => {
 	)
 }
 
-export const DetailsButton: React.FC<Props> = ({ url }) => {
+export const DetailsButton: React.FC<Props> = ({ title, type, url }) => {
 	const { isMobile } = useContext(AppContext)
 
 	return (
@@ -36,33 +53,67 @@ export const DetailsButton: React.FC<Props> = ({ url }) => {
 			<button
 				type='button'
 				className='card-button md:bg-gradient-to-r from-[rgba(256,256,256,0.05)] to-[rgba(256,256,256,0.1)] md:dark:text-cyan-200 md:dark:border-cyan-200 md:border-cyan-500 md:bg-cyan-500 md:hover:bg-cyan-400 md:hover:border-cyan-400 md:hover:dark:bg-cyan-600 md:hover:dark:border-cyan-700'
+				onClick={() => {
+					mainComponentButtonClick({
+						title,
+						isMobile,
+						mainComponentType: type,
+						buttonName: 'Details on Github',
+					})
+				}}
 			>
 				<BsGithub className={`${isMobile ? 'fill-cyan-500' : ''}`} />
-				<span className={`${isMobile ? 'text-cyan-500' : ''} pl-2`}>Details</span>
+				<span className={`${isMobile ? 'text-cyan-500' : ''} pl-2`}>
+					Details
+				</span>
 			</button>
 		</a>
 	)
 }
 
-export const CirriculumButton: React.FC<Props> = ({ url }) => {
+export const CirriculumButton: React.FC<Props> = ({ title, type, url }) => {
 	const { isMobile } = useContext(AppContext)
 
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
-			<button className='card-button md:dark:text-lime-200 md:bg-lime-500 md:border-lime-500 md:hover:bg-lime-400 md:hover:border-lime-400 md:hover:dark:bg-lime-600 md:hover:dark:border-lime-700'>
-				<MdOutlineCastForEducation className={`${isMobile ? 'fill-lime-500' : ''}`}/>
-				<span className={`${isMobile ? 'text-lime-500' : ''} pl-2`}>Cirriculum</span>
+			<button
+				className='card-button md:dark:text-lime-200 md:bg-lime-500 md:border-lime-500 md:hover:bg-lime-400 md:hover:border-lime-400 md:hover:dark:bg-lime-600 md:hover:dark:border-lime-700'
+				onClick={() => {
+					mainComponentButtonClick({
+						title,
+						isMobile,
+						mainComponentType: type,
+						buttonName: 'Cirriculum',
+					})
+				}}
+			>
+				<MdOutlineCastForEducation
+					className={`${isMobile ? 'fill-lime-500' : ''}`}
+				/>
+				<span className={`${isMobile ? 'text-lime-500' : ''} pl-2`}>
+					Cirriculum
+				</span>
 			</button>
 		</a>
 	)
 }
 
-export const CourseButton: React.FC<Props> = ({ url }) => {
+export const CourseButton: React.FC<Props> = ({ title, type, url }) => {
 	const { isMobile } = useContext(AppContext)
 
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
-			<button className='card-button md:bg-emerald-600 md:border-emerald-600 md:hover:bg-emerald-500 md:hover:border-emerald-500 md:dark:text-emerald-200 md:hover:dark:bg-emerald-700 md:dark:border-emerald-200 md:hover:dark:border-emerald-800'>
+			<button
+				className='card-button md:bg-emerald-600 md:border-emerald-600 md:hover:bg-emerald-500 md:hover:border-emerald-500 md:dark:text-emerald-200 md:hover:dark:bg-emerald-700 md:dark:border-emerald-200 md:hover:dark:border-emerald-800'
+				onClick={() => {
+					mainComponentButtonClick({
+						title,
+						isMobile,
+						mainComponentType: type,
+						buttonName: 'Course',
+					})}
+				}
+			>
 				<BsGlobe2 className={`${isMobile ? 'fill-emerald-600' : ''}`} />
 				<span className={`${isMobile ? 'text-emerald-600' : ''} pl-2`}>
 					Course
@@ -72,12 +123,22 @@ export const CourseButton: React.FC<Props> = ({ url }) => {
 	)
 }
 
-export const CredentialsButton: React.FC<Props> = ({ url }) => {
+export const CredentialsButton: React.FC<Props> = ({ title, type, url }) => {
 	const { isMobile } = useContext(AppContext)
 
 	return (
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
-			<button className='md:bg-purple-500 md:border-purple-500 card-button md:hover:bg-purple-400 md:hover:border-purple-400 md:hover:text-white md:hover:dark:bg-purple-600 md:hover:dark:border-purple-700 md:dark:border-purple-300 md:dark:text-purple-300'>
+			<button
+				className='md:bg-purple-500 md:border-purple-500 card-button md:hover:bg-purple-400 md:hover:border-purple-400 md:hover:text-white md:hover:dark:bg-purple-600 md:hover:dark:border-purple-700 md:dark:border-purple-300 md:dark:text-purple-300'
+				onClick={() => {
+					mainComponentButtonClick({
+						title,
+						isMobile,
+						mainComponentType: type,
+						buttonName: 'Credentials',
+					})
+				}}
+			>
 				<HiOutlineIdentification
 					className={`${isMobile ? 'fill-purple-600' : ''}`}
 				/>

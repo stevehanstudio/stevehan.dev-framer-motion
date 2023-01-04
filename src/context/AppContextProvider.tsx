@@ -6,6 +6,7 @@ import {
 	useRef,
 } from 'react'
 import { useLocation } from 'react-router-dom'
+import mixpanel from 'mixpanel-browser'
 import { ThemeType, navDirectionType } from '../types'
 import { AppContext } from './AppContext'
 import { path } from '../constants/misc'
@@ -43,6 +44,16 @@ export const AppProvider = ({
 	useEffect(() => {
 		setWidth(window.innerWidth)
 		window.addEventListener('resize', handleWindowSizeChange)
+		// console.log('Env', process.env.REACT_APP_MIXPANEL_DISTINCT_ID)
+		if (process.env.REACT_APP_MIXPANEL_DISTINCT_ID)
+			mixpanel.init(process.env.REACT_APP_MIXPANEL_DISTINCT_ID, {
+				debug: true,
+			})
+		else if (process.env.NETLIFY_MIXPANEL_DISTINCT_ID)
+			mixpanel.init(process.env.NETLIFY_MIXPANEL_DISTINCT_ID, {
+			debug: false,
+		})
+
 		return () => {
 			window.removeEventListener('resize', handleWindowSizeChange)
 		}
@@ -120,12 +131,20 @@ export const AppProvider = ({
 		} else {
 			setTheme('dark')
 		}
+		mixpanel.track('Toggle Theme', {
+			isMobile,
+			theme,
+			buttonName: 'Dark Mode Switch',
+		})
 	}
 
 	const toggleSystemThemeEnabled = () => setSystemThemeEnabled(!systemThemeEnabled)
 
 	const handleDragDetected = () => {
 		setDragDetected(true)
+		mixpanel.track('Drag Detected', {
+			isMobile,
+		})
 	}
 
 	const value = {

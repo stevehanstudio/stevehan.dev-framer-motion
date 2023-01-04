@@ -1,6 +1,7 @@
 import React, { useContext, ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import mixpanel from 'mixpanel-browser'
 import { VscChevronDown } from 'react-icons/vsc'
 import { AppContext } from '../context/AppContext'
 import { path } from '../constants/misc'
@@ -16,6 +17,12 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 			selectedNavMenuItem === path.length - 1 ? 0 : selectedNavMenuItem + 1
 		navigate(path[nextMenuItem])
 		setSelectedNavMenuItem(nextMenuItem)
+		mixpanel.track('Navigate to Next Page', {
+			isMobile,
+			currentPath: pathname,
+			nextPath: path[nextMenuItem],
+		})
+		// console.log('mixpanel.track: Navigate to Next Page')
 	}
 
 	return (

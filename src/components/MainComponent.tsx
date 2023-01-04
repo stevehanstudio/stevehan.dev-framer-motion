@@ -2,9 +2,10 @@
 import React, { useState, useEffect, useContext, MouseEvent } from 'react'
 // import { motion, Variants } from 'framer-motion'
 // import { InView } from 'react-intersection-observer'
+import mixpanel from 'mixpanel-browser'
 import SkillsComponent from './SkillsComponent'
 // import CardComponent from './CardComponent'
-import { DataType, MainComponentType } from '../types'
+import { DataType, MainComponentType, MixpanelEventType } from '../types'
 // import CarouselOverlay from './CarouselOverlay'
 import { AppContext } from '../context/AppContext'
 import MainCarousel from './MainCarousel'
@@ -13,6 +14,10 @@ import MobileCardsComponent from './MobileCardsComponent'
 
 interface Props {
   componentType: MainComponentType
+}
+
+const mainComponentSkillSelect = (mixpanelEvent: MixpanelEventType) => {
+	mixpanel.track('Main Component Skill Select', mixpanelEvent)
 }
 
 const MainComponent: React.FC<Props> = ({ componentType }) => {
@@ -74,25 +79,55 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 	const handleShowAllSkills = (e: MouseEvent) => {
 		if (showAllSkills === true) {
 			setShowAllSkills(false)
+			mainComponentSkillSelect({
+				title: 'Show All Skill',
+				isMobile,
+				mainComponentType: componentType,
+				buttonName: 'Expand',
+			})
 		} else {
 			setShowAllSkills(true)
+			mainComponentSkillSelect({
+				title: 'Show All Skill',
+				isMobile,
+				mainComponentType: componentType,
+				buttonName: 'Collapse',
+			})
 		}
 	}
 
 	const handleSelectAllSkills = () => {
 		setSelectedSkills([])
+		mainComponentSkillSelect({
+			title: 'Select Skill',
+			isMobile,
+			mainComponentType: componentType,
+			buttonName: 'All',
+		})
 	}
 
 	const handleSelectSkill = (e: MouseEvent, skill: string) => {
 		// There is no selected skill
 		if (selectedSkills.length === 0) {
 			setSelectedSkills([skill])
+			mainComponentSkillSelect({
+				title: 'Select Skill',
+				isMobile,
+				mainComponentType: componentType,
+				buttonName: skill
+			})
 		}
 		// If there is or are selected skill(s)
 		else if (!selectedSkills.includes(skill)) {
 			const skillsToSelect = [...selectedSkills, skill]
 			setSelectedSkills(skillsToSelect)
 			// The skill is already selected, we need to deselect it
+			mainComponentSkillSelect({
+				title: 'Deselect Skill',
+				isMobile,
+				mainComponentType: componentType,
+				buttonName: skill,
+			})
 		} else {
 			// console.log('Deleting skill', skill)
 
@@ -100,9 +135,14 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 				selectedSkill => selectedSkill !== skill
 			)
 			setSelectedSkills(skillsToSelect)
+			mainComponentSkillSelect({
+				title: 'Select Skill',
+				isMobile,
+				mainComponentType: componentType,
+				buttonName: skill,
+			})
 		}
 	}
-
 
 	// const handleDrag = (event: MouseEvent<Element, MouseEvent> | TouchEvent | PointerEvent, info: PanInfo) => {
 	// const handleDrag = (info: PanInfo) => {
