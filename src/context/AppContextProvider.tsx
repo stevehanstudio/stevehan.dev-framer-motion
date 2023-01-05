@@ -35,10 +35,18 @@ export const AppProvider = ({
 
 	const toggleMobileMenuBottom = () => {
 		setMobileMenuBottom(!mobileMenuBottom)
+		mixpanel.track('Toggle Mobile Menu Bottom', {
+			isMobile,
+			buttonName: 'Mobile Menu Bottom Switch',
+		})
 	}
 
 	const handleWindowSizeChange = () => {
 		setWidth(window.innerWidth)
+		mixpanel.track('Window Size Change', {
+			isMobile,
+			width: window.innerWidth,
+		})
 	}
 
 	useEffect(() => {
@@ -141,7 +149,12 @@ export const AppProvider = ({
 		})
 	}
 
-	const toggleSystemThemeEnabled = () => setSystemThemeEnabled(!systemThemeEnabled)
+	const toggleSystemThemeEnabled = () => {
+		setSystemThemeEnabled(!systemThemeEnabled)
+		mixpanel.track('Toggle System Theme Enabled', {
+			isMobile,
+		})
+	}
 
 	const handleDragDetected = () => {
 		setDragDetected(true)

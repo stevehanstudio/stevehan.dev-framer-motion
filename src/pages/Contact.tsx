@@ -31,8 +31,7 @@ const Contact = () => {
 	// })
 
 	// const { isMobile, selectedNavMenuItem, setSelectedNavMenuItem } =
-	const { isMobile } =
-		useContext(AppContext)
+	const { isMobile, mobileMenuBottom } = useContext(AppContext)
 
 	// const handleInView = (inView: boolean) => {
 	// 	if (inView === true && selectedNavMenuItem !== 4) {
@@ -72,7 +71,14 @@ const Contact = () => {
 		// 	onChange={(inView, entry) => handleInView(inView)}
 		// >
 		<AnimatePageTransition>
-			<div id='contact' className='max-w-md mx-auto section bg-blur-md'>
+			<div
+				id='contact'
+				className={`max-w-md mx-auto section bg-blur-md ${
+					isMobile && mobileMenuBottom
+						? 'mt-0 pt-3 pb-5 mb-5'
+						: ''
+				}`}
+			>
 				<h2 className='section-title'>Contact</h2>
 				{/* <h3 className='text-2xl text-red-800 dark:text-red-400'>Let's Get in Touch!</h3> */}
 				<form

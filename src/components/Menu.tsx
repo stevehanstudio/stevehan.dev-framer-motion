@@ -72,19 +72,22 @@ const Menu: React.FC= () => {
 						key={i}
 						className='social-menu-item tooltip expand fade'
 						data-title={item.title}
-						onClick={() => mixpanel.track('External Link', {
-							isMobile: false,
-							buttonName: item.title
-						})}
+						onClick={(e) => {
+							mixpanel.track('External Link', {
+								isMobile: false,
+								buttonName: item.title,
+							})
+							window.open(item.url, '_blank', 'noopener,noreferrer')
+						}}
 					>
-						<a
+						{/* <a
 							href={item.url}
 							target='_blank'
 							rel='noopener noreferrer'
 							aria-label={item.title}
-						>
+						> */}
 							<item.icon size={item.iconSize} />
-						</a>
+						{/* </a> */}
 					</li>
 				))}
 				<button

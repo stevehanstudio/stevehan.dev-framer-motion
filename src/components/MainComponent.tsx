@@ -191,7 +191,9 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 		// 	onKeyUp={handleKeyPress}
 		// >
 		<div
-			className={`section ${isMobile && mobileMenuBottom ? 'mt-5 p-0' : ''}`}
+			className={`section ${
+				isMobile && mobileMenuBottom ? 'mt-0 pt-3 pb-5 mb-5' : ''
+			}`}
 		>
 			<h2 className='section-title'>{componentType}</h2>
 			{isMobile ? (

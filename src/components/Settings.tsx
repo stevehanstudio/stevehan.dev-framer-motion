@@ -20,7 +20,7 @@ const Settings = () => {
 				} fixed z-0 right-1`}
 				onClick={() => {
 					openSettingsMenu(true)
-					mixpanel.track('Navigate to Next Page', {
+					mixpanel.track('Open Settings Menu', {
 						isMobile: true,
 						buttonName: 'Settings Menu'
 					})

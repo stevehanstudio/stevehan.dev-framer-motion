@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
 // import DarkModeSwitch from './DarkModeSwitch'
 import Switch from 'react-switch'
+import mixpanel from 'mixpanel-browser'
 import { GrSystem } from 'react-icons/gr'
 import { BsMoonFill, BsSunFill, BsFillMenuButtonWideFill } from 'react-icons/bs'
 // import { RiExternalLinkFill } from 'react-icons/ri'
 import Drawer from './Drawer'
 import { AppContext } from '../context/AppContext'
 import { socialMenuItems } from '../constants/MenuItems'
-import mixpanel from 'mixpanel-browser'
 
 interface Props {
   isSettingsOpen: boolean
@@ -34,22 +34,25 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 					<li
 						key={i}
 						className='min-w-full my-2'
-						onClick={() =>
+						onClick={() => {
 							mixpanel.track('External Link', {
 								isMobile: true,
 								buttonName: item.title,
 							})
-						}
+							window.open(item.url, '_blank', 'noopener,noreferrer')
+						}}
 					>
-						<a
+						<div className='flex flex-row items-center'>
+							{/* <a
 							href={item.url}
 							target='_blank'
 							rel='noopener noreferrer'
 							className='flex flex-row items-center'
-						>
+						> */}
 							<item.icon size={item.iconSize} />
 							<span className='pl-3 pr-5'>{item.title}</span>
-						</a>
+							{/* </a> */}
+						</div>
 					</li>
 				))}
 				<h4 className='pl-0 mt-2 pb-2 ml-0 text-left text-xl font-normal'>

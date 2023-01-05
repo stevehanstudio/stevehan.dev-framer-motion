@@ -10,8 +10,7 @@ import AnimatePageTransition from '../components/AnimatePageTransition'
 
 const Home = () => {
 	// const { theme, isMobile, selectedNavMenuItem, setSelectedNavMenuItem } =
-	const { theme, isMobile } =
-		useContext(AppContext)
+	const { theme, isMobile, mobileMenuBottom } = useContext(AppContext)
 
 	// const handleInView = (inView: boolean) => {
 	// 	if (inView === true && selectedNavMenuItem !== 0) {
@@ -21,7 +20,12 @@ const Home = () => {
 
 	return (
 		<AnimatePageTransition>
-			<div id='home' className='max-w-5xl mx-auto section'>
+			<div
+				id='home'
+				className={`max-w-5xl mx-auto section ${
+					isMobile && mobileMenuBottom ? 'mt-0 pt-3' : ''
+				}`}
+			>
 				<div className='logo-image'>
 					<motion.img
 						animate={{

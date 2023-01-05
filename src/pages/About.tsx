@@ -13,12 +13,14 @@ const About = () => {
 	// 	}
 	// }
 
+	console.log('Change in mobileMenuBottom', mobileMenuBottom)
+
 	return (
 		<AnimatePageTransition>
 			<div
 				id='about'
 				className={`section max-w-5xl mx-auto ${
-					isMobile && mobileMenuBottom ? 'm-5 p-0' : ''
+					isMobile && mobileMenuBottom ? 'mt-0 pt-3' : ''
 				}`}
 			>
 				<h2 className='section-title'>About</h2>

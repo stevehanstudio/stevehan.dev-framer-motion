@@ -76,4 +76,5 @@ export interface MixpanelEventType {
 	buttonName?: String
 	currentPath?: String
 	nextPath?: String
+	width?: Number
 }
