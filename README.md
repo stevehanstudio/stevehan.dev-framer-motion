@@ -376,6 +376,8 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 
 * [Fix Page Not Found on Netlify by adding a _directs file in the public folder (FreeCodeCamp)](https://www.freecodecamp.org/news/how-to-deploy-a-routed-react-app-to-netlify/)
 
+* [Configure Cloudflare DNS to work with Netlify](https://stevepolito.design/blog/configure-cloudflare-dns-to-work-with-netlify/)
+
 * [Amplify pull error (Github issues)](https://github.com/aws-amplify/amplify-cli/issues/11245). When setting up Amplify Studio and running ```amplify pull``` receive the message ".config\local-env-info.json does not exist".  The solution was to delete the amplify folder and rerun ```amplify pull```
 
 </details>
