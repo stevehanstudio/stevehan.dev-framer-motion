@@ -44,15 +44,17 @@ export const AppProvider = ({
 	useEffect(() => {
 		setWidth(window.innerWidth)
 		window.addEventListener('resize', handleWindowSizeChange)
-		console.log('Env front end', process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
-		console.log('Env Netlify', process.env.NETLIFY_MIXPANEL_PROJECT_TOKEN)
-		if (process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
+		console.log(
+			'Env',
+			process.env.NODE_ENV, process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN
+		)
+		if (process.env.NODE_ENV === 'development' && process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
 			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
 				debug: true,
 			})
-		else if (process.env.NETLIFY_MIXPANEL_PROJECT_TOKEN)
-			mixpanel.init(process.env.NETLIFY_MIXPANEL_PROJECT_TOKEN, {
-				debug: true,
+		else if (process.env.NODE_ENV === 'production' && process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
+			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
+				debug: false,
 			})
 
 		return () => {
