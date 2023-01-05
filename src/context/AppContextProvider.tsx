@@ -44,10 +44,10 @@ export const AppProvider = ({
 	useEffect(() => {
 		setWidth(window.innerWidth)
 		window.addEventListener('resize', handleWindowSizeChange)
-		console.log(
-			'Env',
-			process.env.NODE_ENV, process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN
-		)
+		// console.log(
+		// 	'Env',
+		// 	process.env.NODE_ENV, process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN
+		// )
 		if (process.env.NODE_ENV === 'development' && process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
 			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
 				debug: true,
