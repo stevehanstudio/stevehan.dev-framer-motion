@@ -7,6 +7,7 @@ import { BsMoonFill, BsSunFill, BsFillMenuButtonWideFill } from 'react-icons/bs'
 import Drawer from './Drawer'
 import { AppContext } from '../context/AppContext'
 import { socialMenuItems } from '../constants/MenuItems'
+import mixpanel from 'mixpanel-browser'
 
 interface Props {
   isSettingsOpen: boolean
@@ -30,7 +31,16 @@ const SettingsDrawer: React.FC<Props> = ({ isSettingsOpen, openSettingsMenu }) =
 			</h4>
 			<ul className='flex flex-col w-full pb-4'>
 				{socialMenuItems.map((item, i) => (
-					<li key={i} className='min-w-full my-2'>
+					<li
+						key={i}
+						className='min-w-full my-2'
+						onClick={() =>
+							mixpanel.track('External Link', {
+								isMobile: true,
+								buttonName: item.title,
+							})
+						}
+					>
 						<a
 							href={item.url}
 							target='_blank'

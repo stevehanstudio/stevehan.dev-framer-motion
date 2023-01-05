@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import DarkModeSwitch from './DarkModeSwitch'
 import { AppContext } from '../context/AppContext'
 import { navMenuItems, socialMenuItems} from '../constants/MenuItems'
+import mixpanel from 'mixpanel-browser'
 
 const Menu: React.FC= () => {
   const { theme, toggleTheme, selectedNavMenuItem, setSelectedNavMenuItem} = useContext(AppContext)
@@ -71,6 +72,10 @@ const Menu: React.FC= () => {
 						key={i}
 						className='social-menu-item tooltip expand fade'
 						data-title={item.title}
+						onClick={() => mixpanel.track('External Link', {
+							isMobile: false,
+							buttonName: item.title
+						})}
 					>
 						<a
 							href={item.url}
