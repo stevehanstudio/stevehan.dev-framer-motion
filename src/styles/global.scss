@@ -77,9 +77,10 @@
   }
 
   html {
-    @apply overflow-y-scroll;
-    @JsonIgnoreProperties
-    foo: bar;
+    overflow-y: scroll;
+    // @apply overflow-y-scroll;
+    // @JsonIgnoreProperties
+    // foo: bar;
   }
 
   body {
