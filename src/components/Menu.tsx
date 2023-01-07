@@ -27,6 +27,7 @@ const Menu: React.FC= () => {
 				transition={{
 					duration: 1.5,
 				}}
+			// <motion.ul
 				className='flex flex-row'
 			>
 				{navMenuItems.map((item, i) => (
@@ -65,6 +66,7 @@ const Menu: React.FC= () => {
 					scale: 1,
 				}}
 				transition={{ duration: 1.5 }}
+			// <ul
 				className='flex flex-row'
 			>
 				{socialMenuItems.map((item, i) => (
@@ -103,6 +105,7 @@ const Menu: React.FC= () => {
 				>
 					<DarkModeSwitch />
 				</button>
+			{/* </ul> */}
 			</motion.ul>
 		</nav>
   )

@@ -38,7 +38,7 @@ export const DemoButton: React.FC<Props> = ({ title, type, url }) => {
 			>
 				<BsGlobe2 className={`${isMobile ? 'fill-amber-500' : ''}`} />
 				<span className={`${isMobile ? 'text-amber-500' : ''} pl-2`}>
-					Live Website
+					Live Site
 				</span>
 			</button>
 		</a>

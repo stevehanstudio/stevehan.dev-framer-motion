@@ -278,6 +278,7 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 * [Creating custom scrollbars using CSS (Youtube)](https://www.youtube.com/watch?v=lvKK2fs6h4I)
 
 * [For the carousel we have to hide the scrollbars in the x direction but keep the functionality (W3School)](https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp)
+* [Browser scrollbars can cause annoying layout shifts](https://www.reddit.com/r/webdev/comments/svfsl3/browser_scrollbars_can_cause_annoying_layout/).  I had this issue that is particularly noticeable on my home page where I'm animating in the text from below the screen, so that at the start of the animation the scroll shows and by the time it finishes it is removed when the content fits into a single page resulting in the small layout shift.  The solution I went with is to always show the scrollbar.
 </details>
 
 <details closed>

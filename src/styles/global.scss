@@ -76,6 +76,12 @@
         url('../fonts/work-sans-v18-latin-700.svg#WorkSans') format('svg'); /* Legacy iOS */
   }
 
+  html {
+    @apply overflow-y-scroll;
+    @JsonIgnoreProperties
+    foo: bar;
+  }
+
   body {
     @apply h-full antialiased; // transition duration-[5000] ease-in-out delay-1000 bg-sweetAiran dark:bg-laborWorker;
     font-family: 'Work Sans', Helvetica, sans-serif, Arial;
