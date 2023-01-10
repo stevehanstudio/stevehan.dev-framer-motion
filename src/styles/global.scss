@@ -78,6 +78,7 @@
 
   html {
     overflow-y: scroll;
+    overscroll-behavior: none;
     // @apply overflow-y-scroll;
     // @JsonIgnoreProperties
     // foo: bar;
@@ -86,6 +87,7 @@
   body {
     @apply h-full antialiased; // transition duration-[5000] ease-in-out delay-1000 bg-sweetAiran dark:bg-laborWorker;
     font-family: 'Work Sans', Helvetica, sans-serif, Arial;
+    // overscroll-behavior: none;
     @JsonIgnoreProperties
     foo: bar;
   }

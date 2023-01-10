@@ -379,6 +379,8 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 
 * [Configure Cloudflare DNS to work with Netlify](https://stevepolito.design/blog/configure-cloudflare-dns-to-work-with-netlify/)
 
+* [How to prevent Netlify from treating warnings as errors because process.env.CI = true?](https://stackoverflow.com/questions/62415804/how-to-prevent-netlify-from-treating-warnings-as-errors-because-process-env-ci).  I had to set the CI Environment variable to false to build on Netlify.
+
 * [Amplify pull error (Github issues)](https://github.com/aws-amplify/amplify-cli/issues/11245). When setting up Amplify Studio and running ```amplify pull``` receive the message ".config\local-env-info.json does not exist".  The solution was to delete the amplify folder and rerun ```amplify pull```
 
 </details>
