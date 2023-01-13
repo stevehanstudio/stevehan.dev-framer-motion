@@ -24,7 +24,11 @@ const About = () => {
 				}`}
 			>
 				<h2 className='section-title'>About</h2>
-				<div className='flex flex-col mx-0 md:mx-7 md:flex-row'>
+				<div
+					className='flex flex-col mx-0 md:mx-7 md:flex-row'
+					// onTouchMove={e => console.log('Touch Move Detected', e)}
+					// onDragStart={e => console.log('Drag Detected in About', e)}
+				>
 					<img
 						className='object-cover w-full h-auto md:pt-6 md:w-[484px] basis-1'
 						src='https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1669594147/stevehandev/images/_DSC8502_2_ukhnwo.jpg'
@@ -35,9 +39,9 @@ const About = () => {
 						<h4 className='text-xl dark:text-gray-200'>About Me</h4>
 						<p className='pb-3'>
 							With a bachelor's degree in Computer Engineering, out of
-							college, I pursued hardware engineering, because I
-							found hardware to be more challenging and enjoy challenges.
-							In 2002, after 6 years of designing hardware and ASIC
+							college, I pursued hardware engineering, because I found
+							hardware to be more challenging and enjoy challenges. In
+							2002, after 6 years of designing hardware and ASIC
 							(Application Specific Integrated Circuit) chips, I decided
 							to pursue my passion in photography, the electronic dance
 							music scene, and traveling.

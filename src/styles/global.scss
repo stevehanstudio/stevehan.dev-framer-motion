@@ -79,6 +79,8 @@
   html {
     overflow-y: scroll;
     overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: none;
     // @apply overflow-y-scroll;
     // @JsonIgnoreProperties
     // foo: bar;

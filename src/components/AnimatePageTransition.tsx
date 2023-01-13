@@ -1,4 +1,4 @@
-import React, { useContext, ReactNode } from 'react'
+import React, { useState, useEffect, useContext, ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import mixpanel from 'mixpanel-browser'
@@ -7,10 +7,28 @@ import { AppContext } from '../context/AppContext'
 import { path } from '../constants/misc'
 
 const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
+	const [allowScroll, setAllowScroll] = useState(false)
 	const { pathname } = useLocation()
 	const navigate = useNavigate()
 	const { isMobile, selectedNavMenuItem, setSelectedNavMenuItem, navDirection } = useContext(AppContext)
 	// console.log(`pathname=${pathname}, navDirection=${navDirection}`)
+
+	console.log('allowScroll', allowScroll)
+	useEffect(() => {
+		if (allowScroll) {
+			const handleTouch = (ev: Event) => {
+				ev.stopPropagation()
+				// console.log('handleTouch')
+			}
+			document.documentElement.addEventListener('touchmove', handleTouch)
+			return () => {
+				document.documentElement.removeEventListener(
+					'touchmove',
+					handleTouch
+				)
+			}
+		}
+	}, [allowScroll])
 
 	const handleGoToNextPage = () => {
 		const nextMenuItem =
@@ -30,9 +48,16 @@ const AnimatePageTransition = ({ children }: { children: ReactNode }) => {
 			key={pathname}
 			onKeyDown={() => console.log('PageWrapper key press')}
 			drag='y'
-			onDragStart={(event, info) =>
+			onDragStart={(event, info) => {
+				// console.log('PageWrapper drag detected', event, info)
 				console.log('PageWrapper drag detected', event, info)
-			}
+				if (isMobile) {
+					console.log('Trying to drag up', info.delta.y)
+					setAllowScroll(info.delta.y > 0)
+					// event.preventDefault()
+					// event.stopPropagation()
+				}
+			}}
 			dragElastic={0.8}
 			dragConstraints={{ top: 0, bottom: window.innerHeight }}
 			initial={{

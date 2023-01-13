@@ -466,6 +466,17 @@
 		"course": "https://www.udemy.com/course/aws-typescript-cdk-serverless-react/"
 	},
 	{
+		"title": "The Complete Java Development Bootcamp",
+		"subtitle": "Become proficient in Java 17 with hand-on experience and by solving 100+ coding exercises.",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1673516775/stevehandev/certificates/Udemy-The-Complete-Java-Development-Bootcamp_ggk3gz.jpg",
+		"date": "2023-01-12",
+		"author": "Steve Han",
+		"organization": "Udemy",
+		"skills": ["Java"],
+		"credentials": "https://gale.udemy.com/certificate/UC-cea0d47d-6d92-478c-aa3e-a05e95695926/",
+		"course": "https://www.udemy.com/"
+	},
+	{
 		"title": "Security for Web App Development",
 		"subtitle": "Relevant Courses: JavaScript, jQuery, AJAX, Intermediate HTML and CSS, Introduction to SQL Databases and NoSQL, Computer Networks, Network Security, Securing Web Applications",
 		"slug": "ccsf-web-application-programming",

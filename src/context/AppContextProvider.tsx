@@ -43,10 +43,10 @@ export const AppProvider = ({
 
 	const handleWindowSizeChange = () => {
 		setWidth(window.innerWidth)
-		mixpanel.track('Window Size Change', {
-			isMobile,
-			width: window.innerWidth,
-		})
+		// mixpanel.track('Window Size Change', {
+		// 	isMobile,
+		// 	width: window.innerWidth,
+		// })
 	}
 
 	useEffect(() => {
@@ -56,18 +56,26 @@ export const AppProvider = ({
 		// 	'Env',
 		// 	process.env.NODE_ENV, process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN
 		// )
-		if (process.env.NODE_ENV === 'development' && process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
-			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
-				debug: true,
-			})
-		else if (process.env.NODE_ENV === 'production' && process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN)
-			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
-				debug: false,
-			})
-
 		return () => {
 			window.removeEventListener('resize', handleWindowSizeChange)
 		}
+	}, [])
+
+	useEffect(() => {
+		if (
+			process.env.NODE_ENV === 'development' &&
+			process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN
+		)
+			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
+				debug: true,
+			})
+		else if (
+			process.env.NODE_ENV === 'production' &&
+			process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN
+		)
+			mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN, {
+				debug: false,
+			})
 	}, [])
 
 	useEffect(() => {
