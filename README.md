@@ -236,7 +236,7 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 
 * [How to check if an array contains all elements of another array (StackOverFlow)](https://stackoverflow.com/questions/53606337/check-if-array-contains-all-elements-of-another-array) - I used this resources for the Skills component.
 
-* [react typescript issue on add EventListener](https://stackoverflow.com/questions/58162113/react-typescript-issue-on-addevenlistener) - I had trouble figuring out the type of event touchmove is.  I thought it would be React.TouchEvent<HTMLElement> but it is just Event.
+* [react typescript issue on add EventListener (StackOverFlow)](https://stackoverflow.com/questions/58162113/react-typescript-issue-on-addevenlistener) - I had trouble figuring out the type of event touchmove is.  I thought it would be `React.TouchEvent<HTMLElement>` but it is just `Event`.
 
 * [React/typescript forwardRef cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forward_and_create_ref/)
 
