@@ -56,7 +56,7 @@ export const socialMenuItems: MenuItemType[] = [
 	},
 	{
 		title: 'Open my Resume',
-		url: 'resume.pdf',
+		url: '/resume.pdf',
 		icon: ResumeIcon,
 		iconSize: 19,
 	},
