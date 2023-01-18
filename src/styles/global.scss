@@ -251,7 +251,7 @@
   }
 
   .social-menu-item {
-    @apply px-3 items-center text-gray-400 dark:text-gray-400 font-medium uppercase transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
+    @apply px-3 items-center cursor-pointer text-gray-400 dark:text-gray-400 font-medium uppercase transition-all hover:text-black focus:text-black dark:hover:text-white dark:focus:text-white;
     @JsonIgnoreProperties
     foo: bar;
   }
