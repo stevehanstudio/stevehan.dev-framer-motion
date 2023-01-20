@@ -504,7 +504,7 @@
 	},
 	{
 		"title": "The Complete Spring Boot Development Bootcamp",
-		"subtitle": "Become a Java Web Developer: MVC, REST API, OpenAPI Documentation, Testing, Spring Data JPA (SQL), Spring Security (JWT).  Other topics include: Field Validation, Beans and Dependency Injection, Exception Handling, unit and integration testing, Docker",
+		"subtitle": "Topics include: Model View Controller (MVC), REST API, OpenAPI Documentation, Spring Data JPA (SQL), Spring Security (JWT), Field Validation, Beans and Dependency Injection, Exception Handling, Unit and Integration Testing, Docker",
 		"slug": "udemy-the-complete-spring-boot-development-bootcamp",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1674179240/stevehandev/certificates/Udemy-The-Complete-Spring-Boot-Development-Bootcamp_o9cm1e.jpg",
 		"organization": "Udemy",
