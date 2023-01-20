@@ -390,7 +390,14 @@
 		"date": "2022-06-28",
 		"author": "Steve Han",
 		"organization": "Udemy",
-		"skills": ["AWS", "AWS Lambda", "AWS DynamoDB", "Serverless", "Microservices", "AWS CDK"],
+		"skills": [
+			"AWS",
+			"AWS Lambda",
+			"AWS DynamoDB",
+			"Serverless",
+			"Microservices",
+			"AWS CDK"
+		],
 		"credentials": "https://ude.my/UC-9936078a-b474-4424-ace4-fc6b3279d39c/",
 		"course": "https://www.udemy.com/course/aws-serverless-microservices-lambda-eventbridge-sqs-apigateway/"
 	},
@@ -454,14 +461,22 @@
 		"credentials": "https://ude.my/UC-3bdbf34a-798c-4535-a562-16bb1e08ef77/",
 		"course": "https://www.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/"
 	},
-{
+	{
 		"title": "AWS & Typescript Masterclass - CDK, Serverless, React",
 		"subtitle": "Course on developing with AWS Cloud development kit CDK.  Topics include typescript, AWS Cognito, AWS Amplify, CDK Constructs V2, AWS Lambda, API Gateway, AWS IAM, Cloudwatch, deploy CDK infrastructure and CloudFormation",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1672198866/stevehandev/certificates/UC-8d9ab6f3-cf82-4792-bfaa-e9a34681a7af_qdyyvj.jpg",
 		"date": "2022-12-27",
 		"author": "Steve Han",
 		"organization": "Udemy",
-		"skills": ["AWS", "AWS CDK", "AWS Lambda", "Serverless", "Typescript", "React", "Javascript"],
+		"skills": [
+			"AWS",
+			"AWS CDK",
+			"AWS Lambda",
+			"Serverless",
+			"Typescript",
+			"React",
+			"Javascript"
+		],
 		"credentials": "https://ude.my/UC-8d9ab6f3-cf82-4792-bfaa-e9a34681a7af/",
 		"course": "https://www.udemy.com/course/aws-typescript-cdk-serverless-react/"
 	},
@@ -477,26 +492,37 @@
 		"course": "https://www.udemy.com/"
 	},
 	{
-		"title": "Security for Web App Development",
-		"subtitle": "Relevant Courses: JavaScript, jQuery, AJAX, Intermediate HTML and CSS, Introduction to SQL Databases and NoSQL, Computer Networks, Network Security, Securing Web Applications",
-		"slug": "ccsf-web-application-programming",
-		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1668718398/stevehandev/certificates/CCSF-Secuirty-for-Web-App-Development-web_mesxd9.jpg",
-		"organization": "City College of San Francisco",
-		"date": "2021-12",
+		"title": "The Complete Java Development Bootcamp",
+		"subtitle": "Become proficient in Java 17 with hand-on experience and by solving 100+ coding exercises.",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1673516775/stevehandev/certificates/Udemy-The-Complete-Java-Development-Bootcamp_ggk3gz.jpg",
+		"date": "2023-01-12",
+		"author": "Steve Han",
+		"organization": "Udemy",
+		"skills": ["Java"],
+		"credentials": "https://www.udemy.com/certificate/UC-cea0d47d-6d92-478c-aa3e-a05e95695926/",
+		"course": "https://www.udemy.com/course/the-complete-java-development-bootcamp/"
+	},
+	{
+		"title": "The Complete Spring Boot Development Bootcamp",
+		"subtitle": "Become a Java Web Developer: MVC, REST API, OpenAPI Documentation, Testing, Spring Data JPA (SQL), Spring Security (JWT).  Other topics include: Field Validation, Beans and Dependency Injection, Exception Handling, unit and integration testing, Docker",
+		"slug": "udemy-the-complete-spring-boot-development-bootcamp",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1674179240/stevehandev/certificates/Udemy-The-Complete-Spring-Boot-Development-Bootcamp_o9cm1e.jpg",
+		"organization": "Udemy",
+		"date": "2023-01-19",
 		"author": "Steve Han",
 		"skills": [
-			"Web Security",
-			"Network Security",
-			"Computer Networks",
-			"SQL",
+			"Spring Boot",
+			"Java",
+			"Maven",
+			"MVC",
+			"Rest API",
+			"Authentication",
+			"JWT",
 			"MySQL",
-			"NoSQL",
-			"MongoDB",
-			"Javascript",
-			"HTML",
-			"CSS"
+			"Docker"
 		],
-		"curriculum": "https://ccsf.curricunet.com/Report/Program/GetReport/782?reportId=29"
+		"credentials": "https://www.udemy.com/certificate/UC-dd90e568-6670-4ad7-aa58-157a62fee6ef/",
+		"course": "https://www.udemy.com/course/the-complete-spring-boot-development-bootcamp/"
 	},
 	{
 		"title": "Javascript Specialist",
