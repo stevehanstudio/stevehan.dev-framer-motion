@@ -1,8 +1,8 @@
 {
-  "name": "cms-backend",
+  "name": "backend",
   "version": "0.1.0",
   "bin": {
-    "cms-backend": "bin/cms-backend.js"
+    "backend": "bin/backend.js"
   },
   "scripts": {
     "build": "tsc",

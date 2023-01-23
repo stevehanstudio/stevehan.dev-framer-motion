@@ -137,6 +137,7 @@ This project uses Typescript, React.js, [Framer Motion](https://www.framer.com/m
 ```
 ├── .vscode
 │   └── settings.json # VS Code settings
+├── backend - AWS CDK, AWS Lambda, AWS DynamoDB, Amazon API Gateway.  Details coming soon...
 ├── public
 │   ├── _redirects # Configures Netlify so that routing is handled on the client side by React Router
 │   ├── manifest.json # Not modified.

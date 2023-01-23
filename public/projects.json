@@ -156,7 +156,7 @@
   },
   {
 		"title": "SteveHan.dev v.2",
-		"subtitle": "Responsive web app of my portfolio (version 2).  Built to have a native like mobile user interface using Typescript, React, Framer Motion, Cloudinary and Tailwind CSS, and integrated with Google Analytics 4 and Mixpanel.",
+		"subtitle": "Full stack responsive web app of my portfolio (version 2).  Built using Typescript, React, Framer Motion, Cloudinary, Tailwind CSS, AWS CDK, AWS Lambda, AWS DynamoDB, Amazon API Gateway.",
 		"slug": "stevehan-dev-v2",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
 		"screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
@@ -165,14 +165,20 @@
 		"skills": [
 			"Typescript",
 			"React",
+      "Javascript",
 			"Framer Motion",
 			"Tailwind CSS",
 			"SASS",
 			"SVG",
 			"Javascript",
-      "Cloudinary",
-      "Google Analytics",
-      "Mixpanel"
+			"Cloudinary",
+			"AWS",
+      "AWS CDK",
+			"AWS Lambda",
+			"AWS DynamoDB",
+			"Amazon API Gateway",
+			"Google Analytics",
+			"Mixpanel"
 		],
 		"website": "https://www.stevehan.dev",
 		"github": "https://github.com/stevehanstudio/stevehan.dev-framer-motion"
