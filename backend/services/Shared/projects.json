@@ -1,0 +1,149 @@
+[
+  {
+    "title": "Backjack Game",
+    "subtitle": "Blackjack card game using vanilla javascript",
+    "slug": "blackjack",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/blackjack_mr37hj.png",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/blackjack_mr37hj.png",
+    "date": "2019-08-11",
+    "author": "Steve Han",
+    "skills": ["Javascript","HTML","CSS"],
+    "website": "https://cocky-benz-f77e67.netlify.app/",
+    "github": "https://github.com/stevehanstudio/blackjack-game"
+  },
+  {
+    "title": "MyReads",
+    "subtitle": "Bookshelf project for Udacity React Nanodgree",
+    "slug": "myreads",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/myreads_qz5jfz.png",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/myreads_qz5jfz.png",
+    "date": "2020-05-04",
+    "author": "Steve Han",
+    "skills": ["React", "Javascript"],
+    "website": "https://udacity-myreads-stevehan.netlify.app/",
+    "github": "https://github.com/stevehanstudio/myreads"
+  },
+  {
+    "title": "Mobile Flashcards",
+    "subtitle": "Mobile flashcard app built using React Native and React hooks.",
+    "slug": "mobile-flashcards",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/mobile-flashcards_m3e6gv.jpg",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/mobile-flashcards_m3e6gv.jpg",
+    "date": "2020-08-16",
+    "author": "Steve Han",
+    "skills": ["React Native","Javascript"],
+    "github": "https://github.com/stevehanstudio/mobile-flashcards"
+  },
+  {
+    "title": "Would You Rather",
+    "subtitle": "A questions & answers game with social media features made using React, redux, Node.js.",
+    "slug": "would-you-rather",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/would-you-rather_wbuhgi.png",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011279/stevehandev/projects/would-you-rather_wbuhgi.png",
+    "date": "2020-08-16",
+    "author": "Steve Han",
+    "skills": ["React","Redux","Javascript"],
+    "website": "https://udacity-would-you-rather-stevehan.netlify.app/",
+    "github": "https://github.com/stevehanstudio/would-you-rather"
+  },
+  {
+    "title": "SteveHan.dev (older version)",
+    "subtitle": "My developer portfolio site built using React, Next.js, MDX, and Chakra UI",
+    "slug": "stevehan-dev",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011280/stevehandev/projects/stevehan-dev_np84ix.png",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011280/stevehandev/projects/stevehan-dev_np84ix.png",
+    "date": "2020-08-15",
+    "author": "Steve Han",
+    "skills": ["React","Next.js","Javascript","Chakra UI", "SVG"],
+    "website": "https://www.stevehan.dev",
+    "github": "https://github.com/stevehanstudio/stevehan-dev"
+  },
+  {
+    "title": "Relection of Snowy Cemetery",
+    "subtitle": "Webpage of a reflection of an image on a rotating 3D sphere built using vanilla javascript and three.js",
+    "slug": "stevehan-dev",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011012/stevehandev/projects/ar-glass_qpx2wr.jpg",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011012/stevehandev/projects/ar-glass_qpx2wr.jpg",
+    "date": "2022-02-24",
+    "author": "Steve Han",
+    "skills": ["Javascript","Three.js", "CSS", "HTML"],
+    "website": "https://stevehanstudio.github.io/ar-glass/",
+    "github": "https://github.com/stevehanstudio/ar-glass"
+  },
+  {
+    "title": "Steve Han Photography",
+    "subtitle": "My photography portfolio site built using Gatsby, React, Cloudinary",
+    "slug": "steve-han-photography",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011403/stevehandev/projects/stevehanphotography_nq09r4.jpg",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011403/stevehandev/projects/stevehanphotography_nq09r4.jpg",
+    "date": "2020-09-25",
+    "author": "Steve Han",
+    "skills": ["React","Gatsby","Javascript","GraphQL","Styled Components"],
+    "website": "https://www.stevehanphotography.com",
+    "github": "https://github.com/stevehanstudio/stevehanphotography"
+  },
+  {
+    "title": "Video from ESP32-CAM",
+    "subtitle": "Web application that controls video from an ESP32-CAM module built using React, Rest API",
+    "slug": "timeseries-arduino",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011319/stevehandev/projects/video-from-esp32-cam_xbyexo.jpg",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011319/stevehandev/projects/video-from-esp32-cam_xbyexo.jpg",
+    "date": "2022-05-20",
+    "author": "Steve Han",
+    "skills": [
+      "React",
+      "Javascript",
+      "Rest API",
+      "Bootstrap",
+      "IoT"
+    ],
+    "github": "https://github.com/stevehanstudio/CNIT133I-esp32cam-project"
+  },
+  {
+		"title": "Timeseries Arduino",
+		"subtitle": "Full stack web application, that display live time series data from temperature sensor collected on a Arduino Uno board, built using Typescript, React, Node.js, Express, socket.io, Recharts.js",
+		"slug": "timeseries-arduino",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011319/stevehandev/projects/timeseries_arduino_icybbq.jpg",
+		"screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1669011319/stevehandev/projects/timeseries_arduino_icybbq.jpg",
+		"date": "2022-05-04",
+		"author": "Steve Han",
+		"skills": [
+			"Typescript",
+			"React",
+			"Node.js",
+			"Express",
+			"Socket.io",
+			"Javascript",
+			"Rest API",
+			"IoT"
+		],
+		"github": "https://github.com/stevehanstudio/timeseries_arduino"
+  },
+  {
+    "title": "Graph UI",
+    "subtitle": "Web application that visualizes a complex data schema.  Built using Typescript, React, and Material UI",
+    "slug": "graph-ui",
+    "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855413/stevehandev/projects/graph-ui-screenshot_qol2u8.jpg",
+    "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855413/stevehandev/projects/graph-ui-screenshot_qol2u8.jpg",
+    "date": "2022-10-30",
+    "author": "Steve Han",
+    "skills": [
+      "Typescript",
+      "React",
+      "Material UI",
+      "Javascript"
+    ],
+    "github": "https://github.com/stevehanstudio/Graph-UI"
+  },
+  {
+  "title": "SteveHan.dev v.2",
+  "subtitle": "This website is version 2 of my portfolio site with UI update and built using Typescript, Next.js 13, React, Framer Motion, and Tailwind CSS",
+  "slug": "stevehan-dev-v2",
+  "image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
+  "screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
+  "date": "2022-11-12",
+  "author": "Steve Han",
+  "skills": ["Typescript", "Next.js", "React", "Framer Motion", "Tailwind CSS", "SASS", "SVG", "Javascript"],
+  "github": "https://github.com/stevehanstudio/stevehan-dev-v2"
+}
+]

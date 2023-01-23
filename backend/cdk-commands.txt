@@ -1,0 +1,13 @@
+cdk init app --language typescript
+cd bootstrap # create CDK toolkit CloudFormation stack - only do once so no need to!
+cdk synth
+cdk deploy
+cdk deploy -all
+cdk list
+cdk diff
+cdk destroy
+cdk doctor
+
+
+cdk.json - had to remove because comments are not allowed in JSON
+"app": "npx ts-node --prefer-ts-exts bin/cms-backend.ts",
