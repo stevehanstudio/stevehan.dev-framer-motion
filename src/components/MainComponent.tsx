@@ -66,32 +66,32 @@ const MainComponent: React.FC<Props> = ({ componentType }) => {
 			})
 	}, [componentType])
 
-	useEffect(() => {
-		if (componentType === 'Projects') {
-			fetch(
-				'https://hgivcfn2hb.execute-api.us-west-1.amazonaws.com/prod/projects'
-			)
-				.then(res => res.json())
-				.then((dataFromApi: any) => {
-					if (dataFromApi && dataFromApi?.Items) {
-						const dataFromSource: DataType[] = dataFromApi.Items!
-						console.log('AWS', dataFromSource)
-						const reorderedData = dataFromSource.reverse()
-						setDataObject(reorderedData)
-						setSelectedDataObject(reorderedData)
-						const listOfSkills: string[] = []
-						dataFromSource.forEach(data => {
-							data.skills.forEach((skill: string) => {
-								if (!listOfSkills.includes(skill)) {
-									listOfSkills.push(skill)
-								}
-							})
-						})
-						setSkills(listOfSkills)
-					}
-				})
-		}
-	}, [componentType])
+	// useEffect(() => {
+	// 	if (componentType === 'Projects') {
+	// 		fetch(
+	// 			'https://hgivcfn2hb.execute-api.us-west-1.amazonaws.com/prod/projects'
+	// 		)
+	// 			.then(res => res.json())
+	// 			.then((dataFromApi: any) => {
+	// 				if (dataFromApi && dataFromApi?.Items) {
+	// 					const dataFromSource: DataType[] = dataFromApi.Items!
+	// 					console.log('AWS', dataFromSource)
+	// 					const reorderedData = dataFromSource.reverse()
+	// 					setDataObject(reorderedData)
+	// 					setSelectedDataObject(reorderedData)
+	// 					const listOfSkills: string[] = []
+	// 					dataFromSource.forEach(data => {
+	// 						data.skills.forEach((skill: string) => {
+	// 							if (!listOfSkills.includes(skill)) {
+	// 								listOfSkills.push(skill)
+	// 							}
+	// 						})
+	// 					})
+	// 					setSkills(listOfSkills)
+	// 				}
+	// 			})
+	// 	}
+	// }, [componentType])
 
 	useEffect(() => {
 		if (selectedSkills.length === 0) {

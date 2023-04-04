@@ -492,17 +492,6 @@
 		"course": "https://www.udemy.com/"
 	},
 	{
-		"title": "The Complete Java Development Bootcamp",
-		"subtitle": "Become proficient in Java 17 with hand-on experience and by solving 100+ coding exercises.",
-		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/c_scale,w_auto/f_auto/dpr_auto/v1673516775/stevehandev/certificates/Udemy-The-Complete-Java-Development-Bootcamp_ggk3gz.jpg",
-		"date": "2023-01-12",
-		"author": "Steve Han",
-		"organization": "Udemy",
-		"skills": ["Java"],
-		"credentials": "https://www.udemy.com/certificate/UC-cea0d47d-6d92-478c-aa3e-a05e95695926/",
-		"course": "https://www.udemy.com/course/the-complete-java-development-bootcamp/"
-	},
-	{
 		"title": "The Complete Spring Boot Development Bootcamp",
 		"subtitle": "Topics include: Model View Controller (MVC), REST API, OpenAPI Documentation, Spring Data JPA (SQL), Spring Security (JWT), Field Validation, Beans and Dependency Injection, Exception Handling, Unit and Integration Testing, Docker",
 		"slug": "udemy-the-complete-spring-boot-development-bootcamp",
@@ -523,6 +512,83 @@
 		],
 		"credentials": "https://www.udemy.com/certificate/UC-dd90e568-6670-4ad7-aa58-157a62fee6ef/",
 		"course": "https://www.udemy.com/course/the-complete-spring-boot-development-bootcamp/"
+	},
+	{
+		"title": "Go: The Complete Developer's Guide (Golang)",
+		"subtitle": "Topics include: Go Routines and Channels, common data structures, interfaces, and advanced features of Go.",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680593148/udemy-go-the-complete-developers-guide-golang_orzngt.jpg",
+		"date": "2023-01-12",
+		"author": "Steve Han",
+		"organization": "Udemy",
+		"skills": ["Go (Golang)"],
+		"credentials": "https://www.udemy.com/certificate/UC-cea0d47d-6d92-478c-aa3e-a05e95695926/",
+		"course": "https://www.udemy.com/course/go-the-complete-developers-guide/"
+	},
+	{
+		"title": ".NET Platform Explained",
+		"subtitle": "Topics include: Expaination of the .NET framework, .NET Core and .NET Standard",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680593191/Linkedin-.NET-Platform-Explained_fvc1p3.png",
+		"date": "2023-02-17",
+		"author": "Steve Han",
+		"organization": "Udemy",
+		"skills": ["Go (Golang)"],
+		"credentials": "https://www.linkedin.com/learning/certificates/14c1981deabb9177e7f61ae0c3118d788570fdeeeb1dbe08d6588dff641b5f6c",
+		"course": "https://www.udemy.com/course/go-the-complete-developers-guide/"
+	},
+	{
+		"title": "JavaScript Essential Training",
+		"subtitle": "Topics include: DOM, Objects, Strings, Arrays, functions and methods, events, Troubleshooting, and how Javascript is used in React.",
+		"slug": "Udemy-Javascript-Understanding-The-Weird-Parts",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680593191/Linkedin-JavaScript-Essential-Training_buddmy.png",
+		"organization": "Udemy",
+		"date": "2023-04-03",
+		"author": "Steve Han",
+		"skills": ["Javascript", "jQuery"],
+		"credentials": "https://www.udemy.com/certificate/UC-dcb15865-c901-4d15-b619-66c7d61ad69f/",
+		"course": "https://www.udemy.com/course/understand-javascript/"
+	},
+	{
+		"title": "JavaScript: Understanding the Weird Parts",
+		"subtitle": "Topics include: closures, prototypal inheritance, IIFEs, common pitfalls and mistakes, building your own Javascript framework or library",
+		"slug": "Udemy-Javascript-Understanding-The-Weird-Parts",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680593148/Udemy-Javascript-Understanding-The-Weird-Parts_qauff6.jpg",
+		"organization": "Udemy",
+		"date": "2023-04-03",
+		"author": "Steve Han",
+		"skills": ["Javascript", "jQuery"],
+		"credentials": "https://www.udemy.com/certificate/UC-dcb15865-c901-4d15-b619-66c7d61ad69f/",
+		"course": "https://www.udemy.com/course/understand-javascript/"
+	},
+	{
+		"title": "AWS AppSync & Amplify with React & GraphQL Complete Guide",
+		"subtitle": "Develop a production-ready serverless backend API powered by AWS AppSync and GraphQL.",
+		"slug": "Udemy-AWS-AppSync-Amplify-with-React-GraphQL-Complete-Guide",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680593148/Udemy-AWS-AppSync-Amplify-with-React-GraphQL-Complete-Guide_w9xe6e.jpg",
+		"organization": "Udemy",
+		"date": "2023-04-03",
+		"author": "Steve Han",
+		"skills": ["React", "GraphQL", "AppSync", "Amplify", "Javascript"],
+		"credentials": "https://www.udemy.com/certificate/UC-e6b4343c-2735-4995-b36b-46d5d2cbdb24/",
+		"course": "https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/"
+	},
+	{
+		"title": "ChatGPT Masterclass - Build Solutions and Apps with ChatGPT",
+		"subtitle": "Integrating ChatGPT's OpenAI API and Azure Functions with Outlook, Teams, Excel, Power Automate, Power Apps, Bubble, and Airtable to create business solutions.",
+		"slug": "Udemy-ChatGPT-Masterclass-Build-Solutions-and-Apps-with-ChatGPT",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680593148/Udemy-ChatGPT-Masterclass-Build-Solutions-and-Apps-with-ChatGPT_slnnpy.jpg",
+		"organization": "Udemy",
+		"date": "2023-04-03",
+		"author": "Steve Han",
+		"skills": [
+			"OpenAI API",
+			"ChatGPT",
+			"DALL-E",
+			"Azure Functions",
+			"Javascript",
+			"Python"
+		],
+		"credentials": "https://www.udemy.com/certificate/UC-eb5ba44d-5216-47f0-849d-5a384dba5249/",
+		"course": "https://www.udemy.com/course/chatgpt-build-solutions-and-apps-with-chatgpt-and-openai/"
 	},
 	{
 		"title": "Javascript Specialist",

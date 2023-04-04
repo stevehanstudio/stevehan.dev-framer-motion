@@ -6,7 +6,7 @@ import { AppContext } from '../context/AppContext'
 import { navMenuItems, socialMenuItems} from '../constants/MenuItems'
 import mixpanel from 'mixpanel-browser'
 
-const Menu: React.FC= () => {
+const Menu: React.FC = () => {
   const { theme, toggleTheme, selectedNavMenuItem, setSelectedNavMenuItem} = useContext(AppContext)
 	// console.log('selectedNavMenuItem', selectedNavMenuItem)
 	const location = useLocation()
