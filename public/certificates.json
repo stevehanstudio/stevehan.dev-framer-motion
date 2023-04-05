@@ -591,6 +591,23 @@
 		"course": "https://www.udemy.com/course/chatgpt-build-solutions-and-apps-with-chatgpt-and-openai/"
 	},
 	{
+		"title": "Pair-Programming-with-AI",
+		"subtitle": "Practical strategies and hands-on practice on how to leverage AI tools such as Github Copilot and ChatGPT to increase productivity and write better code.",
+		"slug": "Linkedin-Pair-Programming-with-AI",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680660465/stevehandev/certificates/Linkedin-Pair-Programming-with-AI_knpfky.png",
+		"organization": "Linkedin",
+		"date": "2023-04-04",
+		"author": "Steve Han",
+		"skills": [
+			"Github Copilot",
+			"ChatGPT",
+			"VS Code",
+			"Javascript"
+		],
+		"credentials": "https://www.linkedin.com/learning/certificates/0f4c72b95eb833a3c45bddabdba6df0c0497db09ab393987e093355d997dae49",
+		"course": "https://www.linkedin.com/learning/pair-programming-with-ai/pair-programming-with-ai?autoplay=true"
+	},
+	{
 		"title": "Javascript Specialist",
 		"subtitle": "Relevant Courses: Intermediate HTML and CSS, JavaScript, jQuery, AJAX, Mobile Web w/HTML, Javascript Frameworks and Libraries, JavaScript for IoT and XR",
 		"slug": "ccsf-web-application-programming",
