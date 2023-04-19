@@ -1,0 +1,97 @@
+import React from 'react'
+import { render, fireEvent } from '@testing-library/react'
+import MainComponent from './MainComponent'
+
+describe('MainComponent', () => {
+	const props = {
+		componentType: 'Projects',
+	}
+
+	beforeEach(() => {
+		global.fetch = jest.fn(() =>
+			Promise.resolve({
+				json: () =>
+					Promise.resolve([
+						{
+							id: 1,
+							title: 'Project 1',
+							description: 'Description 1',
+							skills: ['React', 'JavaScript'],
+						},
+						{
+							id: 2,
+							title: 'Project 2',
+							description: 'Description 2',
+							skills: ['JavaScript', 'HTML'],
+						},
+						{
+							id: 3,
+							title: 'Project 3',
+							description: 'Description 3',
+							skills: ['React', 'CSS'],
+						},
+					]),
+			})
+		)
+	})
+
+	afterEach(() => {
+		jest.clearAllMocks()
+	})
+
+	it('renders without crashing', () => {
+		render(<MainComponent {...props} />)
+	})
+
+	it('displays the correct number of projects/certificates', async () => {
+		const { getByTestId } = render(<MainComponent {...props} />)
+		const projects = await getByTestId('projects')
+		expect(projects.children.length).toBe(3)
+	})
+
+	it('displays the correct project/certificate details', async () => {
+		const { getByText } = render(<MainComponent {...props} />)
+		const project1 = await getByText('Project 1')
+		const project2 = await getByText('Project 2')
+		const project3 = await getByText('Project 3')
+		expect(project1).toBeInTheDocument()
+		expect(project2).toBeInTheDocument()
+		expect(project3).toBeInTheDocument()
+	})
+
+	it('displays the correct skills', async () => {
+		const { getByText } = render(<MainComponent {...props} />)
+		const react = await getByText('React')
+		const javascript = await getByText('JavaScript')
+		const html = await getByText('HTML')
+		const css = await getByText('CSS')
+		expect(react).toBeInTheDocument()
+		expect(javascript).toBeInTheDocument()
+		expect(html).toBeInTheDocument()
+		expect(css).toBeInTheDocument()
+	})
+
+	it('displays all skills on button click', async () => {
+		const { getByText, getByTestId } = render(<MainComponent {...props} />)
+		const showAllButton = await getByText('Show All Skills')
+		fireEvent.click(showAllButton)
+		const skillsList = await getByTestId('skills-list')
+		expect(skillsList.children.length).toBe(4)
+	})
+
+	it('selects all skills on button click', async () => {
+		const { getByText } = render(<MainComponent {...props} />)
+		const selectAllButton = await getByText('Select All Skills')
+		fireEvent.click(selectAllButton)
+		const selectedSkills = await getByText('Selected Skills: All')
+		expect(selectedSkills).toBeInTheDocument()
+	})
+
+	it('selects a skill on button click', async () => {
+		const { getByText } = render(<MainComponent {...props} />)
+		const reactButton = await getByText('React')
+		fireEvent.click(reactButton)
+		const selectedSkills = await getByText('Selected Skills: React')
+		expect(selectedSkills).toBeInTheDocument()
+	})
+})

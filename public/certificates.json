@@ -572,6 +572,27 @@
 		"course": "https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/"
 	},
 	{
+		"title": "Next JS & WordPress: Build rapid NextJS sites with Next & WP",
+		"subtitle": "Create static websites using Next JS, React JS, GraphQL, TailwindCSS and Wordpress.",
+		"slug": "NextJS-WordPress-Build-rapid-NextJS-sites-with-Next-WP",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1681191987/stevehandev/certificates/Udemy-NextJS-WordPress-Build-rapid-NextJS-sites-with-Next-WP_-_Copy_b3zdjl.jpg",
+		"organization": "Udemy",
+		"date": "2023-04-10",
+		"author": "Steve Han",
+		"skills": [
+			"Next.js",
+			"React",
+			"Javascript",
+			"TailwindCSS",
+			"HTML",
+			"CSS",
+			"PHP",
+			"Wordpress"
+		],
+		"credentials": "https://www.udemy.com/certificate/UC-eb5ba44d-5216-47f0-849d-5a384dba5249/",
+		"course": "https://www.udemy.com/course/chatgpt-build-solutions-and-apps-with-chatgpt-and-openai/"
+	},
+	{
 		"title": "ChatGPT Masterclass - Build Solutions and Apps with ChatGPT",
 		"subtitle": "Integrating ChatGPT's OpenAI API and Azure Functions with Outlook, Teams, Excel, Power Automate, Power Apps, Bubble, and Airtable to create business solutions.",
 		"slug": "Udemy-ChatGPT-Masterclass-Build-Solutions-and-Apps-with-ChatGPT",
@@ -598,14 +619,21 @@
 		"organization": "Linkedin",
 		"date": "2023-04-04",
 		"author": "Steve Han",
-		"skills": [
-			"Github Copilot",
-			"ChatGPT",
-			"VS Code",
-			"Javascript"
-		],
+		"skills": ["Github Copilot", "ChatGPT", "VS Code", "Javascript"],
 		"credentials": "https://www.linkedin.com/learning/certificates/0f4c72b95eb833a3c45bddabdba6df0c0497db09ab393987e093355d997dae49",
 		"course": "https://www.linkedin.com/learning/pair-programming-with-ai/pair-programming-with-ai?autoplay=true"
+	},
+	{
+		"title": "Intermediate Three.js with Shaders",
+		"subtitle": ".",
+		"slug": "Intermediate-Threejs-with-Shaders",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680660465/stevehandev/certificates/Linkedin-Pair-Programming-with-AI_knpfky.png",
+		"organization": "Udemy",
+		"date": "2023-04-15",
+		"author": "Steve Han",
+		"skills": ["Three.js", "Javascript", "Shaders"],
+		"credentials": "https://www.udemy.com/certificate/UC-2b72f0b2-9a23-4fbb-a312-06a76cf37507/",
+		"course": "https://www.udemy.com/course/intermediate-threejs-with-shaders/"
 	},
 	{
 		"title": "Javascript Specialist",
