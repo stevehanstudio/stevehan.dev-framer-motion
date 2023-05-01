@@ -25,7 +25,7 @@ export const DemoButton: React.FC<Props> = ({ title, type, url }) => {
 		<a className='flex py-2' href={url} target='_blank' rel='noreferrer'>
 			<button
 				type='button'
-				className='card-button md:bg-amber-500 md:dark:text-amber-400 md:border-amber-400 md:hover:bg-amber-400 md:hover:border-amber-400 md:hover:dark:bg-amber-500 md:hover:dark:border-amber-600'
+				className='card-button md:bg-amber-500 md:dark:text-amber-400 md:border-amber-400 md:hover:bg-amber-400 md:hover:border-amber-400 md:hover:dark:bg-amber-600 md:hover:dark:border-amber-700'
 				// className='card-button md:bg-amber-500 md:dark:text-amber-400 md:border-amber-400 md:hover:bg-amber-400 md:hover:border-amber-400 md:hover:bg-transparent'
 				onClick={() => {
 					mainComponentButtonClick({

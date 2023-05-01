@@ -182,29 +182,5 @@
 		],
 		"website": "https://www.stevehan.dev",
 		"github": "https://github.com/stevehanstudio/stevehan.dev-framer-motion"
-  },
-    {
-			"title": "SteveHan.dev Admin CMS",
-			"subtitle": "Content Management System for SteveHan.dev.  Built using Typescript, React, GraphQL, Tailwind CSS, AWS Amplify, AWS AppSync, Amazon Cognito, and DynamoDB.",
-			"slug": "stevehan-dev-famer-motion",
-			"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680595766/stevehandev/projects/stevehan-dev-admin_no0xu0.jpg",
-			"screenshot": "https://res.cloudinary.com/dbrvquuei/image/upload/v1668855859/stevehandev/projects/stevehan-dev-v2_aij9ds.jpg",
-			"date": "2023-03-30",
-			"author": "Steve Han",
-			"skills": [
-				"Typescript",
-				"React",
-        "GraphQL",
-				"Javascript",
-				"Tailwind CSS",
-				"Javascript",
-				"AWS",
-        "AWS AppSync",
-        "AWS Amplify",
-				"Amazon Cognito",
-				"Amazon DynamoDB"
-			],
-			"website": "https://dev.d28cbri168nrvc.amplifyapp.com/",
-			"github": "https://github.com/stevehanstudio/stevehan-dev-admin"
-		}
+  }
 ]

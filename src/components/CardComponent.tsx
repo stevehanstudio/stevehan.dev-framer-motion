@@ -33,12 +33,12 @@ const CardComponent: React.FC<Props> = ({
 						{` ${dataIndex + 1} of ${totalDataObject}`}
 					</h4>
 				)}
-				<div className='relative object-contain overflow-hidden mx-6 mt-6 md:mt-0 md:border-2 border-gray-50 dark:border-gray-800 rounded-sm shadow-sm pointer-events-none h-auto md:w-[325px] md:h-[200px]'>
+				<div className='relative overflow-hidden mx-6 mt-6 md:mt-0 md:border-2 border-gray-50 dark:border-gray-800 rounded-sm shadow-sm pointer-events-none h-auto md:w-[325px] md:h-[215px]'>
 					<img
 						alt={data.title}
 						src={data.image}
 						sizes='(max-width: 325px)'
-						// className='object-cover'
+						className='object-fill'
 						// placeholder='blur'
 						// width={350}
 						// height={200}
@@ -53,13 +53,13 @@ const CardComponent: React.FC<Props> = ({
 						{` ${dataIndex + 1} of ${totalDataObject}`}
 					</h4>
 				)}
-				<h1 className='font-normal md:font-medium md:text-center leading-none text-xl md:text-lg dark:text-white'>
+				<h1 className='text-xl font-normal leading-none md:font-medium md:text-center md:text-lg dark:text-white'>
 					{data.title}
 				</h1>
 				<h2 className='py-2 text-sm font-light md:text-sm dark:text-gray-100'>
 					{data.subtitle}
 				</h2>
-				<div className='flex flex-row mb-4 md:mb-0 justify-between w-full h-full'>
+				<div className='flex flex-row justify-between w-full h-full mb-4 md:mb-0'>
 					{data.website && (
 						<DemoButton
 							title={data.title}

@@ -625,8 +625,8 @@
 	},
 	{
 		"title": "Intermediate Three.js with Shaders",
-		"subtitle": ".",
-		"slug": "Intermediate-Threejs-with-Shaders",
+		"subtitle": "Topics include: Vertex and fragment shaders, normals, attributes, varying, UVs, click and drag funcionality, Vite, GSAP animation, mobile, textures to create globe",
+		"slug": "intermediate-threejs-with-shaders",
 		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1680660465/stevehandev/certificates/Linkedin-Pair-Programming-with-AI_knpfky.png",
 		"organization": "Udemy",
 		"date": "2023-04-15",
@@ -634,6 +634,30 @@
 		"skills": ["Three.js", "Javascript", "Shaders"],
 		"credentials": "https://www.udemy.com/certificate/UC-2b72f0b2-9a23-4fbb-a312-06a76cf37507/",
 		"course": "https://www.udemy.com/course/intermediate-threejs-with-shaders/"
+	},
+	{
+		"title": "React Three Fiber",
+		"subtitle": "Topics include: React Three Fiber, React, Declarative Programming, Materials, Shadows, useLoader, GLTFSX, useMemo, OrbitControls, gridHelper, Drei, Leva, Lights, Environment maps, useGLTF, stats Pabel, axesHelper",
+		"slug": "react-three-fiber",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1682928999/stevehandev/certificates/Udemy-React-Three-Fiber_j3gz21.jpg",
+		"organization": "Udemy",
+		"date": "2023-04-16",
+		"author": "Steve Han",
+		"skills": ["React Three Fiber", "React", "Three.js", "Javascript", "Shaders"],
+		"credentials": "https://www.udemy.com/certificate/UC-2b72f0b2-9a23-4fbb-a312-06a76cf37507/",
+		"course": "https://www.udemy.com/course/react-three-fiber/"
+	},
+	{
+		"title": "The Ultimate Redux Course 2023",
+		"subtitle": "Topics include: Redux, Redux Toolkit, Redux devTools, middleware, folder structure, react-redux, review of javascript.",
+		"slug": "the-ultimate-redux-course-2023",
+		"image": "https://res.cloudinary.com/dbrvquuei/image/upload/v1682928268/stevehandev/certificates/Udemy-Ultimate-Redux-Course_rzuo8i.jpg",
+		"organization": "Udemy",
+		"date": "2023-04-29",
+		"author": "Steve Han",
+		"skills": ["React", "Redux", "Redux Toolkit", "Javascript"],
+		"credentials": "https://www.udemy.com/certificate/UC-835936ad-2fa1-450d-83d9-9470a9aaa933/",
+		"course": "https://www.udemy.com/course/the-ultimate-redux-course-state-management-library/"
 	},
 	{
 		"title": "Javascript Specialist",
