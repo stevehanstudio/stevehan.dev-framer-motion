@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/stevehan.dev-framer-motion/static/css/main.dbb9e9fa.css",
+    "main.js": "/stevehan.dev-framer-motion/static/js/main.24aa9f58.js",
+    "static/js/496.39e13092.chunk.js": "/stevehan.dev-framer-motion/static/js/496.39e13092.chunk.js",
+    "static/media/work-sans-v18-latin-700.svg": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-700.5c7cfef0ced923b36441.svg",
+    "static/media/work-sans-v18-latin-600.svg": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-600.fa7796068bf049df3f79.svg",
+    "static/media/work-sans-v18-latin-500.svg": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-500.b73acc362c18bc004875.svg",
+    "static/media/work-sans-v18-latin-regular.svg": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-regular.0d84246426710d2a9afd.svg",
+    "static/media/work-sans-v18-latin-300.svg": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-300.9615bd0d1102402d00db.svg",
+    "static/media/work-sans-v18-latin-600.ttf": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-600.6c28a6ec28e2905886ad.ttf",
+    "static/media/work-sans-v18-latin-500.ttf": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-500.94957bb99aa3bd5150ba.ttf",
+    "static/media/work-sans-v18-latin-300.ttf": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-300.f6b2e246189a9f12d84c.ttf",
+    "static/media/work-sans-v18-latin-700.ttf": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-700.7f6be810bc3894fbc299.ttf",
+    "static/media/work-sans-v18-latin-regular.ttf": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-regular.f4966d8dc4b74190e56e.ttf",
+    "static/media/work-sans-v18-latin-600.woff": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-600.627a8dbfdac9bf91a38e.woff",
+    "static/media/work-sans-v18-latin-500.woff": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-500.546a8ec45870ab46426a.woff",
+    "static/media/work-sans-v18-latin-700.woff": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-700.1bc7a6283285a5052c23.woff",
+    "static/media/work-sans-v18-latin-300.woff": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-300.3c3520f97ff1723f92e0.woff",
+    "static/media/work-sans-v18-latin-600.eot": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-600.e5602770e778d17bbb95.eot",
+    "static/media/work-sans-v18-latin-500.eot": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-500.6236f94baf6bcd8df099.eot",
+    "static/media/work-sans-v18-latin-700.eot": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-700.b13e6e47d1cff484ff18.eot",
+    "static/media/work-sans-v18-latin-regular.woff": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-regular.5d4063433780150ca0ad.woff",
+    "static/media/work-sans-v18-latin-300.eot": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-300.53216f05121a3d7ae703.eot",
+    "static/media/work-sans-v18-latin-regular.eot": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-regular.44a3096e997c8375a511.eot",
+    "static/media/work-sans-v18-latin-600.woff2": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-600.1da16a19362715098335.woff2",
+    "static/media/work-sans-v18-latin-500.woff2": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-500.e31b5d6a252395e6093f.woff2",
+    "static/media/work-sans-v18-latin-700.woff2": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-700.db79812ac7e725f59dba.woff2",
+    "static/media/work-sans-v18-latin-300.woff2": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-300.e89bea4bf8075ec6d601.woff2",
+    "static/media/work-sans-v18-latin-regular.woff2": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-regular.ce971665e863d3b2fc8f.woff2",
+    "index.html": "/stevehan.dev-framer-motion/index.html",
+    "main.dbb9e9fa.css.map": "/stevehan.dev-framer-motion/static/css/main.dbb9e9fa.css.map",
+    "main.24aa9f58.js.map": "/stevehan.dev-framer-motion/static/js/main.24aa9f58.js.map",
+    "496.39e13092.chunk.js.map": "/stevehan.dev-framer-motion/static/js/496.39e13092.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbb9e9fa.css",
+    "static/js/main.24aa9f58.js"
+  ]
+}
