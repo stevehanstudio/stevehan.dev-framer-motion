@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stevehan.dev-framer-motion/static/css/main.dbb9e9fa.css",
-    "main.js": "/stevehan.dev-framer-motion/static/js/main.24aa9f58.js",
+    "main.js": "/stevehan.dev-framer-motion/static/js/main.26ec4f79.js",
     "static/js/496.39e13092.chunk.js": "/stevehan.dev-framer-motion/static/js/496.39e13092.chunk.js",
     "static/media/work-sans-v18-latin-700.svg": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-700.5c7cfef0ced923b36441.svg",
     "static/media/work-sans-v18-latin-600.svg": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-600.fa7796068bf049df3f79.svg",
@@ -30,11 +30,11 @@
     "static/media/work-sans-v18-latin-regular.woff2": "/stevehan.dev-framer-motion/static/media/work-sans-v18-latin-regular.ce971665e863d3b2fc8f.woff2",
     "index.html": "/stevehan.dev-framer-motion/index.html",
     "main.dbb9e9fa.css.map": "/stevehan.dev-framer-motion/static/css/main.dbb9e9fa.css.map",
-    "main.24aa9f58.js.map": "/stevehan.dev-framer-motion/static/js/main.24aa9f58.js.map",
+    "main.26ec4f79.js.map": "/stevehan.dev-framer-motion/static/js/main.26ec4f79.js.map",
     "496.39e13092.chunk.js.map": "/stevehan.dev-framer-motion/static/js/496.39e13092.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dbb9e9fa.css",
-    "static/js/main.24aa9f58.js"
+    "static/js/main.26ec4f79.js"
   ]
 }
